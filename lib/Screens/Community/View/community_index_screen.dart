@@ -1,4 +1,6 @@
+import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
+import 'package:chinesequizapp/infrastructure/repositories/database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -9,6 +11,9 @@ class CommunityIndexScreen extends StatefulWidget {
 }
 
 class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
+  final String? _collection = DatabaseConstants.databaseQuestionsCollection;
+  final QuizAppDatabaseService db = QuizAppDatabaseService.I;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

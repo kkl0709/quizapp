@@ -173,13 +173,47 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                 bottom: 0,
                 child: Container(
                   height: 66,
-                  width: double.infinity,
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                       color: Colors.white
                   ),
-                  child: TextField(
-                    maxLines: 1,
-                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                          child: TextField(
+                              maxLines: 1,
+                              decoration: InputDecoration(
+                                hintText: '댓글을 입력해주세요...',
+                                hintStyle: TextStyle(color: HexColor('#A3A3A3'), fontSize: 13),
+                                contentPadding: EdgeInsets.only(left: 20, right: 20),
+                                enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                    borderSide: BorderSide(
+                                        color: HexColor('#E5E5E5')
+                                    )
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                    borderSide: BorderSide(
+                                        color: HexColor('#E5E5E5')
+                                    )
+                                ),
+                              )
+                          )
+                      ),
+                      SizedBox(width: 10,),
+                      CircleAvatar(
+                        radius: 16,
+                        backgroundColor: HexColor('#321646').withOpacity(0.5),
+                        child: IconButton(
+                          padding: EdgeInsets.zero,
+                            onPressed: () {},
+                            icon: Icon(Icons.arrow_upward, color: Colors.white,)
+                        ),
+                      )
+                    ],
+                  )
                 )
             )
           ],
