@@ -12,6 +12,7 @@ import 'package:chinesequizapp/Screens/HomeScreens/binddings/view_result_binding
 import 'package:chinesequizapp/Screens/HomeScreens/views/main_home_screen.dart';
 import 'package:chinesequizapp/Screens/HomeScreens/views/quiz_result_screen.dart';
 import 'package:chinesequizapp/Screens/HomeScreens/views/view_result_screen.dart';
+import 'package:chinesequizapp/Screens/LectureScreens/views/lecture_detail_screen.dart';
 import 'package:chinesequizapp/Screens/LoginScreen/Binding/login_binding.dart';
 import 'package:chinesequizapp/Screens/MembershipScreen/Binding/membership_binding.dart';
 import 'package:chinesequizapp/Screens/OnBordingScreens/Bindding/onBoarding_binding.dart';
@@ -150,6 +151,12 @@ class AppPages {
       page: () => CommunityIndexScreen(),
       transitionDuration: Duration(milliseconds: 500),
       transition: Transition.cupertino
-    )
+    ),
+    GetPage(
+      name: RoutesConstants.lectureDetailScreen,
+      page: () => LectureDetailScreen(),
+      transitionDuration: Duration(milliseconds: 500),
+      transition: Transition.cupertino
+    ),
   ];
 }
