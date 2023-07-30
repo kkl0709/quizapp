@@ -73,6 +73,7 @@ dependencies:
   extended_image: ^8.0.2
   loading_animation_widget: ^1.2.0+4
   appinio_video_player: ^1.2.1
+  hexcolor: ^3.0.1
 
 dev_dependencies:
   flutter_test:
