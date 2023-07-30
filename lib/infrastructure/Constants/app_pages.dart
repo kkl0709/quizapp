@@ -159,7 +159,6 @@ class AppPages {
       transitionDuration: Duration(milliseconds: 500),
       transition: Transition.cupertino
     ),
-    ),
     GetPage(
         name: RoutesConstants.communityDetailScreen,
         page: () => CommunityDetailScreen(),
