@@ -77,6 +77,18 @@ class MainHomeScreen extends GetView<HomeScreenController> {
               label: "",
               backgroundColor: Colors.white,
             ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                controller.selectedIndex.value == 5
+                    ? Icons.video_collection
+                    : Icons.video_collection_outlined,
+                color: controller.selectedIndex.value == 5
+                    ? Color(0xff59287b)
+                    : Colors.grey.shade400,
+              ),
+              label: "",
+              backgroundColor: Colors.white,
+            ),
           ],
           type: BottomNavigationBarType.fixed,
           currentIndex: controller.selectedIndex.value,

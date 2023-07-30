@@ -1,5 +1,6 @@
 import 'package:chinesequizapp/Screens/Community/View/community_index_screen.dart';
 import 'package:chinesequizapp/Screens/HomeScreens/views/home_screen.dart';
+import 'package:chinesequizapp/Screens/LectureScreens/views/lecture_screen.dart';
 import 'package:chinesequizapp/Screens/ProfileScreens/views/profile_screen.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/Views/progress_screen_view.dart';
 import 'package:chinesequizapp/infrastructure/Constants/app_constants_color.dart';
@@ -26,6 +27,7 @@ class HomeScreenController extends GetxController {
     QuizScreen(),
     ProgressScreen(),
     ProfileScreen(),
+    LectureScreen(),
   ].obs;
 
   @override
