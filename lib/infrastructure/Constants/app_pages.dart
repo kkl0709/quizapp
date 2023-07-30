@@ -2,6 +2,7 @@ import 'package:chinesequizapp/Screens/AuthenticationScreens/Binding/email_otp_v
 import 'package:chinesequizapp/Screens/AuthenticationScreens/Binding/password_authentication_bindding.dart';
 import 'package:chinesequizapp/Screens/AuthenticationScreens/View/email_otp_veryfication_screen.dart';
 import 'package:chinesequizapp/Screens/AuthenticationScreens/View/password_authentication_screen.dart';
+import 'package:chinesequizapp/Screens/Community/View/community_create_screen.dart';
 import 'package:chinesequizapp/Screens/Community/View/community_detail_screen.dart';
 import 'package:chinesequizapp/Screens/Community/View/community_index_screen.dart';
 import 'package:chinesequizapp/Screens/EmailLoginScreen/Binding/email_login_binding.dart';
@@ -162,6 +163,12 @@ class AppPages {
     GetPage(
         name: RoutesConstants.communityDetailScreen,
         page: () => CommunityDetailScreen(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino
+    ),
+    GetPage(
+        name: RoutesConstants.communityCreateScreen,
+        page: () => CommunityCreateScreen(),
         transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino
     )

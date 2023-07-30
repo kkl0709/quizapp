@@ -26,4 +26,5 @@ class RoutesConstants {
   static const String communityIndexScreen = "/communityIndexScreen";
   static const String lectureDetailScreen = "/lectureDetailScreen";
   static const String communityDetailScreen = "/communityDetailScreen";
+  static const String communityCreateScreen =  "/communityCreateScreen";
 }

@@ -95,7 +95,9 @@ class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {
+          Get.toNamed(RoutesConstants.communityCreateScreen);
+        },
         child: Icon(Icons.edit),
       ),
     );
