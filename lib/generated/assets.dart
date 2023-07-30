@@ -4,6 +4,7 @@ class Assets {
 
   static const String imagesAppale = 'assets/images/appale.png';
   static const String imagesBook = 'assets/images/book.png';
+  static const String imagesComment = 'assets/images/comment.png';
   static const String imagesCompleteQuizImage = 'assets/images/completeQuizImage.png';
   static const String imagesDummy = 'assets/images/dummy.png';
   static const String imagesFacbook = 'assets/images/facbook.png';
@@ -11,7 +12,7 @@ class Assets {
   static const String imagesHidepass = 'assets/images/hidepass.png';
   static const String imagesHomePageBackground = 'assets/images/homePage_background.png';
   static const String imagesHomePageLogo = 'assets/images/homePageLogo.png';
-  static const String imagesImg = 'assets/images/comment.png';
+  static const String imagesImg = 'assets/images/dummy_board.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesMailicon = 'assets/images/mailicon.png';
   static const String imagesMessage = 'assets/images/message.png';
@@ -31,4 +32,5 @@ class Assets {
   static const String localesPtPT = 'assets/locales/pt_PT.json';
   static const String localesRuRU = 'assets/locales/ru_RU.json';
   static const String localesZhCN = 'assets/locales/zh_CN.json';
+
 }
