@@ -26,160 +26,162 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            SingleChildScrollView(
-              padding: EdgeInsets.only(bottom: 66),
-              child: Column(
-                children: [
-                  Padding(
-                      padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Positioned.fill(
+                child: SingleChildScrollView(
+                  padding: EdgeInsets.only(bottom: 66),
+                  child: Column(
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
+                          child: Column(
                             children: [
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Image(image: AssetImage('assets/images/dummy.png'), width: 40, height: 40,),
-                                  SizedBox(width: 8,),
-                                  Text('abc@abc.com', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)
+                                  Row(
+                                    children: [
+                                      Image(image: AssetImage('assets/images/dummy.png'), width: 40, height: 40,),
+                                      SizedBox(width: 8,),
+                                      Text('abc@abc.com', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)
+                                    ],
+                                  ),
+                                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz), color: HexColor('#ACACAF'),)
                                 ],
                               ),
-                              IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz), color: HexColor('#ACACAF'),)
-                            ],
-                          ),
-                          Container(
-                            child: Text('sss'),
-                          ),
-                          Image(image: AssetImage('assets/images/dummy_board.png')),
-                          Align(
-                              alignment: Alignment.centerRight,
-                              child: Text('2023.10.10', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12))
-                          )
-                        ],
-                      )
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: HexColor('#F0F0F1'),
-                    ),
-                    height: 6,
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                              border: Border(
-                                  bottom: BorderSide(
-                                      color: HexColor('#F0F0F1')
-                                  )
-                              )
-                          ),
-                          width: double.infinity,
-                          padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage('assets/images/dummy.png'),
-                                radius: 20,
+                              Container(
+                                child: Text('sss'),
                               ),
-                              SizedBox(width: 8,),
-                              Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text('이름', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.end,
-                                            children: [
-                                              Text('2023.10.10', style: TextStyle(color: HexColor('#ACACAF'), fontSize: 12),),
-                                              IconButton(
-                                                  style: IconButton.styleFrom(
-                                                      padding: EdgeInsets.zero
-                                                  ),
-                                                  onPressed: () {},
-                                                  icon: Icon(Icons.more_horiz, color: HexColor('#ACACAF'))
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                      Text('testtesttest', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12),)
-                                    ],
-                                  )
+                              Image(image: AssetImage('assets/images/dummy_board.png')),
+                              Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Text('2023.10.10', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12))
                               )
                             ],
                           )
                       ),
                       Container(
-                          decoration: BoxDecoration(
-                              border: Border(
-                                  bottom: BorderSide(
-                                      color: HexColor('#F0F0F1')
+                        decoration: BoxDecoration(
+                          color: HexColor('#F0F0F1'),
+                        ),
+                        height: 6,
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                      bottom: BorderSide(
+                                          color: HexColor('#F0F0F1')
+                                      )
                                   )
-                              )
-                          ),
-                          width: double.infinity,
-                          padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage('assets/images/dummy.png'),
-                                radius: 20,
                               ),
-                              SizedBox(width: 8,),
-                              Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              width: double.infinity,
+                              padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  CircleAvatar(
+                                    backgroundImage: AssetImage('assets/images/dummy.png'),
+                                    radius: 20,
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text('이름', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
                                           Row(
-                                            mainAxisAlignment: MainAxisAlignment.end,
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                             children: [
-                                              Text('2023.10.10', style: TextStyle(color: HexColor('#ACACAF'), fontSize: 12),),
-                                              IconButton(
-                                                  style: IconButton.styleFrom(
-                                                      padding: EdgeInsets.zero
-                                                  ),
-                                                  onPressed: () {},
-                                                  icon: Icon(Icons.more_horiz, color: HexColor('#ACACAF'))
+                                              Text('이름', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: [
+                                                  Text('2023.10.10', style: TextStyle(color: HexColor('#ACACAF'), fontSize: 12),),
+                                                  IconButton(
+                                                      style: IconButton.styleFrom(
+                                                          padding: EdgeInsets.zero
+                                                      ),
+                                                      onPressed: () {},
+                                                      icon: Icon(Icons.more_horiz, color: HexColor('#ACACAF'))
+                                                  )
+                                                ],
                                               )
                                             ],
-                                          )
+                                          ),
+                                          Text('testtesttest', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12),)
                                         ],
-                                      ),
-                                      Text('testtesttest', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12),)
-                                    ],
+                                      )
                                   )
+                                ],
                               )
-                            ],
+                          ),
+                          Container(
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                      bottom: BorderSide(
+                                          color: HexColor('#F0F0F1')
+                                      )
+                                  )
+                              ),
+                              width: double.infinity,
+                              padding: EdgeInsets.only(left: 20, right: 20, bottom: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  CircleAvatar(
+                                    backgroundImage: AssetImage('assets/images/dummy.png'),
+                                    radius: 20,
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text('이름', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: [
+                                                  Text('2023.10.10', style: TextStyle(color: HexColor('#ACACAF'), fontSize: 12),),
+                                                  IconButton(
+                                                      style: IconButton.styleFrom(
+                                                          padding: EdgeInsets.zero
+                                                      ),
+                                                      onPressed: () {},
+                                                      icon: Icon(Icons.more_horiz, color: HexColor('#ACACAF'))
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                          Text('testtesttest', style: TextStyle(color: HexColor('#696A6F'), fontSize: 12),)
+                                        ],
+                                      )
+                                  )
+                                ],
+                              )
                           )
+                        ],
                       )
                     ],
-                  )
-                ],
-              ),
+                  ),
+                ),
             ),
             Positioned(
-              bottom: 0,
+                bottom: 0,
                 child: Container(
                   height: 66,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.white
+                      color: Colors.white
                   ),
                   child: TextField(
-
+                    maxLines: 1,
                   ),
                 )
-            ),
+            )
           ],
         )
       ),
