@@ -22,7 +22,7 @@ class _LectureDetailScreenState extends State<LectureDetailScreen> {
   @override
   void initState() {
     super.initState();
-    videoPlayerController = VideoPlayerController.networkUrl(Uri.parse('https://media.w3.org/2010/05/sintel/trailer.mp4'))
+    videoPlayerController = VideoPlayerController.networkUrl(Uri.parse('https://firebasestorage.googleapis.com/v0/b/tetra-56730.appspot.com/o/lectures%2Ftest_video.mp4?alt=media&token=42060ef6-b555-45aa-91ce-629ad23cf780'))
       ..initialize().then((value) => setState(() {}));
     _customVideoPlayerController = CustomVideoPlayerController(
       context: context,
