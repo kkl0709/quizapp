@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "عُد",
+      "move": "حركة",
+      "cancel": "الخروج"
+    }
+  },
+
+  "splashScreen": {
+    "title": "تيترا التدريب الذاتي",
+    "content": "كل شيء هو تصوري"
+  },
+
+  "homeScreen": {
+    "title": ".مرحبًا بك في عالم القواعد غير المرئية",
+    "content": ".تترا هي كل شيء في تصورها الخاص\nتظهر أنك تغادر",
+    "button": {
+      "start": "الشروع في التدريب الذاتي"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "اسم تيترا للتدريب الذاتي",
+    "content": ".تترا هي كل شيء في تصورها الخاص تظهر أنك تغادر. اكتب الكلمات أو الجمل التي تتبادر إلى الذهن فور بدء التدريب",
+    "subject": "الموضوع",
+    "select": "(إدخال اختياري)",
+    "button": {
+      "start": "ابدأ التدريب"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "تدريب تيترا الذاتي",
+    "content": "أدخل ما يتبادر إلى الذهن في المربع أدناه",
+    "textField": {
+      "title1": "يستلم",
+      "title2": "يعطي",
+      "title3": "لا أستطيع الحصول عليه",
+      "title4": "لا تستطيع ان تعطي",
+      "hint1": "يستلم",
+      "hint2": "يعطي",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "عرض النتائج"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "رباعي نتائج التدريب الذاتي",
+    "resultContent1": "",
+    "resultContent2": "\".لذا أعطني ''.",
+    "resultContent3": "\"لا يمكن إعطاء\n\"",
+    "resultContent4": "\"لا أستطيع الحصول \n\"",
+    "resultContent5": "اريد ان استقبل \"",
+    "button": {
+      "save": "حفظ",
+      "return": "عودة"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "تدريب تيترا الذاتي",
+    "content1": "اختر لغتك لاستخدام التطبيق",
+    "content2": "يرجى تحديد لغتك للبدء",
+    "language": "اللغة / اللغة",
+    "button": {
+      "start": "البدء"
+    }
+  },
+
+  "loginScreen": {
+    "title": "تيترا التدريب الذاتي",
+    "content": "كل شيء هو تصوري",
+    "emailLogin": "تسجيل الدخول عبر البريد الإلكتروني",
+    "signUp": "الانضمام إلى العضوية",
+    "findPassword": "العثور على كلمة السر",
+    "snsLogin": "تسجيل سهل"
+  },
+
+  "membershipScreen": {
+    "signUp": "الانضمام إلى العضوية",
+    "email": "عنوان البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "passwordCheck": "كلمة المرور",
+    "name": "اسم",
+    "birth": "تاريخ الميلاد",
+    "men": "رجال",
+    "women": "نساء",
+    "terms": "هل توافق على الشروط؟",
+    "termsAgree": "إذا وافقت على الشروط والأحكام ، فسيظهر زر تسجيل.",
+    "register": "Sign Up",
+    "inputBirth": " الرجاء إدخال تاريخ ميلادك في ملف التعريف الخاص بك",
+    "logout": "هل أنت متأكد أنك تريد تسجيل الخروج؟"
+  },
+
+  "emailLoginScreen": {
+    "title": "تيترا التدريب الذاتي",
+    "content": "كل شيء هو تصوري",
+    "email": "أدخل البريد الإلكتروني",
+    "password": "أدخل كلمة المرور",
+    "button": {
+      "login": "تسجيل الدخول"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "إعادة تعيين كلمة المرور الخاصة بك",
+    "content": "يرجى إعادة ضبط كلمة المرور الخاصة بك",
+    "password": "أدخل كلمة المرور",
+    "passwordCheck": "إعادة إدخال كلمة المرور",
+    "button": {
+      "done": "مكتمل"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "التحقق من البريد الإلكتروني",
+    "content": "الرجاء إدخال عنوان البريد الإلكتروني الخاص بك",
+    "email": "بريد إلكتروني",
+    "emailInput": "أدخل البريد الإلكتروني",
+    "button": {
+      "next": "التالي"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "رمز المصادقة",
+    "content": "الرجاء إدخال رمز التحقق الخاص بك",
+    "code": "رقم الشهادة",
+    "codeInput": "أدخل رمز التحقق",
+    "button": {
+      "next": "التالي"
+    }
+  },
+
+  "profileScreen": {
+    "men": "رجال",
+    "women": "نساء",
+    "profileEdit": "الملف الشخصي",
+    "email": "بريد إلكتروني",
+    "birth": "تاريخ الميلاد",
+    "privatePolicy": "سياسة الخصوصية",
+    "accountDelete": "حذف الحساب",
+    "logout": "تسجيل الخروج"
+  },
+
+  "updateProfileScreen": {
+    "birth": "تاريخ الميلاد",
+    "email": "بريد إلكتروني",
+    "password": "تغيير كلمة المرور",
+    "button": {
+      "done": "مكتمل"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "مسابقة يومية",
+    "content": "تترا هي أصل الحياة في الكون",
+    "true": " هذا صحيح.",
+    "false": "خطأ",
+    "trueAnswer": "الجملة صحيحة.",
+    "falseAnswer": "البيان خاطئ.",
+    "button": {
+      "true": "صحيح",
+      "false": "خطأ",
+      "back": "عُد",
+      "right": "إجابة صحيحة",
+      "wrong": "إجابة خاطئة",
+      "submit": "يُقدِّم"
+    }
+  },
+
+  "quizScreen": {
+    "title": "أكملت مسابقة اليوم\nمن فضلك تعال غدا أيضا!",
+    "content": "تترا هي أصل الحياة في الكون",
+    "dailyQuiz": "مسابقة يومية",
+    "button": {
+      "true": "إجابة"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "التقدم",
+    "quizComplete": "إكمال الاختبار",
+    "calender": "تقويم",
+    "levelTitle": "مستواي",
+    "levelRate": "رفع المستوى الآن!",
+    "levelRateMax": "رائع! لقد ملأت جميع المستويات!",
+    "levelRate1": "شكا من المستوى المتبقي",
+    "levelRate2": "هناك!",
+    "answerTitle": "معدل الإجابة الصحيح",
+    "deliveryRate": "تسليم معدل الإجابة الصحيحة",
+    "month": "على أساس شهري",
+    "monthAnswer": "ما هو معدل الإجابة الصحيح هذا الشهر؟",
+    "completeQuizTitle": "اختبارًا قصيرًا",
+    "completeQuizTotal1": "تم إكمال ما مجموعه",
+    "completeQuizTotal2": ""
+  }
+}

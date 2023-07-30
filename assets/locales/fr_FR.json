@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "Retour",
+      "move": "mouvement",
+      "cancel": "annuler"
+    }
+  },
+
+  "splashScreen": {
+    "title": "auto-coaching tétra",
+    "content": "tout est ma perception"
+  },
+
+  "homeScreen": {
+    "title": "Bienvenue dans le monde des règles invisibles.",
+    "content": "Tetra est tout dans sa propre perception\nmontrez que vous partez.",
+    "button": {
+      "start": "Se lancer dans l'auto-coaching"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Self-Coaching",
+    "content": "Tetra est tout dans sa propre perception montrez que vous partez. Notez les mots ou les phrases qui vous viennent à l'esprit immédiatement après le début du coaching.",
+    "subject": "Sujet",
+    "select": "(entrée facultative)",
+    "button": {
+      "start": "commencer l'entraînement"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Tetra Auto-Coaching",
+    "content": "Entrez ce qui vous vient à l'esprit dans la case ci-dessous",
+    "textField": {
+      "title1": "recevoir",
+      "title2": "donner",
+      "title3": "ne peut pas l'obtenir",
+      "title4": "ne peut pas donner",
+      "hint1": "recevoir",
+      "hint2": "donner",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "Voir les résultats"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Quadrant des résultats de l'auto-coaching",
+    "resultContent1": "Je veux recevoir '",
+    "resultContent2": "'\nje n'arrive pas à '",
+    "resultContent3": "'\n‘",
+    "resultContent4": "’ ne peut pas être donné.\nAlors donnez-moi '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "enregistrer",
+      "return": "revenir"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Tetra Auto-Coaching",
+    "content1": "Choisissez votre langue pour utiliser l'application",
+    "content2": "veuillez sélectionner votre langue pour commencer",
+    "language": "Langue / Langue",
+    "button": {
+      "start": "Commencer"
+    }
+  },
+
+  "loginScreen": {
+    "title": "auto-coaching tétra",
+    "content": "tout est ma perception",
+    "emailLogin": "connexion par e-mail",
+    "signUp": "Inscrivez-vous",
+    "findPassword": "trouvez le mot de passe",
+    "snsLogin": "connexion facile"
+  },
+
+  "membershipScreen": {
+    "signUp": "rejoindre l'adhésion",
+    "email": "Adresse e-mail",
+    "password": "mot de passe",
+    "passwordCheck": "mot de passe",
+    "name": "nom",
+    "birth": "date de naissance",
+    "men": "Hommes",
+    "women": "femmes",
+    "terms": "Êtes-vous d'accord avec les termes?",
+    "termsAgree": "Si vous acceptez les termes et conditions, un bouton d'inscription apparaîtra.",
+    "register": "Sign Up",
+    "inputBirth": "Veuillez entrer votre date de naissance dans votre profi",
+    "logout": "Êtes-vous sûr de vouloir vous déconnecter?"
+  },
+
+  "emailLoginScreen": {
+    "title": "auto-coaching tétra",
+    "content": "tout est ma perception",
+    "email": "Entrez l'e-mail",
+    "password": "Entrez le mot de passe",
+    "button": {
+      "login": "connexion"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Réinitialisez votre mot de passe",
+    "content": "Veuillez réinitialiser votre mot de passe",
+    "password": "Entrer le mot de passe",
+    "passwordCheck": "Entrez à nouveau le mot de passe",
+    "button": {
+      "done": "complet"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "Vérification par e-mail",
+    "content": "Veuillez saisir votre adresse e-mail",
+    "email": "e-mail",
+    "emailInput": "Entrez l'e-mail",
+    "button": {
+      "next": "suivant"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Code d'authentification",
+    "content": "Veuillez entrer votre code de vérification",
+    "code": "Numéro de certification",
+    "codeInput": "Entrez le code de vérification",
+    "button": {
+      "next": "suivant"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Hommes",
+    "women": "femmes",
+    "profileEdit": "le profil",
+    "email": "e-mail",
+    "birth": "date de naissance",
+    "privatePolicy": "politique de confidentialité",
+    "accountDelete": "suppression de compte",
+    "logout": "déconnexion"
+  },
+
+  "updateProfileScreen": {
+    "birth": "Date de naissance",
+    "email": "e-mail",
+    "password": "Changer le mot de passe",
+    "button": {
+      "done": "complet"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "quiz quotidien",
+    "content": "Tetra est l'origine de la vie dans l'univers.",
+    "true": "C'est vrai.",
+    "false": "Faux",
+    "trueAnswer": "La phrase est vraie.",
+    "falseAnswer": "déclaration est fausse.",
+    "button": {
+      "true": "vrai",
+      "false": "faux",
+      "back": "retourner",
+      "right": "bonne réponse",
+      "wrong": "mauvaise réponse",
+      "submit": "soumettre"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Quiz du jour terminé\nS'il vous plaît venez demain aussi!",
+    "content": "Tetra est l'origine de la vie dans l'univers.",
+    "dailyQuiz": "quiz quotidien",
+    "button": {
+      "true": "répondre"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Progrès",
+    "quizComplete": "achèvement du quiz",
+    "calender": "calendrier",
+    "levelTitle": "mon niveau",
+    "levelRate": "Montez de niveau dès maintenant !",
+    "levelRateMax": "Génial ! J'ai rempli tous les niveaux !",
+    "levelRate1": "Il reste",
+    "levelRate2": "niveaux supplémentaires !",
+    "answerTitle": "taux de bonnes réponses",
+    "deliveryRate": "Livraison taux de réponse correcte",
+    "month": "base mensuelle",
+    "monthAnswer": "Quel est le taux de bonnes réponses ce mois-ci ?",
+    "completeQuizTitle": "questionnaires remplis",
+    "completeQuizTotal1": "Un total de",
+    "completeQuizTotal2": ""
+  }
+}

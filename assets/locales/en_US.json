@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "go back",
+      "move": "movement",
+      "cancel": "cancel"
+    }
+  },
+
+  "splashScreen": {
+    "title": "tetra self coaching",
+    "content": "everything is my perception"
+  },
+
+  "homeScreen": {
+    "title": "Welcome to the world of invisible rules.",
+    "content": "Tetra is everything in its own perception\nshow that you are leaving.",
+    "button": {
+      "start": "Getting started with self-coaching"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Self-Coaching",
+    "content": "Tetra is everything in its own perception show that you are leaving. Write down the words or sentences that come to mind immediately after coaching begins.",
+    "subject": "Topic",
+    "select": "(optional input)",
+    "button": {
+      "start": "start coaching"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Tetra Self Coaching",
+    "content": "Enter what comes to mind in the box below",
+    "textField": {
+      "title1": "receive",
+      "title2": "give",
+      "title3": "can't get it",
+      "title4": "can't give",
+      "hint1": "receive",
+      "hint2": "give",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "View Results"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Quadrant Self-Coaching Results",
+    "resultContent1": "I want to receive '",
+    "resultContent2": "'\nI can't get '",
+    "resultContent3": "'\n‘",
+    "resultContent4": "’ cannot be given.\nSo give me '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "save",
+      "return": "return"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Tetra Self Coaching",
+    "content1": "Choose your language to use the app",
+    "content2": "Please select your language to start.",
+    "language": "Language / Language",
+    "button": {
+      "start": "get started"
+    }
+  },
+
+  "loginScreen": {
+    "title": "tetra self coaching",
+    "content": "everything is my perception",
+    "emailLogin": "email login",
+    "signUp": "Sign up",
+    "findPassword": "find password",
+    "snsLogin": "easy login"
+  },
+
+  "membershipScreen": {
+    "signUp": "join the membership",
+    "email": "Email Address",
+    "password": "password",
+    "passwordCheck": "password",
+    "name": "name",
+    "birth": "birth date",
+    "men": "Men",
+    "women": "women",
+    "terms": "Do you agree to the terms?",
+    "termsAgree": "If you agree to the terms and conditions, a sign up button will appear.",
+    "register": "Sign Up",
+    "inputBirth": "Please enter your date of birth in your profile",
+    "logout": "Are you sure you want to log out?"
+  },
+
+  "emailLoginScreen": {
+    "title": "tetra self coaching",
+    "content": "everything is my perception",
+    "email": "Enter Email",
+    "password": "Enter password",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Reset your password",
+    "content": "Please reset your password",
+    "password": "Enter Password",
+    "passwordCheck": "Re-enter password",
+    "button": {
+      "done": "complete"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "Email verification",
+    "content": "Please enter your email address",
+    "email": "Email",
+    "emailInput": "Enter Email",
+    "button": {
+      "next": "next"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Authentication code",
+    "content": "Please enter your verification code",
+    "code": "Verification code",
+    "codeInput": "Enter verification code",
+    "button": {
+      "next": "next"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Men",
+    "women": "Women",
+    "profileEdit": "profile",
+    "email": "email",
+    "birth": "birth date",
+    "privatePolicy": "Privacy Policy",
+    "accountDelete": "account deletion",
+    "logout": "logout"
+  },
+
+  "updateProfileScreen": {
+    "birth": "Date of birth",
+    "email": "email",
+    "password": "Change Password",
+    "button": {
+      "done": "complete"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "daily quiz",
+    "content": "Tetra is the origin of life in the universe.",
+    "true": "That's right.",
+    "false": "Wrong",
+    "trueAnswer": "The sentence is true.",
+    "falseAnswer": "statement is false.",
+    "button": {
+      "true": "right",
+      "false": "wrong",
+      "back": "go back",
+      "right": "correct answer",
+      "wrong": "wrong answer",
+      "submit": "submit"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Completed Today's Quiz\nPlease come tomorrow too!",
+    "content": "Tetra is the origin of life in the universe.",
+    "dailyQuiz": "Daily Quiz",
+    "button": {
+      "true": "answer"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Progress",
+    "quizComplete": "quiz completion",
+    "calender": "calendar",
+    "levelTitle": "my level",
+    "levelRate": "Level up right now!",
+    "levelRateMax": "Awesome! I've filled all the levels!",
+    "levelRate1": "There are",
+    "levelRate2": "more level ups left!",
+    "answerTitle": "correct answer rate",
+    "deliveryRate": "Delivery correct answer rate",
+    "month": "monthly standard",
+    "monthAnswer": "What is the correct answer rate this month?",
+    "completeQuizTitle": "quizzes completed",
+    "completeQuizTotal1": "A total of",
+    "completeQuizTotal2": ""
+  }
+}

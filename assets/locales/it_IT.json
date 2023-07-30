@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "torna indietro",
+      "move": "movimento",
+      "cancel": "annullare"
+    }
+  },
+
+  "splashScreen": {
+    "title": "auto-allenamento tetra",
+    "content": "tutto è la mia percezione"
+  },
+
+  "homeScreen": {
+    "title": "Benvenuti nel mondo delle regole invisibili.",
+    "content": "Tetra è tutto nella sua stessa percezione\nmostra che te ne vai.",
+    "button": {
+      "start": "Iniziare con l'auto-coaching"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Self-Coaching",
+    "content": "Tetra è tutto nella sua stessa percezione mostra che te ne vai. Annota le parole o le frasi che ti vengono in mente subito dopo l'inizio del coaching.",
+    "subject": "Argomento",
+    "select": "(input facoltativo)",
+    "button": {
+      "start": "iniziare ad allenare"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Tetra Self Coaching",
+    "content": "Inserisci ciò che ti viene in mente nella casella sottostante",
+    "textField": {
+      "title1": "ricevere",
+      "title2": "Dare",
+      "title3": "non riesco a capirlo",
+      "title4": "non posso dare",
+      "hint1": "ricevere",
+      "hint2": "Dare",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "vedi i risultati"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Risultati del quadrante Self-Coaching",
+    "resultContent1": "Voglio ricevere '",
+    "resultContent2": "'\nnon riesco a ottenere '",
+    "resultContent3": "'\n‘",
+    "resultContent4": "’ non può essere dato.\nQuindi dammi '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "salva",
+      "return": "ritorna"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Tetra Self Coaching",
+    "content1": "Scegli la lingua per utilizzare l'app",
+    "content2": "selezionare la lingua per iniziare",
+    "language": "Lingua / Lingua",
+    "button": {
+      "start": "iniziare"
+    }
+  },
+
+  "loginScreen": {
+    "title": "auto-allenamento tetra",
+    "content": "tutto è la mia percezione",
+    "emailLogin": "accesso e-mail",
+    "signUp": "Iscriviti",
+    "findPassword": "rova la password 찾기",
+    "snsLogin": "facile accesso"
+  },
+
+  "membershipScreen": {
+    "signUp": "unisciti al tesseramento",
+    "email": "Indirizzo e-mail",
+    "password": "parola d'ordine",
+    "passwordCheck": "parola d'ordine",
+    "name": "nome",
+    "birth": "Data di nascita",
+    "men": "Uomini",
+    "women": "donne",
+    "terms": "Accetti i termini?",
+    "termsAgree": "Se accetti i termini e le condizioni, verrà visualizzato un pulsante di registrazione.",
+    "register": "Sign Up",
+    "inputBirth": "Inserisci la tua data di nascita nel tuo profilo",
+    "logout": "Sei sicuro di voler uscire?"
+  },
+
+  "emailLoginScreen": {
+    "title": "auto-allenamento tetra",
+    "content": "tutto è la mia percezione",
+    "email": "Inserisci l'email",
+    "password": "Inserisci la password di accesso",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Reimposta la tua password",
+    "content": "Per favore reimposta la tua password",
+    "password": "Inserire la password",
+    "passwordCheck": "Reinserire la password",
+    "button": {
+      "done": "completare"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "Verifica e-mail",
+    "content": "Inserisci il tuo indirizzo email",
+    "email": "e-mail",
+    "emailInput": "Inserisci l'email",
+    "button": {
+      "next": "Prossimo"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Codice di autenticazione",
+    "content": "Inserisci il tuo codice di verifica",
+    "code": "Numero di certificazione",
+    "codeInput": "Inserisci il codice di verifica",
+    "button": {
+      "next": "Prossimo"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Uomini",
+    "women": "donne",
+    "profileEdit": "profilo",
+    "email": "e-mail",
+    "birth": "Data di nascita",
+    "privatePolicy": "politica sulla riservatezza",
+    "accountDelete": "cancellazione dell'account",
+    "logout": "logout"
+  },
+
+  "updateProfileScreen": {
+    "birth": "Data di nascita",
+    "email": "e-mail",
+    "password": "Cambiare la password",
+    "button": {
+      "done": "completare"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "quiz quotidiano",
+    "content": "Tetra è l'origine della vita nell'universo.",
+    "true": "Esatto.",
+    "false": "Sbagliato",
+    "trueAnswer": "La frase è vera.",
+    "falseAnswer": "affermazione è falsa.",
+    "button": {
+      "true": "giusto",
+      "false": "sbagliato",
+      "back": "torna indietro",
+      "right": "risposta corretta",
+      "wrong": "risposta sbagliata",
+      "submit": "invia"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Hai completato il quiz di oggi\nPer favore, vieni anche domani!",
+    "content": "Tetra è l'origine della vita nell'universo.",
+    "dailyQuiz": "quiz quotidiano",
+    "button": {
+      "true": "risposta"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Avanzamento",
+    "quizComplete": "completamento del quiz",
+    "calender": "calendario",
+    "levelTitle": "il mio livello",
+    "levelRate": "Sali di livello adesso!",
+    "levelRateMax": "Fantastico! Ho riempito tutti i livelli!",
+    "levelRate1": "Sono rimasti altri",
+    "levelRate2": "livelli superiori!",
+    "answerTitle": "tasso di risposta corretto",
+    "deliveryRate": "Tasso di risposta corretta alla consegna",
+    "month": "standard mensile",
+    "monthAnswer": "Qual è il tasso di risposta corretta questo mese?",
+    "completeQuizTitle": "quiz completati",
+    "completeQuizTotal1": "Un totale di",
+    "completeQuizTotal2": ""
+  }
+}

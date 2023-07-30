@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "戻る",
+      "move": "移動",
+      "cancel": "キャンセル"
+    }
+  },
+
+  "splashScreen": {
+    "title": "テトラセルフコーチング",
+    "content": "すべては私の認識です"
+  },
+
+  "homeScreen": {
+    "title": "目に見えないルールの世界へようこそ。",
+    "content": "テトラというすべてが自分の意識から\n出発することを示しています。",
+    "button": {
+      "start": "セルフコーチングを始める"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "テトラセルフコーチング",
+    "content": "テトラというすべてが自分の意識から 出発することを示しています。 コーチング開始後に思い浮かぶ単語や文章をすぐに書いてみてください。",
+    "subject": "トピック",
+    "select": "(選択入力)",
+    "button": {
+      "start": "コーチングスタート"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "テトラセルフコーチング",
+    "content": "下の欄に登場するものを入力してください",
+    "textField": {
+      "title1": "受け取る",
+      "title2": "与える",
+      "title3": "受け取らない",
+      "title4": "できない",
+      "hint1": "受け取る",
+      "hint2": "与える",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "結果を見る"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "象限セルフコーチング結果",
+    "resultContent1": "私は「",
+    "resultContent2": "」を受け取るために\n「",
+    "resultContent3": "」を受け取らずに\n「",
+    "resultContent4": "」を与えられない。\nそれで私に「",
+    "resultContent5": "」を与える。",
+    "button": {
+      "save": "保存",
+      "return": "戻る"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "テトラセルフコーチング",
+    "content1": "アプリを使用するには言語を選択してください",
+    "content2": "Please select your language to start.",
+    "language": "言語 / Language",
+    "button": {
+      "start": "始める"
+    }
+  },
+
+  "loginScreen": {
+    "title": "テトラセルフコーチング",
+    "content": "すべては私の認識です",
+    "emailLogin": "メールログイン",
+    "signUp": "会員登録",
+    "findPassword": "パスワードを探す",
+    "snsLogin": "簡単ログイン"
+  },
+
+  "membershipScreen": {
+    "signUp": "会員登録",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "passwordCheck": "パスワード",
+    "name": "名前",
+    "birth": "生年月日",
+    "men": "男",
+    "women": "女",
+    "terms": "利用規約に同意しますか？",
+    "termsAgree": "利用規約に同意すると、登録ボタンが表示されます。",
+    "register": "Sign Up",
+    "inputBirth": "プロフィールに生年月日を入力してください",
+    "logout": "ログアウトしますか？"
+  },
+
+  "emailLoginScreen": {
+    "title": "テトラセルフコーチング",
+    "content": "すべては私の認識です",
+    "email": "メール入力",
+    "password": "パスワード入力ログイン",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "パスワードリセット",
+    "content": "パスワードをリセットしてください",
+    "password": "パスワード入力",
+    "passwordCheck": "パスワード再入力",
+    "button": {
+      "done": "完了"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "電子メール認証",
+    "content": "メールアドレスを入力してください",
+    "email": "Eメール",
+    "emailInput": "メール入力",
+    "button": {
+      "next": "Next"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "認証コード",
+    "content": "認証コードを入力してください",
+    "code": "認証番号",
+    "codeInput": "認証コード入力",
+    "button": {
+      "next": "Next"
+    }
+  },
+
+  "profileScreen": {
+    "men": "男",
+    "women": "女",
+    "profileEdit": "プロフィール編集",
+    "email": "Eメール",
+    "birth": "生年月日",
+    "privatePolicy": "個人情報保護処理方針",
+    "accountDelete": "アカウントの削除",
+    "logout": "ログアウト"
+  },
+
+  "updateProfileScreen": {
+    "birth": "生年月日",
+    "email": "Eメール",
+    "password": "パスワードを変更する",
+    "button": {
+      "done": "完了"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "毎日クイズ",
+    "content": "テトラは宇宙生命の起源です",
+    "true": "そうです。",
+    "false": "틀렸어요",
+    "trueAnswer": "文が真実です。",
+    "falseAnswer": "문장이 거짓입니다.",
+    "button": {
+      "true": "そうです",
+      "false": "間違っています",
+      "back": "戻る",
+      "right": "正解",
+      "wrong": "誤解",
+      "submit": "提出"
+    }
+  },
+
+  "quizScreen": {
+    "title": "今日のクイズを完了しました\n明日もぜひ来てください！",
+    "content": "テトラは宇宙生命の起源です",
+    "dailyQuiz": "毎日クイズ",
+    "button": {
+      "true": "正解"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "震度",
+    "quizComplete": "クイズ完了",
+    "calender": "カレンダー",
+    "levelTitle": "私のレベル",
+    "levelRate": "今すぐレベルを上げてみてください！",
+    "levelRateMax": "すごい！レベルを全部満たしました！",
+    "levelRate1": "今後",
+    "levelRate2": "回のLevel upが残りました！",
+    "answerTitle": "正解率",
+    "deliveryRate": "配信正答率",
+    "month": "1ヶ月基準",
+    "monthAnswer": "今月正解率は？",
+    "completeQuizTitle": "完了したクイズの合計",
+    "completeQuizTotal1": "",
+    "completeQuizTotal2": "回"
+  }
+}

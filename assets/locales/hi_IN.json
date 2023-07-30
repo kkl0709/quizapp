@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "वापस जाओ",
+      "move": "आंदोलन",
+      "cancel": "लॉगआउट"
+    }
+  },
+
+  "splashScreen": {
+    "title": "टेट्रा सेल्फ कोचिंग",
+    "content": "सब कुछ मेरी धारणा है"
+  },
+
+  "homeScreen": {
+    "title": "अदृश्य नियमों की दुनिया में आपका स्वागत है।",
+    "content": "टेट्रा अपनी ही धारणा में सब कुछ है\nदिखाओ कि तुम जा रहे हो।",
+    "button": {
+      "start": "स्व-प्रशिक्षण के साथ शुरुआत करना"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "टेट्रा सेल्फ-कोचिंग",
+    "content": "टेट्रा अपनी ही धारणा में सब कुछ है दिखाओ कि तुम जा रहे हो। कोचिंग शुरू होने के तुरंत बाद दिमाग में आने वाले शब्दों या वाक्यों को लिख लें।",
+    "subject": "विषय",
+    "select": "(वैकल्पिक इनपुट)",
+    "button": {
+      "start": "कोचिंग शुरू करो"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "टेट्रा सेल्फ कोचिंग",
+    "content": "नीचे दिए गए बॉक्स में मन में जो आता है उसे दर्ज करें",
+    "textField": {
+      "title1": "पाना",
+      "title2": "देना",
+      "title3": "यह नहीं मिल सकता",
+      "title4": "नहीं दे सकता",
+      "hint1": "पाना",
+      "hint2": "देना",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "परिणाम दर्शन"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "चतुर्थांश स्व-कोचिंग परिणाम",
+    "resultContent1": "मैं '",
+    "resultContent2": "' प्राप्त करना चाहता हूं\nमुझे नहीं मिल सकता '",
+    "resultContent3": "'\n'",
+    "resultContent4": "' नहीं दिया जा सकता।\nइसलिए मुझे दो '",
+    "resultContent5": "'।",
+    "button": {
+      "save": "बचाओ",
+      "return": "लौटो"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "टेट्रा सेल्फ कोचिंग",
+    "content1": "ऐप का उपयोग करने के लिए अपनी भाषा चुनें",
+    "content2": "प्रारंभ करने के लिए कृपया अपनी भाषा चुनें",
+    "language": "भाषा / भाषा",
+    "button": {
+      "start": "शुरू हो जाओ"
+    }
+  },
+
+  "loginScreen": {
+    "title": "टेट्रा सेल्फ कोचिंग",
+    "content": "सब कुछ मेरी धारणा है",
+    "emailLogin": "ईमेल लॉगिन",
+    "signUp": "साइन अप करें",
+    "findPassword": "पासवर्ड खोजें",
+    "snsLogin": "आसान लॉगिन"
+  },
+
+  "membershipScreen": {
+    "signUp": "सदस्यता में शामिल हों",
+    "email": "मेल पता",
+    "password": "पासवर्ड",
+    "passwordCheck": "पासवर्ड",
+    "name": "नाम",
+    "birth": "जन्म तिथि",
+    "men": "पुरुषों",
+    "women": "महिलाओं",
+    "terms": "क्या आप शर्तों से सहमत हैं?",
+    "termsAgree": "यदि आप नियम और शर्तों से सहमत हैं, तो एक साइन अप बटन दिखाई देगा।",
+    "register": "Sign Up",
+    "inputBirth": "कृपया अपनी प्रोफ़ाइल में अपनी जन्मतिथि दर्ज करें",
+    "logout": "क्या आप लॉग आउट करना चाहते हैं?"
+  },
+
+  "emailLoginScreen": {
+    "title": "टेट्रा सेल्फ कोचिंग",
+    "content": "सब कुछ मेरी धारणा है",
+    "email": "ईमेल दर्ज करें",
+    "password": "पासवर्ड लॉगिन दर्ज करें",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "अपना पासवर्ड रीसेट करें",
+    "content": "कृपया अपना पासवर्ड रीसेट करें",
+    "password": "पास वर्ड दर्ज करें",
+    "passwordCheck": "पासवर्ड फिर से दर्ज करें",
+    "button": {
+      "done": "पूरा"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "ईमेल सत्यापन",
+    "content": "कृपया अपना ईमेल एड्रेस इंटर करें",
+    "email": "ईमेल",
+    "emailInput": "ईमेल दर्ज करें",
+    "button": {
+      "next": "अगला"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "प्रमाणीकरण कोड",
+    "content": "अपना सत्यापन कोड दर्ज करें",
+    "code": "प्रमाणन संख्या",
+    "codeInput": "सत्यापन कोड दर्ज करें",
+    "button": {
+      "next": "अगला"
+    }
+  },
+
+  "profileScreen": {
+    "men": "पुरुषों",
+    "women": "महिलाओं",
+    "profileEdit": "प्रोफ़ाइल संपादित करें",
+    "email": "ईमेल",
+    "birth": "जन्म तिथि",
+    "privatePolicy": "गोपनीयता नीति",
+    "accountDelete": "खाता विलोपन",
+    "logout": "लॉगआउट"
+  },
+
+  "updateProfileScreen": {
+    "birth": "जन्म तिथि",
+    "email": "ईमेल",
+    "password": "पासवर्ड बदलें",
+    "button": {
+      "done": "पूरा"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "दैनिक प्रश्नोत्तरी",
+    "content": "टेट्रा ब्रह्मांड में जीवन की उत्पत्ति है",
+    "true": "सही है।",
+    "false": "गलत",
+    "trueAnswer": "वाक्य सत्य है।",
+    "falseAnswer": "कथन असत्य है।",
+    "button": {
+      "true": "सही",
+      "false": "ग़लत",
+      "back": "वापस जाओ",
+      "right": "सही उत्तर",
+      "wrong": "गलत उत्तर",
+      "submit": "जमा करना"
+    }
+  },
+
+  "quizScreen": {
+    "title": "आज की प्रश्नोत्तरी समाप्त\nकृपया कल भी पधारें!",
+    "content": "टेट्रा ब्रह्मांड में जीवन की उत्पत्ति है",
+    "dailyQuiz": "दैनिक प्रश्नोत्तरी",
+    "button": {
+      "true": "उत्तर"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "प्रगति",
+    "quizComplete": "प्रश्नोत्तरी पूर्णता",
+    "calender": "पंचांग",
+    "levelTitle": "मेरा स्तर",
+    "levelRate": "अभी लेवल अप करें!",
+    "levelRateMax": "बहुत बढ़िया! मैंने सभी स्तरों को भर दिया है!",
+    "levelRate1": "अभी",
+    "levelRate2": "लेवल और ऊपर जाने बाकी हैं!",
+    "answerTitle": "सही उत्तर दर",
+    "deliveryRate": "वितरण सही उत्तर दर",
+    "month": "मासिक आधार",
+    "monthAnswer": "इस महीने सही उत्तर दर क्या है?",
+    "completeQuizTitle": "क्विज़ पूरे हुए",
+    "completeQuizTotal1": "कुल",
+    "completeQuizTotal2": ""
+  }
+}

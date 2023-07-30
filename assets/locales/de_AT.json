@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "Geh zurück",
+      "move": "Bewegung",
+      "cancel": "Abmeldung"
+    }
+  },
+
+  "splashScreen": {
+    "title": "Tetra-Selbstcoaching",
+    "content": "Alles ist meine Wahrnehmung"
+  },
+
+  "homeScreen": {
+    "title": "Willkommen in der Welt der unsichtbaren Regeln.",
+    "content": "Tetra ist alles in seiner eigenen Wahrnehmung\nZeigen Sie, dass Sie gehen.",
+    "button": {
+      "start": "Einstieg ins Selbstcoaching"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Sie Tetra Selbstcoaching",
+    "content": "Tetra ist alles in seiner eigenen Wahrnehmung Zeigen Sie, dass Sie gehen. Schreiben Sie die Wörter oder Sätze auf, die Ihnen unmittelbar nach Beginn des Coachings in den Sinn kommen.",
+    "subject": "Thema",
+    "select": "(optionale Eingabe)",
+    "button": {
+      "start": "mit dem Coaching beginnen"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Tetra Selbstcoaching",
+    "content": "Geben Sie in das Feld unten ein, was Ihnen in den Sinn kommt",
+    "textField": {
+      "title1": "erhalten",
+      "title2": "geben",
+      "title3": "Ich kann es nicht verstehen",
+      "title4": "kann nicht geben",
+      "hint1": "erhalten",
+      "hint2": "geben",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "Ergebnisse anzeigen"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Ergebnisse des Quadranten-Selbstcoachings",
+    "resultContent1": "'",
+    "resultContent2": "'Ich möchte erhalten '",
+    "resultContent3": "'\nIch kann es nicht verstehen.\n‘",
+    "resultContent4": "’ kann nicht gegeben werden.\nAlso geben Sie mir '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "speichern",
+      "return": "zurückgeben"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Tetra Selbstcoaching",
+    "content1": "Wählen Sie Ihre Sprache, um die App zu verwenden",
+    "content2": "Bitte wählen Sie Ihre Sprache aus, um zu beginnen",
+    "language": "Sprache / Sprache",
+    "button": {
+      "start": "loslegen"
+    }
+  },
+
+  "loginScreen": {
+    "title": "Tetra-Selbstcoaching",
+    "content": "Alles ist meine Wahrnehmung",
+    "emailLogin": "E-Mail-Login",
+    "signUp": "Registrieren",
+    "findPassword": "Passwort finden",
+    "snsLogin": "Einfache Anmeldung"
+  },
+
+  "membershipScreen": {
+    "signUp": "Treten Sie der Mitgliedschaft bei",
+    "email": "E-Mail-Addresse",
+    "password": "Passwort",
+    "passwordCheck": "Passwort",
+    "name": "Name",
+    "birth": "Geburtsdatum",
+    "men": "Männer",
+    "women": "Frauen",
+    "terms": "Sind Sie mit den Bedingungen einverstanden?",
+    "termsAgree": "Wenn Sie den Allgemeinen Geschäftsbedingungen zustimmen, wird eine Schaltfläche zum Anmelden angezeigt.",
+    "register": "Sign Up",
+    "inputBirth": "Bitte geben Sie in Ihrem Profil Ihr Geburtsdatum ein",
+    "logout": "Möchten Sie sich wirklich abmelden?"
+  },
+
+  "emailLoginScreen": {
+    "title": "Tetra-Selbstcoaching",
+    "content": "Alles ist meine Wahrnehmung",
+    "email": "Email eingeben",
+    "password": "Geben Sie das Login-Passwort ein",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Setzen Sie Ihr Passwort zurück",
+    "content": "Bitte setzen Sie ihr Passwort zurück",
+    "password": "Passwort eingeben",
+    "passwordCheck": "Kennwort erneut eingeben",
+    "button": {
+      "done": "vollständig"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "E-Mail-Bestätigung",
+    "content": "Geben Sie bitte Ihre Email-Adresse ein",
+    "email": "Email",
+    "emailInput": "Email eingeben",
+    "button": {
+      "next": "nächste"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Authentifizierungscode",
+    "content": "Bitte geben Sie Ihren Bestätigungscode ein",
+    "code": "Zertifizierungsnummer",
+    "codeInput": "Bestätigungscode eingeben",
+    "button": {
+      "next": "nächste"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Männer",
+    "women": "Frauen",
+    "profileEdit": "Profil bearbeiten",
+    "email": "Email",
+    "birth": "Geburtsdatum",
+    "privatePolicy": "Datenschutz-Bestimmungen",
+    "accountDelete": "Kontolöschung",
+    "logout": "Abmelden"
+  },
+
+  "updateProfileScreen": {
+    "birth": "Geburtsdatum",
+    "email": "Email",
+    "password": "Kennwort ändern",
+    "button": {
+      "done": "vollständig"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "tägliches Quiz",
+    "content": "Tetra ist der Ursprung des Lebens im Universum.",
+    "true": "Das stimmt.",
+    "false": "Falsch",
+    "trueAnswer": "Der Satz ist wahr.",
+    "falseAnswer": "Aussage ist falsch.",
+    "button": {
+      "true": "richtig",
+      "false": "falsch",
+      "back": "geh zurück",
+      "right": "richtige Antwort",
+      "wrong": "falsche Antwort",
+      "submit": "einreichen"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Das heutige Quiz abgeschlossen\nBitte kommen Sie auch morgen!",
+    "content": "Tetra ist der Ursprung des Lebens im Universum.",
+    "dailyQuiz": "tägliches Quiz",
+    "button": {
+      "true": "antworten"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Fortschritt",
+    "quizComplete": "Abschluss des Quiz",
+    "calender": "Kalender",
+    "levelTitle": "mein Level",
+    "levelRate": "Steige jetzt auf!",
+    "levelRateMax": "Großartig! Ich habe alle Level geschafft!",
+    "levelRate1": "Es sind noch",
+    "levelRate2": "Levelaufstiege übrig!",
+    "answerTitle": "richtige Antwortquote",
+    "deliveryRate": "Zustellung korrekte Antwortrate",
+    "month": "monatlicher Standard",
+    "monthAnswer": "Wie hoch ist die richtige Antwortquote in diesem Monat?",
+    "completeQuizTitle": "Tests abgeschlossen",
+    "completeQuizTotal1": "Insgesamt",
+    "completeQuizTotal2": ""
+  }
+}

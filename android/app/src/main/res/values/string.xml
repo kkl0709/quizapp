@@ -1,0 +1,9 @@
+<resources>
+    <string name="client_id">M13SF6Rqtrp63EA8aDIk</string>
+    <string name="client_secret">vKX8I26e88</string>
+    <string name="client_name">QuizApp</string>
+    <string name="Tetraselfcoaching"></string>
+    <string name="facebook_app_id">3485522875036833</string>
+    <string name="fb_login_protocol_scheme">fb3485522875036833</string>
+    <string name="facebook_client_token">f90de591a81234444b86398d028e1a98</string>
+</resources>

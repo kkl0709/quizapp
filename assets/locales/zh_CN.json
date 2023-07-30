@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "回去",
+      "move": "移动",
+      "cancel": "取消"
+    }
+  },
+
+  "splashScreen": {
+    "title": "四自我训练",
+    "content": "一切都是我的认知"
+  },
+
+  "homeScreen": {
+    "title": "欢迎来到无形规则的世界。",
+    "content": "Tetra 是它自己认知中的一切\n表明你要离开了。",
+    "button": {
+      "start": "开始自我训练"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Self-Coaching",
+    "content": "Tetra 是它自己认知中的一切 表明你要离开了。 写下教练开始后立即想到的单词或句子。",
+    "subject": "主题",
+    "select": "(可选输入)",
+    "button": {
+      "start": "开始辅导"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "利乐自我辅导",
+    "content": "在下面的框中输入想到的内容",
+    "textField": {
+      "title1": "收到",
+      "title2": "给",
+      "title3": "不能得到它",
+      "title4": "不能给",
+      "hint1": "收到",
+      "hint2": "给",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "查看结果"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "象限自我训练结果",
+    "resultContent1": "我想收到'",
+    "resultContent2": "'\n我无法得到 '",
+    "resultContent3": "'\n‘",
+    "resultContent4": "’不能给出。\n所以给我'",
+    "resultContent5": "'。",
+    "button": {
+      "save": "保存",
+      "return": "返回"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "利乐自我辅导",
+    "content1": "选择您的语言以使用该应用程序",
+    "content2": "请选择您的语言开始",
+    "language": "语言 / 语言",
+    "button": {
+      "start": "开始"
+    }
+  },
+
+  "loginScreen": {
+    "title": "四自我训练",
+    "content": "一切都是我的认知",
+    "emailLogin": "邮箱登录",
+    "signUp": "注册",
+    "findPassword": "找回密码",
+    "snsLogin": "轻松登录"
+  },
+
+  "membershipScreen": {
+    "signUp": "加入会员",
+    "email": "电子邮件地址",
+    "password": "密码",
+    "passwordCheck": "密码",
+    "name": "姓名",
+    "birth": "出生日期",
+    "men": "男",
+    "women": "女",
+    "terms": "你同意这些条款吗？",
+    "termsAgree": "如果您同意条款和条件，将出现一个注册按钮。",
+    "register": "Sign Up",
+    "inputBirth": "请在您的个人资料中输入您的出生日期 ",
+    "logout": "您确定要退出吗？"
+  },
+
+  "emailLoginScreen": {
+    "title": "四自我训练",
+    "content": "一切都是我的认知",
+    "email": "输入电子邮件",
+    "password": "输入密码登录",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "重置密码",
+    "content": "请重新设置您的密码",
+    "password": "输入密码",
+    "passwordCheck": "重新输入密码",
+    "button": {
+      "done": "完全的"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "邮箱验证",
+    "content": "请输入您的电子邮件地址",
+    "email": "电子邮件",
+    "emailInput": "输入电子邮件",
+    "button": {
+      "next": "下一个"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "验证码",
+    "content": "请输入您的验证码",
+    "code": "认证编号",
+    "codeInput": "输入验证码",
+    "button": {
+      "next": "下一个"
+    }
+  },
+
+  "profileScreen": {
+    "men": "男",
+    "women": "女",
+    "profileEdit": "简介",
+    "email": "电子邮件",
+    "birth": "出生日期",
+    "privatePolicy": "隐私政策",
+    "accountDelete": "账号删除",
+    "logout": "注销"
+  },
+
+  "updateProfileScreen": {
+    "birth": "出生日期",
+    "email": "电子邮件",
+    "password": "更改密码",
+    "button": {
+      "done": "完全的"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "每日测验",
+    "content": "Tetra是宇宙生命的起源",
+    "true": " 没错。",
+    "false": "错误",
+    "trueAnswer": "这句话是真的。",
+    "falseAnswer": "陈述是错误的。",
+    "button": {
+      "true": "正确",
+      "false": "错误",
+      "back": "回去",
+      "right": "正确答案",
+      "wrong": "错误答案",
+      "submit": "提交"
+    }
+  },
+
+  "quizScreen": {
+    "title": "完成今天的测验\n明天也请来吧！",
+    "content": "Tetra是宇宙生命的起源",
+    "dailyQuiz": "每日测验",
+    "button": {
+      "true": "回答"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "进度",
+    "quizComplete": "测验完成",
+    "calender": "日历",
+    "levelTitle": "我的水平",
+    "levelRate": "马上升级！",
+    "levelRateMax": "太棒了！我已经填满了所有关卡！",
+    "levelRate1": "还剩",
+    "levelRate2": "层升级！",
+    "answerTitle": "正确答案率",
+    "deliveryRate": "交期答对率",
+    "month": "月度标准",
+    "monthAnswer": "这个月的正确答案率是多少？",
+    "completeQuizTitle": "共完成 个测验",
+    "completeQuizTotal1": "",
+    "completeQuizTotal2": ""
+  }
+}

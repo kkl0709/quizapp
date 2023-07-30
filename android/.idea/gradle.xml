@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_auth-4.6.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_core-2.14.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_facebook_auth-6.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility-5.4.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_native_splash-2.3.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_naver_login-1.8.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_secure_storage-8.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/fluttertoast-8.2.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.16/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/image_gallery_saver-2.0.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/kakao_flutter_sdk_common-1.4.3/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/launch_review-3.0.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/package_info_plus-4.0.2/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/shared_preferences_android-2.1.4/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/sign_in_with_apple-5.0.0/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/webview_flutter_android-3.8.0/android" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

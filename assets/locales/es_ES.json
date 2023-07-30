@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "regresa",
+      "move": "movimienot",
+      "cancel": "cancelar"
+    }
+  },
+
+  "splashScreen": {
+    "title": "autoentrenamiento tetra",
+    "content": "todo es mi percepción"
+  },
+
+  "homeScreen": {
+    "title": "Bienvenido al mundo de las reglas invisibles.",
+    "content": "Tetra es todo en su propia percepción.\ndemuestra que te vas.",
+    "button": {
+      "start": "Comenzando con el auto-entrenamiento"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Autoentrenamiento",
+    "content": "Tetra es todo en su propia percepción. demuestra que te vas. Escriba las palabras u oraciones que le vengan a la mente inmediatamente después de que comience el entrenamiento.",
+    "subject": "Tema",
+    "select": "(entrada opcional)",
+    "button": {
+      "start": "empezar a entrenar"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Autoentrenamiento Tetra",
+    "content": "Escribe lo que te venga a la mente en el cuadro de abajo",
+    "textField": {
+      "title1": "recibir",
+      "title2": "dar",
+      "title3": "no puedo conseguirlo",
+      "title4": "no puedo dar",
+      "hint1": "recibir",
+      "hint2": "dar",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "Ver resultados"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Resultados de autoentrenamiento del cuadrante",
+    "resultContent1": "quiero recibir'",
+    "resultContent2": "'\nno puedo conseguir '",
+    "resultContent3": "'\n'",
+    "resultContent4": "' no se puede dar.\nAsí que dame '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "guardar",
+      "return": "volver"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Autoentrenamiento Tetra",
+    "content1": "Elige tu idioma para usar la aplicación",
+    "content2": "por favor seleccione su idioma para comenzar",
+    "language": "Idioma / idioma",
+    "button": {
+      "start": "Empezar"
+    }
+  },
+
+  "loginScreen": {
+    "title": "autoentrenamiento tetra",
+    "content": "todo es mi percepción",
+    "emailLogin": "inicio de sesión de correo electrónico",
+    "signUp": "Regístrese",
+    "findPassword": "busque la contraseña",
+    "snsLogin": "inicio de sesión fácil"
+  },
+
+  "membershipScreen": {
+    "signUp": "unirse a la membresía",
+    "email": "Dirección de correo electrónico",
+    "password": "contraseña",
+    "passwordCheck": "contraseña",
+    "name": "nombre",
+    "birth": "fecha de nacimiento",
+    "men": "Hombres",
+    "women": "mujeres",
+    "terms": "¿Estás de acuerdo con los términos?",
+    "termsAgree": "Si acepta los términos y condiciones, aparecerá un botón de registro.",
+    "register": "Sign Up",
+    "inputBirth": "Por favor ingrese su fecha de nacimiento en su perfil",
+    "logout": "¿Está seguro de que desea cerrar la sesión?"
+  },
+
+  "emailLoginScreen": {
+    "title": "autoentrenamiento tetra",
+    "content": "todo es mi percepción",
+    "email": "Ingrese correo electrónico",
+    "password": "Ingrese la contraseña de inicio de sesión",
+    "button": {
+      "login": "login"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Restablece tu contraseña",
+    "content": "por favor, cambie su contraseña",
+    "password": "Introducir la contraseña",
+    "passwordCheck": "Escriba la contraseña otra vez",
+    "button": {
+      "done": "completo"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "Verificación de correo electrónico",
+    "content": "Por favor, introduzca su dirección de correo electrónico",
+    "email": "correo electrónico",
+    "emailInput": "Ingrese correo electrónico",
+    "button": {
+      "next": "próximo"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Código de autenticación",
+    "content": "Por favor ingrese su código de verificación",
+    "code": "Numero de Certificación",
+    "codeInput": "Introduce el código de verificación",
+    "button": {
+      "next": "próximo"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Hombres",
+    "women": "mujeres",
+    "profileEdit": "perfil",
+    "email": "correo electrónico",
+    "birth": "fecha de nacimiento",
+    "privatePolicy": "política de privacidad",
+    "accountDelete": "eliminación de cuenta",
+    "logout": "cierre de sesión"
+  },
+
+  "updateProfileScreen": {
+    "birth": "fecha de nacimiento",
+    "email": "correo electrónico",
+    "password": "Cambiar la contraseña",
+    "button": {
+      "done": "completo"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "prueba diaria",
+    "content": "Tetra es el origen de la vida en el universo.",
+    "true": "Así es.",
+    "false": "Incorrecto",
+    "trueAnswer": "La frase es verdadera.",
+    "falseAnswer": "declaración es falsa.",
+    "button": {
+      "true": "correcto",
+      "false": "incorrecto",
+      "back": "regresa",
+      "right": "respuesta correcta",
+      "wrong": "respuesta incorrecta",
+      "submit": "entregar"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Cuestionario de hoy completado\n¡Ven mañana también!",
+    "content": "Tetra es el origen de la vida en el universo.",
+    "dailyQuiz": "prueba diaria",
+    "button": {
+      "true": "respuesta"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Progreso",
+    "quizComplete": "finalización del cuestionario",
+    "calender": "calendario",
+    "levelTitle": "Mi nivel",
+    "levelRate": "¡Sube de nivel ahora mismo!",
+    "levelRateMax": "Impresionante, he completado todos los niveles.",
+    "levelRate1": "¡Quedan",
+    "levelRate2": "subidas de nivel más!",
+    "answerTitle": "tasa de respuesta correcta",
+    "deliveryRate": "Tasa de respuesta correcta de entrega",
+    "month": "estándar mensual",
+    "monthAnswer": "¿Cuál es la tasa de respuestas correctas este mes?",
+    "completeQuizTitle": "cuestionarios completados",
+    "completeQuizTotal1": "Un total de",
+    "completeQuizTotal2": ""
+  }
+}

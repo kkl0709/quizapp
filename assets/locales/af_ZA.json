@@ -1,0 +1,202 @@
+{
+  "common": {
+    "button": {
+      "back": "gaan terug",
+      "move": "beweging",
+      "cancel": "kanselleer"
+    }
+  },
+
+  "splashScreen": {
+    "title": "tetra selfafrigting",
+    "content": "alles is my persepsie"
+  },
+
+  "homeScreen": {
+    "title": "Welkom by die wêreld van onsigbare reëls.",
+    "content": "Tetra is alles in sy eie persepsie\nwys dat jy weggaan.",
+    "button": {
+      "start": "Aan die gang met selfafrigting"
+    }
+  },
+
+  "topicSelectionScreen": {
+    "title": "Tetra Self-Afrigting",
+    "content": "Tetra is alles in sy eie persepsie wys dat jy weggaan. Skryf die woorde of sinne neer wat by jou opkom onmiddellik nadat afrigting begin het.",
+    "subject": "Onderwerp",
+    "select": "(opsionele invoer)",
+    "button": {
+      "start": "begin afrig"
+    }
+  },
+
+  "quizResultScreen": {
+    "title": "Tetra Self Afrigting",
+    "content": "Tik wat by jou opkom in die blokkie hieronder",
+    "textField": {
+      "title1": "ontvang",
+      "title2": "gee",
+      "title3": "kan dit nie kry nie",
+      "title4": "kan gee nie",
+      "hint1": "ontvang",
+      "hint2": "gee",
+      "hint3": "",
+      "hint4": ""
+    },
+    "button": {
+      "result": "Bekyk resultate"
+    }
+  },
+
+  "viewResultScreen": {
+    "title": "Kwadrant Self-Afrigting Resultate",
+    "resultContent1": "Ek wil '",
+    "resultContent2": "' ontvang\nek kan nie '",
+    "resultContent3": "' kry nie\n'",
+    "resultContent4": "' kan nie gegee word nie.\nSo gee my '",
+    "resultContent5": "'.",
+    "button": {
+      "save": "red",
+      "return": "terugkeer"
+    }
+  },
+
+  "onBoardingScreen": {
+    "title": "Tetra Self Afrigting",
+    "content1": "Kies jou taal om die toepassing te gebruik",
+    "content2": "kies asseblief jou taal om te begin",
+    "language": "Taal / Taal",
+    "button": {
+      "start": "begin"
+    }
+  },
+
+  "loginScreen": {
+    "title": "tetra selfafrigting",
+    "content": "alles is my persepsie",
+    "emailLogin": "e-pos aanmelding",
+    "signUp": "Teken in",
+    "findPassword": "vind wagwoord",
+    "snsLogin": "maklike aanmelding"
+  },
+
+  "membershipScreen": {
+    "signUp": "sluit by die lidmaatskap aan",
+    "email": "E-pos adres",
+    "password": "wagwoord",
+    "passwordCheck": "wagwoord",
+    "name": "naam",
+    "birth": "geboorte datum",
+    "men": "Mans",
+    "women": "vrouens",
+    "terms": "Stem jy in tot die bepalings?",
+    "termsAgree": "As jy tot die bepalings en voorwaardes instem, sal 'n aanmeldknoppie verskyn.",
+    "register": "Sign Up",
+    "inputBirth": "Voer asseblief jou geboortedatum in jou profiel in",
+    "logout": "Is jy seker jy wil afmeld?"
+  },
+
+  "emailLoginScreen": {
+    "title": "tetra selfafrigting",
+    "content": "alles is my persepsie",
+    "email": "Voer e-pos in",
+    "password": "비밀번호 입력",
+    "button": {
+      "login": "로그인"
+    }
+  },
+
+  "passwordAuthenticationScreen": {
+    "title": "Stel jou wagwoord terug",
+    "content": "Stel asseblief jou wagwoord terug",
+    "password": "Sleutel wagwoord in",
+    "passwordCheck": "Voer wagwoord weer in",
+    "button": {
+      "done": "voltooi"
+    }
+  },
+
+  "emailAuthenticationScreen": {
+    "title": "E-pos verifikasie",
+    "content": "Voer asseblief jou e-posadres in",
+    "email": "e-pos",
+    "emailInput": "Voer e-pos in",
+    "button": {
+      "next": "volgende"
+    }
+  },
+
+  "emailVerificationScreen": {
+    "title": "Bekragtigingskode",
+    "content": "Voer asseblief jou verifikasiekode in",
+    "code": "Sertifiseringsnomme",
+    "codeInput": "Tik verifikasiekode",
+    "button": {
+      "next": "volgende"
+    }
+  },
+
+  "profileScreen": {
+    "men": "Mans",
+    "women": "vrouens",
+    "profileEdit": "profiel",
+    "email": "e-pos",
+    "birth": "geboorte datum",
+    "privatePolicy": "Privaatheidsbeleid",
+    "accountDelete": "rekening uitvee",
+    "logout": "uitteken"
+  },
+
+  "updateProfileScreen": {
+    "birth": "Geboortedatum",
+    "email": "e-pos",
+    "password": "Verander wagwoord",
+    "button": {
+      "done": "voltooi"
+    }
+  },
+
+  "dailyQuizScreen": {
+    "title": "daaglikse vasvra",
+    "content": "Tetra is die oorsprong van lewe in die heelal.",
+    "true": "Dis reg.",
+    "false": "Verkeerd",
+    "trueAnswer": "Die sin is waar.",
+    "falseAnswer": "stelling is vals.",
+    "button": {
+      "true": "reg",
+      "false": "verkeerd",
+      "back": "gaan terug",
+      "right": "korrekte antwoord",
+      "wrong": "verkeerde antwoord",
+      "submit": "Indien"
+    }
+  },
+
+  "quizScreen": {
+    "title": "Het vandag se vasvra voltooi\nKom asseblief môre ook!",
+    "content": "Tetra is die oorsprong van lewe in die heelal.",
+    "dailyQuiz": "Daaglikse vasvra",
+    "button": {
+      "true": "antwoord"
+    }
+  },
+
+  "progressScreen": {
+    "progress": "Vordering",
+    "quizComplete": "vasvra voltooiing",
+    "calender": "kalender",
+    "levelTitle": "my vlak",
+    "levelRate": "Vlak op nou!",
+    "levelRateMax": "Awesome! Ek het al die vlakke gevul!",
+    "levelRate1": "Daar is nog",
+    "levelRate2": "vlak-ups oor!",
+    "answerTitle": "korrekte antwoordkoers",
+    "deliveryRate": "Lewering korrekte antwoord koers",
+    "month": "maandelikse basis",
+    "monthAnswer": "Wat is die korrekte antwoordkoers hierdie maand?",
+    "completeQuizTitle": "vasvrae voltooi",
+    "completeQuizTotal1": "Altesaam",
+    "completeQuizTotal2": ""
+  }
+}
