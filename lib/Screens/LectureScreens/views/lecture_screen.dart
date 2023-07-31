@@ -1,7 +1,14 @@
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
+import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
 import 'package:chinesequizapp/infrastructure/components/image_padding.dart';
+import 'package:chinesequizapp/infrastructure/components/loading.dart';
+import 'package:chinesequizapp/infrastructure/models/account.dart';
+import 'package:chinesequizapp/infrastructure/models/lecture.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/account_repository.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/lecture_repository.dart';
 import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 
 import '../../../infrastructure/Constants/font_constants.dart';
@@ -14,7 +21,10 @@ class LectureScreen extends StatefulWidget {
 }
 
 class _LectureScreenState extends State<LectureScreen> {
-  late List<dynamic> lectureList;
+  bool isLoading = true;
+  late Rx<Account> account;
+  final AccountRepository _accountRepository = AccountRepository();
+  List<Lecture> lectureList = [];
 
   @override
   void initState() {
@@ -23,12 +33,26 @@ class _LectureScreenState extends State<LectureScreen> {
   }
 
   Future<void> _initData() async {
-    lectureList = List.filled(5, {}).map((e) => {
-      'id': 1,
-      'imgUrl': 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-      'title': '1강. 테트라란 무엇인가?',
-      'price': 9900,
-    }).toList();
+    String email = await SharedPreferenceService.getLoggedInEmail;
+    Account? account;
+    if (email.isNotEmpty) {
+      final resp = await _accountRepository.getAccountByEmail(email);
+      if (resp.data is Account) {
+        account = resp.data;
+      }
+    }
+    if (account == null) {
+      Fluttertoast.showToast(msg: '회원 정보를 불러올 수 없습니다.');
+      return;
+    }
+
+    lectureList = await LectureRepository().getLectures();
+    debugPrint('lectureList length: ${lectureList.length}');
+    if (lectureList.isEmpty) {
+      lectureList = await LectureRepository().initLectureSample();
+    }
+
+    setState(() => isLoading = false);
   }
 
   @override
@@ -52,10 +76,10 @@ class _LectureScreenState extends State<LectureScreen> {
               ),
               SizedBox(height: 20,),
               Expanded(
-                child: ListView.builder(
+                child: isLoading ? Loading() : ListView.builder(
                   itemCount: lectureList.length,
                   itemBuilder: (BuildContext context, int index) {
-                    dynamic lecture = lectureList[index];
+                    Lecture lecture = lectureList[index];
 
                     return Column(
                       children: [
@@ -84,7 +108,7 @@ class _LectureScreenState extends State<LectureScreen> {
                                     child: Stack(
                                       children: [
                                         Positioned.fill(child: ImagePadding(
-                                          lecture['imgUrl'],
+                                          lecture.imgUrl,
                                           isNetwork: true,
                                           fit: BoxFit.cover,
                                         )),
@@ -98,7 +122,7 @@ class _LectureScreenState extends State<LectureScreen> {
                                     ImagePadding('play.png', width: 24, height: 24, fit: BoxFit.contain,),
                                     SizedBox(width: 8,),
                                     Expanded(child: Text(
-                                      lecture['title'],
+                                      '${lecture.number}강. ${lecture.title}',
                                       style: TextStyle(
                                         fontFamily: FontsConstants.sourceSerifProRegular,
                                         fontWeight: FontWeight.w700,
@@ -110,7 +134,7 @@ class _LectureScreenState extends State<LectureScreen> {
                                     )),
                                     SizedBox(width: 8,),
                                     Text(
-                                      '₩${Utils.numberFormat(lecture['price'])}',
+                                      '₩${Utils.numberFormat(lecture.price)}',
                                       style: TextStyle(
                                         fontFamily: FontsConstants.sourceSerifProRegular,
                                         fontWeight: FontWeight.w700,

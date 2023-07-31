@@ -10,6 +10,7 @@ class DatabaseConstants {
       SwitchLanguage.databaseQuestionsCollection;
   static const String databaseStatisticsCollection = "statistics";
   static const String databaseVersionCollection = "version";
+  static const String databaseLectureCollection = "lecture";
 
   set setDatabaseQuestionsCollection(String databaseQuestionsCollection) =>
       databaseQuestionsCollection = databaseQuestionsCollection;
