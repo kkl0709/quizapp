@@ -15,6 +15,24 @@ class DailyQuizScreen extends GetView<DailyQuizController> {
     return Obx(
       () => Scaffold(
         backgroundColor: controller.bgColor.value,
+        appBar: AppBar(backgroundColor: Colors.white,
+          elevation: 0,
+          titleSpacing: 0,
+          automaticallyImplyLeading: false,
+          toolbarHeight: 56,
+          title: SizedBox(
+            width: double.infinity,
+            height: 56,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.arrow_back_ios_rounded, color: Color(0xff1E1F27),),
+                  onPressed: () => Get.back(),
+                ),
+              ],
+            ),
+          ),
+        ),
         body: Stack(
           children: [
             Visibility(
@@ -35,7 +53,7 @@ class DailyQuizScreen extends GetView<DailyQuizController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.1,
+                      height: MediaQuery.of(context).size.height * 0.05,
                     ),
                     HeadlineBodyOneBaseWidget(
                       title: "dailyQuizScreen_title".tr,

@@ -23,11 +23,10 @@ class HomeScreenController extends GetxController {
 
   RxList<Widget> navigationOptions = <Widget>[
     HomeScreen(),
+    LectureScreen(),
     CommunityIndexScreen(),
-    QuizScreen(),
     ProgressScreen(),
     ProfileScreen(),
-    LectureScreen(),
   ].obs;
 
   @override

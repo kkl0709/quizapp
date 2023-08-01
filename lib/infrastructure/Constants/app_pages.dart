@@ -24,7 +24,9 @@ import 'package:chinesequizapp/Screens/ProfileScreens/views/update_profile_scree
 import 'package:chinesequizapp/Screens/ProgressScreen/Views/progress_screen_view.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/bindding/progress_screen_binding.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/binddings/daily_quiz_binding_screen.dart';
+import 'package:chinesequizapp/Screens/QuizScreens/binddings/quiz_screen_bindding.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/views/daily_quiz_screen.dart';
+import 'package:chinesequizapp/Screens/QuizScreens/views/quiz_screen.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:get/get.dart';
 
@@ -138,6 +140,13 @@ class AppPages {
         name: RoutesConstants.dailyQuizScreen,
         page: () => DailyQuizScreen(),
         binding: DailyQuizBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino //tr
+        ),
+    GetPage(
+        name: RoutesConstants.quizScreen,
+        page: () => QuizScreen(),
+        binding: QuizScreenBinding(),
         transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino //tr
         ),

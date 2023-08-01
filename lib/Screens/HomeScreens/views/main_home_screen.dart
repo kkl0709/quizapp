@@ -32,8 +32,8 @@ class MainHomeScreen extends GetView<HomeScreenController> {
             BottomNavigationBarItem(
               icon: Icon(
                 controller.selectedIndex.value == 1
-                    ? Icons.messenger
-                    : Icons.messenger_outline,
+                    ? Icons.video_collection
+                    : Icons.video_collection_outlined,
                 color: controller.selectedIndex.value == 1
                     ? Color(0xff59287b)
                     : Colors.grey.shade400,
@@ -44,9 +44,9 @@ class MainHomeScreen extends GetView<HomeScreenController> {
             BottomNavigationBarItem(
               icon: Icon(
                 controller.selectedIndex.value == 2
-                    ? CupertinoIcons.chat_bubble
-                    : CupertinoIcons.chat_bubble_fill,
-                color: controller.selectedIndex == 2
+                    ? Icons.messenger
+                    : Icons.messenger_outline,
+                color: controller.selectedIndex.value == 2
                     ? Color(0xff59287b)
                     : Colors.grey.shade400,
               ),
@@ -71,18 +71,6 @@ class MainHomeScreen extends GetView<HomeScreenController> {
                     ? Icons.person
                     : Icons.person_outline_rounded,
                 color: controller.selectedIndex.value == 4
-                    ? Color(0xff59287b)
-                    : Colors.grey.shade400,
-              ),
-              label: "",
-              backgroundColor: Colors.white,
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                controller.selectedIndex.value == 5
-                    ? Icons.video_collection
-                    : Icons.video_collection_outlined,
-                color: controller.selectedIndex.value == 5
                     ? Color(0xff59287b)
                     : Colors.grey.shade400,
               ),

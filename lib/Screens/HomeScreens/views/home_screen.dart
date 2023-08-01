@@ -66,27 +66,63 @@ class HomeScreen extends GetView<HomeScreenController> {
                       onTap: () {
                         Get.toNamed(RoutesConstants.topicSelectionScreen);
                       },
-                      child: Center(
-                        child: new ClipRect(
-                          child: BackdropFilter(
-                            filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50.0),
-                                color: Colors.black87.withOpacity(0.55),
+                      child: ClipRect(
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                          child: Container(
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(50.0),
+                              color: Colors.black87.withOpacity(0.55),
+                            ),
+                            constraints: BoxConstraints(
+                              maxWidth: 250,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 20.0,
+                                vertical: 25.0,
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 20.0,
-                                  vertical: 25.0,
-                                ),
-                                child: HeadlineBodyOneBaseWidget(
-                                  title: "homeScreen_button_start".tr,
-                                  titleTextAlign: TextAlign.center,
-                                  fontSize: 24.0,
-                                  fontWeight: FontWeight.w700,
-                                  titleColor: AppConstantsColor.buttonTextColor,
-                                ),
+                              child: HeadlineBodyOneBaseWidget(
+                                title: "homeScreen_button_start".tr,
+                                titleTextAlign: TextAlign.center,
+                                fontSize: 24.0,
+                                fontWeight: FontWeight.w700,
+                                titleColor: AppConstantsColor.buttonTextColor,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 16,),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(RoutesConstants.quizScreen);
+                      },
+                      child: ClipRect(
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                          child: Container(
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(50.0),
+                              color: Colors.black87.withOpacity(0.55),
+                            ),
+                            constraints: BoxConstraints(
+                              maxWidth: 250,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 20.0,
+                                vertical: 25.0,
+                              ),
+                              child: HeadlineBodyOneBaseWidget(
+                                title: '퀴즈 풀기',
+                                titleTextAlign: TextAlign.center,
+                                fontSize: 24.0,
+                                fontWeight: FontWeight.w700,
+                                titleColor: AppConstantsColor.buttonTextColor,
                               ),
                             ),
                           ),
@@ -94,7 +130,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                       ),
                     ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.3,
+                      height: MediaQuery.of(context).size.height * 0.25,
                     ),
                   ],
                 ),

@@ -17,6 +17,24 @@ class QuizScreen extends GetView<QuizScreenController> {
     return Obx(
       () => Scaffold(
         backgroundColor: controller.bgColor.value,
+        appBar: AppBar(backgroundColor: Colors.white,
+          elevation: 0,
+          titleSpacing: 0,
+          automaticallyImplyLeading: false,
+          toolbarHeight: 56,
+          title: SizedBox(
+            width: double.infinity,
+            height: 56,
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.arrow_back_ios_rounded, color: Color(0xff1E1F27),),
+                  onPressed: () => Get.back(),
+                ),
+              ],
+            ),
+          ),
+        ),
         body: Stack(
           children: [
             Container(
@@ -26,7 +44,7 @@ class QuizScreen extends GetView<QuizScreenController> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                   ),
                   HeadlineBodyOneBaseWidget(
                     title: "quizScreen_dailyQuiz".tr,
@@ -129,7 +147,7 @@ class QuizScreen extends GetView<QuizScreenController> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             SizedBox(
-                              height: MediaQuery.of(context).size.height * 0.1,
+                              height: MediaQuery.of(context).size.height * 0.05,
                             ),
                             HeadlineBodyOneBaseWidget(
                               title: "quizScreen_title".tr,
