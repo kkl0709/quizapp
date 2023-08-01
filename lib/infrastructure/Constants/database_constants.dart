@@ -11,6 +11,8 @@ class DatabaseConstants {
   static const String databaseStatisticsCollection = "statistics";
   static const String databaseVersionCollection = "version";
   static const String databaseLectureCollection = "lecture";
+  static const String databaseCommunityCollection = "communities";
+  static const String databaseCommunityCommentsCollection = "community_comments";
 
   set setDatabaseQuestionsCollection(String databaseQuestionsCollection) =>
       databaseQuestionsCollection = databaseQuestionsCollection;

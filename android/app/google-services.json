@@ -1,64 +1,49 @@
 {
   "project_info": {
-    "project_number": "1078905386022",
-    "project_id": "quizapp-5eba7",
-    "storage_bucket": "quizapp-5eba7.appspot.com"
+    "project_number": "857577217329",
+    "firebase_url": "https://tetra-56730-default-rtdb.firebaseio.com",
+    "project_id": "tetra-56730",
+    "storage_bucket": "tetra-56730.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1078905386022:android:56ce771f1610e4ee2a22e7",
+        "mobilesdk_app_id": "1:857577217329:android:890684d8b27b07cfd8a410",
         "android_client_info": {
           "package_name": "com.imi.tetra"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1078905386022-3v5dppmnvh80jshjhhe9m38v3cd7coir.apps.googleusercontent.com",
+          "client_id": "857577217329-bhgpobivjnde2jb7mbpd335shk2nhc37.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.quiz.app",
-            "certificate_hash": "2119796c1f41f1ba5e5da75ccd680637f28e1a6a"
+            "package_name": "com.imi.tetra",
+            "certificate_hash": "6a43c05333b5dc0b318beb653d3a247e6246107e"
           }
         },
         {
-          "client_id": "1078905386022-a9gmrqehlg4vcldtknhf30u8ck8t5214.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.quiz.app",
-            "certificate_hash": "8ba7ceb7974748715d068acbe613fa4906d697d3"
-          }
-        },
-        {
-          "client_id": "1078905386022-cf3nh0rilk5kf37jd5bi429pfol50b5v.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.quiz.app",
-            "certificate_hash": "ceb4dcc7e3d3f2aeb87c861167c1a76297973379"
-          }
-        },
-        {
-          "client_id": "1078905386022-2rpo6eo4pss413t9sgbhs588vana96o4.apps.googleusercontent.com",
+          "client_id": "857577217329-ubjbvdpq3rth3m94ehktgs75ov7ng1eq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB-GA-CC4LrzgRYTUgbGa9Hhl44jVEoL28"
+          "current_key": "AIzaSyAKnQ4k4zUDmgf7DljxoiQ7vvXmZm8vX9M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1078905386022-2rpo6eo4pss413t9sgbhs588vana96o4.apps.googleusercontent.com",
+              "client_id": "857577217329-ubjbvdpq3rth3m94ehktgs75ov7ng1eq.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1078905386022-o63o28roikf6cfgk0m02u0ddlhd85bp9.apps.googleusercontent.com",
+              "client_id": "857577217329-3ldi9s9ld3e5j489566tjgfj3t79pcob.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.tetra.quiz.app"
+                "bundle_id": "com.masonKim.TetraApp"
               }
             }
           ]

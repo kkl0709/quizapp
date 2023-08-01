@@ -24,7 +24,7 @@ class LectureDetailScreen extends StatefulWidget {
 
 class _LectureDetailScreenState extends State<LectureDetailScreen> {
   bool isLoading = true;
-  late Rx<Account> account;
+  late Account account;
   late Lecture lecture;
   late VideoPlayerController videoPlayerController;
   late CustomVideoPlayerController _customVideoPlayerController;
@@ -50,6 +50,7 @@ class _LectureDetailScreenState extends State<LectureDetailScreen> {
       Fluttertoast.showToast(msg: '회원 정보를 불러올 수 없습니다.');
       return;
     }
+    this.account = account;
 
     lectureList = await LectureRepository().getLectures();
 
