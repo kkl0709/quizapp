@@ -77,6 +77,12 @@ class _MyAppState extends ConsumerState<MyApp> {
       ),
       translationsKeys: AppTranslation.translations,
       locale: Locale('ko', 'KR'),
+      builder: (context, child) => MediaQuery(
+        data: MediaQuery.of(context).copyWith(
+          textScaleFactor: 1.0,
+        ),
+        child: child!,
+      ),
     );
   }
 }
