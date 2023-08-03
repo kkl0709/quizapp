@@ -20,6 +20,8 @@ class ProgressScreenController extends GetxController {
   Rx<double> accuracy = 0.0.obs;
   Rx<double> prevAccuracy = 0.0.obs;
 
+  List<DateTime> answerDtList = [];
+
   @override
   void onInit() async {
     datePickerController.value.view = DateRangePickerView.month;
@@ -42,6 +44,9 @@ class ProgressScreenController extends GetxController {
 
       if (resp.isException == false && resp.data is Statistic) {
         statistic.value = resp.data;
+
+        answerDtList = statistic.value.dateList.map((e) => DateTime(e.year ?? 0, e.month ?? 0, e.day ?? 0, 0, 0, 0, 0, 0)).toList();
+
         datePickerController.value.selectedDates = statistic.value.dateList
             .where((date) =>
                 date.year == currentDate.value.year &&

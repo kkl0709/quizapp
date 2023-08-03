@@ -1,5 +1,6 @@
 import 'package:chinesequizapp/Screens/ProgressScreen/controller/progress_screen_controller.dart';
 import 'package:chinesequizapp/infrastructure/Constants/app_constants_color.dart';
+import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
@@ -10,6 +11,7 @@ class ProgressScreen extends GetView<ProgressScreenController> {
   @override
   Widget build(BuildContext context) {
     controller.loadStatisticData();
+
     return Obx(
       () => Scaffold(
         body: SafeArea(
@@ -56,50 +58,19 @@ class ProgressScreen extends GetView<ProgressScreenController> {
                         vertical: 0.0, horizontal: 10),
                     child: SfDateRangePicker(
                       controller: controller.datePickerController.value,
-                      // initialSelectedDate: DateTime.now(),
                       selectionColor: Colors.transparent,
                       cellBuilder: (context, cellDetails) {
-                        // if (cellDetails.date ==
-                        //     DateTime(
-                        //         controller.currentDate.value.year,
-                        //         controller.currentDate.value.month,
-                        //         controller.currentDate.value.day)) {
-                        //   return Container(
-                        //     margin: const EdgeInsets.all(2),
-                        //     decoration: BoxDecoration(
-                        //       shape: BoxShape.circle,
-                        //       color:
-                        //           AppConstantsColor.basicColor.withOpacity(0.9),
-                        //     ),
-                        //     alignment: Alignment.center,
-                        //     child: Column(
-                        //       mainAxisAlignment: MainAxisAlignment.center,
-                        //       crossAxisAlignment: CrossAxisAlignment.center,
-                        //       children: [
-                        //         Icon(
-                        //           Icons.check,
-                        //           size: 10.0,
-                        //           color: AppConstantsColor.whiteColor,
-                        //         ),
-                        //         Text(
-                        //           cellDetails.date.day.toString(),
-                        //           style: TextStyle(
-                        //             color: AppConstantsColor.whiteColor,
-                        //             fontWeight: FontWeight.w500,
-                        //           ),
-                        //         ),
-                        //       ],
-                        //     ),
-                        //   );
-                        // }
-                        if (controller.datePickerController.value.selectedDates!
-                            .contains(cellDetails.date)) {
+                        DateTime nowDt = DateTime.now();
+                        bool isActive = controller.answerDtList.indexWhere((e) => Utils.isSameDay(e, cellDetails.date)) >= 0;
+                        bool isAfter = cellDetails.date.isAfter(nowDt.subtract(Duration(days: 1)));
+
+                        if (isActive) {
                           return Container(
                             margin: const EdgeInsets.all(2),
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color:
-                                  AppConstantsColor.basicColor.withOpacity(0.9),
+                              AppConstantsColor.basicColor.withOpacity(0.9),
                             ),
                             alignment: Alignment.center,
                             child: Column(
@@ -122,52 +93,21 @@ class ProgressScreen extends GetView<ProgressScreenController> {
                             ),
                           );
                         }
-                        if (cellDetails.date.day >=
-                                controller.minDate.value.day &&
-                            cellDetails.date.month ==
-                                controller.minDate.value.month) {
-                          // print(
-                          //     "cellDetails Date Max:  ${cellDetails.date.day}");
-                          // print(" Date Max:  ${controller.minDate.value.day}");
-                          // print(
-                          //     "cellDetails month Max :  ${cellDetails.date.month}");
-                          // print(
-                          //     " month Max :  ${controller.minDate.value.month}");
+
+                        if (isAfter) {
                           return Container(
                             margin: const EdgeInsets.all(2),
                             alignment: Alignment.center,
                             child: Text(
                               cellDetails.date.day.toString(),
                               style: TextStyle(
-                                color: AppConstantsColor.basicColor,
+                                color: Colors.black,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
                           );
                         }
-                        if (cellDetails.date.day <=
-                                controller.maxDate.value.day &&
-                            cellDetails.date.month ==
-                                controller.maxDate.value.month) {
-                          // print(
-                          //     "cellDetails Date Max:  ${cellDetails.date.day}");
-                          // print(" Date Max:  ${controller.maxDate.value.day}");
-                          // print(
-                          //     "cellDetails month Max :  ${cellDetails.date.month}");
-                          // print(
-                          //     " month Max :  ${controller.maxDate.value.month}");
-                          return Container(
-                            margin: const EdgeInsets.all(2),
-                            alignment: Alignment.center,
-                            child: Text(
-                              cellDetails.date.day.toString(),
-                              style: TextStyle(
-                                color: AppConstantsColor.basicColor,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          );
-                        }
+
                         return Container(
                           margin: const EdgeInsets.all(2),
                           alignment: Alignment.center,
@@ -181,14 +121,8 @@ class ProgressScreen extends GetView<ProgressScreenController> {
                           ),
                         );
                       },
-                      minDate: DateTime.now().subtract(
-                        Duration(days: 7),
-                      ),
-                      maxDate: DateTime.now().add(
-                        Duration(days: 7),
-                      ),
                       onSelectionChanged: (value) {},
-                      selectionMode: DateRangePickerSelectionMode.multiple,
+                      selectionMode: DateRangePickerSelectionMode.single,
                       monthViewSettings: DateRangePickerMonthViewSettings(
                         viewHeaderHeight: 50,
                         viewHeaderStyle: DateRangePickerViewHeaderStyle(

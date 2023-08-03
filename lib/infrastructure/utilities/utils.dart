@@ -19,4 +19,10 @@ class Utils {
   static hideKeyboard(BuildContext context) {
     FocusScope.of(context).unfocus();
   }
+
+  static bool isSameDay(DateTime dt, DateTime otherDt) {
+    return dt.year == otherDt.year
+        && dt.month == otherDt.month
+        && dt.day == otherDt.day;
+  }
 }
