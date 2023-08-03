@@ -11,6 +11,8 @@ _$_Account _$$_AccountFromJson(Map<String, dynamic> json) => _$_Account(
       email: json['email'] as String?,
       password: json['password'] as String?,
       name: json['name'] as String?,
+      nickname: json['nickname'] as String?,
+      profileUrl: json['profileUrl'] as String?,
       birthday: json['birthday'] as int?,
       gender: json['gender'] as int?,
       createdAt: json['createdAt'] == null
@@ -24,6 +26,8 @@ Map<String, dynamic> _$$_AccountToJson(_$_Account instance) =>
       'email': instance.email,
       'password': instance.password,
       'name': instance.name,
+      'nickname': instance.nickname,
+      'profileUrl': instance.profileUrl,
       'birthday': instance.birthday,
       'gender': instance.gender,
       'createdAt': instance.createdAt?.toIso8601String(),

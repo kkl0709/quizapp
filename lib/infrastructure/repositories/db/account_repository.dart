@@ -116,17 +116,17 @@ class AccountRepository implements IAccountRepository {
           .getConnection()
           ?.collection(_collection)
           .updateOne(
-            where.eq('email', email),
-            modify.set('birthday', birthday),
-          );
+        where.eq('email', email),
+        modify.set('birthday', birthday),
+      );
     } else {
       result = await QuizAppDatabaseService.I
           .getConnection()
           ?.collection(_collection)
           .updateOne(
-            where.eq('email', email),
-            modify.set('email', newEmail).set('birthday', birthday),
-          );
+        where.eq('email', email),
+        modify.set('email', newEmail).set('birthday', birthday),
+      );
     }
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
@@ -134,6 +134,25 @@ class AccountRepository implements IAccountRepository {
       final StatisticRepository statisticRepo = StatisticRepository();
       await statisticRepo.updateStatisticEmail(email, newEmail);
 
+      return DatabaseResp.success();
+    }
+  }
+
+  @override
+  Future<DatabaseResp> updateProfile(String email, {
+    required String nickname,
+    String? profileUrl,
+  }) async {
+    WriteResult? result = await QuizAppDatabaseService.I
+        .getConnection()
+        ?.collection(_collection)
+        .updateOne(
+      where.eq('email', email),
+      modify.set('nickname', nickname).set('profileUrl', profileUrl),
+    );
+    if (result?.isFailure == true) {
+      return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
+    } else {
       return DatabaseResp.success();
     }
   }

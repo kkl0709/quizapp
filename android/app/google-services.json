@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "857577217329-u7un6seec4kvm72hnaj8qpvcv9qpa2ek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imi.tetra",
+            "certificate_hash": "7453213f56509aef67cf7886ba7f06378626d064"
+          }
+        },
+        {
           "client_id": "857577217329-ubjbvdpq3rth3m94ehktgs75ov7ng1eq.apps.googleusercontent.com",
           "client_type": 3
         }

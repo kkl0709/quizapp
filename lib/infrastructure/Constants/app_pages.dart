@@ -20,6 +20,7 @@ import 'package:chinesequizapp/Screens/MembershipScreen/Binding/membership_bindi
 import 'package:chinesequizapp/Screens/OnBordingScreens/Bindding/onBoarding_binding.dart';
 import 'package:chinesequizapp/Screens/OnBordingScreens/views/onBoarding_screen.dart';
 import 'package:chinesequizapp/Screens/ProfileScreens/binddings/profile_screen_bindding.dart';
+import 'package:chinesequizapp/Screens/ProfileScreens/views/profile_edit.dart';
 import 'package:chinesequizapp/Screens/ProfileScreens/views/update_profile_screen.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/Views/progress_screen_view.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/bindding/progress_screen_binding.dart';
@@ -180,6 +181,12 @@ class AppPages {
         page: () => CommunityCreateScreen(),
         transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino
-    )
+    ),
+    GetPage(
+        name: RoutesConstants.profileEdit,
+        page: () => ProfileEdit(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino
+    ),
   ];
 }

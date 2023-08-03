@@ -13,6 +13,8 @@ class Account with _$Account {
     String? email,
     String? password,
     String? name,
+    String? nickname,
+    String? profileUrl,
     int? birthday,
     int? gender, // 0 : 남자, 1: 여자
     DateTime? createdAt,

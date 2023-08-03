@@ -1,4 +1,5 @@
 import 'package:chinesequizapp/Screens/ProfileScreens/controller/profile_screen_controller.dart';
+import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -230,6 +231,30 @@ class UpdateProfileScreen extends GetView<ProfileScreenController> {
                                     title: "updateProfileScreen_password".tr,
                                     titleColor:
                                         AppConstantsColor.buttonTextColor,
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 30,),
+                          GestureDetector(
+                            onTap: () => Get.toNamed(RoutesConstants.profileEdit),
+                            child: Padding(
+                              padding:
+                              const EdgeInsets.symmetric(horizontal: 60),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    color: AppConstantsColor.buttonColor,
+                                    borderRadius: BorderRadius.circular(12.0)),
+                                padding:
+                                const EdgeInsets.symmetric(vertical: 14.0),
+                                child: Center(
+                                  child: HeadlineBodyOneBaseWidget(
+                                    title: '프로필 수정',
+                                    titleColor:
+                                    AppConstantsColor.buttonTextColor,
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w500,
                                   ),

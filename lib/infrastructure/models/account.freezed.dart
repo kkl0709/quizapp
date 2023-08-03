@@ -25,6 +25,8 @@ mixin _$Account {
   String? get email => throw _privateConstructorUsedError;
   String? get password => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
+  String? get nickname => throw _privateConstructorUsedError;
+  String? get profileUrl => throw _privateConstructorUsedError;
   int? get birthday => throw _privateConstructorUsedError;
   int? get gender => throw _privateConstructorUsedError; // 0 : 남자, 1: 여자
   DateTime? get createdAt => throw _privateConstructorUsedError;
@@ -44,6 +46,8 @@ abstract class $AccountCopyWith<$Res> {
       String? email,
       String? password,
       String? name,
+      String? nickname,
+      String? profileUrl,
       int? birthday,
       int? gender,
       DateTime? createdAt});
@@ -66,6 +70,8 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
     Object? email = freezed,
     Object? password = freezed,
     Object? name = freezed,
+    Object? nickname = freezed,
+    Object? profileUrl = freezed,
     Object? birthday = freezed,
     Object? gender = freezed,
     Object? createdAt = freezed,
@@ -86,6 +92,14 @@ class _$AccountCopyWithImpl<$Res, $Val extends Account>
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nickname: freezed == nickname
+          ? _value.nickname
+          : nickname // ignore: cast_nullable_to_non_nullable
+              as String?,
+      profileUrl: freezed == profileUrl
+          ? _value.profileUrl
+          : profileUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       birthday: freezed == birthday
           ? _value.birthday
@@ -115,6 +129,8 @@ abstract class _$$_AccountCopyWith<$Res> implements $AccountCopyWith<$Res> {
       String? email,
       String? password,
       String? name,
+      String? nickname,
+      String? profileUrl,
       int? birthday,
       int? gender,
       DateTime? createdAt});
@@ -134,6 +150,8 @@ class __$$_AccountCopyWithImpl<$Res>
     Object? email = freezed,
     Object? password = freezed,
     Object? name = freezed,
+    Object? nickname = freezed,
+    Object? profileUrl = freezed,
     Object? birthday = freezed,
     Object? gender = freezed,
     Object? createdAt = freezed,
@@ -154,6 +172,14 @@ class __$$_AccountCopyWithImpl<$Res>
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nickname: freezed == nickname
+          ? _value.nickname
+          : nickname // ignore: cast_nullable_to_non_nullable
+              as String?,
+      profileUrl: freezed == profileUrl
+          ? _value.profileUrl
+          : profileUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       birthday: freezed == birthday
           ? _value.birthday
@@ -179,6 +205,8 @@ class _$_Account extends _Account {
       this.email,
       this.password,
       this.name,
+      this.nickname,
+      this.profileUrl,
       this.birthday,
       this.gender,
       this.createdAt})
@@ -198,6 +226,10 @@ class _$_Account extends _Account {
   @override
   final String? name;
   @override
+  final String? nickname;
+  @override
+  final String? profileUrl;
+  @override
   final int? birthday;
   @override
   final int? gender;
@@ -207,7 +239,7 @@ class _$_Account extends _Account {
 
   @override
   String toString() {
-    return 'Account(authType: $authType, email: $email, password: $password, name: $name, birthday: $birthday, gender: $gender, createdAt: $createdAt)';
+    return 'Account(authType: $authType, email: $email, password: $password, name: $name, nickname: $nickname, profileUrl: $profileUrl, birthday: $birthday, gender: $gender, createdAt: $createdAt)';
   }
 
   @override
@@ -221,6 +253,8 @@ class _$_Account extends _Account {
             (identical(other.password, password) ||
                 other.password == password) &&
             (identical(other.name, name) || other.name == name) &&
+            (identical(other.nickname, nickname) || other.nickname == nickname) &&
+            (identical(other.profileUrl, profileUrl) || other.profileUrl == profileUrl) &&
             (identical(other.birthday, birthday) ||
                 other.birthday == birthday) &&
             (identical(other.gender, gender) || other.gender == gender) &&
@@ -230,7 +264,7 @@ class _$_Account extends _Account {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, authType, email, password, name,
+  int get hashCode => Object.hash(runtimeType, authType, email, password, name, nickname, profileUrl,
       birthday, gender, createdAt);
 
   @JsonKey(ignore: true)
@@ -253,6 +287,8 @@ abstract class _Account extends Account {
       final String? email,
       final String? password,
       final String? name,
+      final String? nickname,
+      final String? profileUrl,
       final int? birthday,
       final int? gender,
       final DateTime? createdAt}) = _$_Account;
@@ -268,6 +304,10 @@ abstract class _Account extends Account {
   String? get password;
   @override
   String? get name;
+  @override
+  String? get nickname;
+  @override
+  String? get profileUrl;
   @override
   int? get birthday;
   @override
