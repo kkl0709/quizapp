@@ -183,6 +183,21 @@ class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
                                     Container(
                                       child: Text(community.contents, style: TextStyle(fontSize: 14, color: HexColor('#696A6F')), textAlign: TextAlign.left,),
                                     ),
+                                    if (community.imgUrl != null)...[
+                                      Container(
+                                        width: double.infinity,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(12),
+                                          border: Border.all(color: Color(0xffF0F0F1)),
+                                        ),
+                                        clipBehavior: Clip.antiAlias,
+                                        child: ImagePadding(
+                                          community.imgUrl!,
+                                          width: double.infinity,
+                                          isNetwork: true,
+                                        ),
+                                      )
+                                    ],
                                     SizedBox(height: 8,),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
