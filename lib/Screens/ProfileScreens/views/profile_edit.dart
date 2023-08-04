@@ -59,28 +59,19 @@ class _ProfileEditState extends State<ProfileEdit> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        centerTitle: true,
-        title: Text(
-          '프로필 수정',
-          style: TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: 18,
-            color: Colors.white,
-          ),
-          textAlign: TextAlign.center,
-        ),
+        backgroundColor: Colors.white,
         leading: TextButton(
           onPressed: () => Get.back(),
           style: CustomStyles.textButtonZeroSize(),
           child: ImagePadding(
-            'arrow-left-app-bar.png',
-            width: 48,
-            height: 48,
+            'arrow-left-app-bar-2.png',
+            width: 24,
+            height: 24,
           ),
         ),
+        elevation: 0,
       ),
       body: SafeArea(
         child: isLoading ? Loading() : Stack(
@@ -97,35 +88,35 @@ class _ProfileEditState extends State<ProfileEdit> {
                         style: CustomStyles.textButtonZeroSize(),
                         child: Stack(
                           children: [
-                            if (_image != null)...[
-                              Container(
-                                margin: EdgeInsets.all(6),
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                clipBehavior: Clip.antiAlias,
-                                child: Image.memory(
-                                  _image!,
-                                  width: 80,
-                                  height: 80,
-                                  fit: BoxFit.cover,
+                            Container(
+                              width: 80,
+                              height: 80,
+                              margin: EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.black,
+                                  width: 3,
                                 ),
                               ),
-                            ]else...[
-                              ImagePadding(
-                                account.profileUrl ?? 'default-profile.png',
+                              clipBehavior: Clip.antiAlias,
+                              child: _image != null ? Image.memory(
+                                _image!,
                                 width: 80,
                                 height: 80,
                                 fit: BoxFit.cover,
-                                isNetwork: account.profileUrl != null,
-                                isCircle: true,
-                                padding: EdgeInsets.all(6),
-                              ),
-                            ],
+                              ) : account.profileUrl != null ? ImagePadding(
+                                account.profileUrl!,
+                                width: 80,
+                                height: 80,
+                                fit: BoxFit.cover,
+                                isNetwork: true,
+                              ) : Container(),
+                            ),
                             Positioned(
                               right: 0,
                               bottom: 0,
-                              child: ImagePadding('profile-camera.png', width: 32, height: 32,),
+                              child: ImagePadding('profile-camera-2.png', width: 32, height: 32,),
                             ),
                           ],
                         ),
@@ -133,7 +124,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                     ],
                   ),
                   SizedBox(height: 18,),
-                  TextPadding('닉네임', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xffD4D4D4),),
+                  TextPadding('닉네임', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xff696A6F),),
                   SizedBox(height: 6,),
                   FormInputText(
                     controller: _nicknameController,
@@ -141,14 +132,13 @@ class _ProfileEditState extends State<ProfileEdit> {
                     maxLength: 8,
                     fontSize: 14,
                     counterText: '',
-                    fillColor: Color(0xff171717),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide: const BorderSide(
-                        color: Color(0xff262626),
+                        color: Color(0xffEAEAEB),
                       ),
                     ),
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: Colors.white),
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: Colors.black),
                     onChanged: (e) => setState(() => {}),
                   ),
                   Row(

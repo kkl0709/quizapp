@@ -2,6 +2,8 @@ import 'package:chinesequizapp/Screens/ProfileScreens/controller/profile_screen_
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
 import 'package:chinesequizapp/infrastructure/mixins/authentication_mixin.dart';
+import 'package:chinesequizapp/infrastructure/utilities/custom_styles.dart';
+import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -167,22 +169,26 @@ class ProfileScreen extends GetView<ProfileScreenController> {
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
-                child: Row(
-                  children: [
-                    HeadlineBodyOneBaseWidget(
-                      title: "profileScreen_privatePolicy".tr,
-                      titleTextAlign: TextAlign.center,
-                      fontSize: 17.0,
-                      fontWeight: FontWeight.w700,
-                      titleColor: AppConstantsColor.blackColor,
-                    ),
-                    Spacer(),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      color: AppConstantsColor.normalTextColor.withOpacity(0.5),
-                      size: 24,
-                    )
-                  ],
+                child: TextButton(
+                  onPressed: () => Utils.launchUrl('https://ckehdwns00.wixsite.com/my-site/privacy-policy-for-tetra-self-coaching'),
+                  style: CustomStyles.textButtonZeroSize(),
+                  child: Row(
+                    children: [
+                      HeadlineBodyOneBaseWidget(
+                        title: "profileScreen_privatePolicy".tr,
+                        titleTextAlign: TextAlign.center,
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.w700,
+                        titleColor: AppConstantsColor.blackColor,
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: AppConstantsColor.normalTextColor.withOpacity(0.5),
+                        size: 24,
+                      )
+                    ],
+                  ),
                 ),
               ),
               Padding(

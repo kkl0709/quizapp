@@ -1,5 +1,6 @@
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
+import 'package:chinesequizapp/infrastructure/components/image_padding.dart';
 import 'package:chinesequizapp/infrastructure/components/loading.dart';
 import 'package:chinesequizapp/infrastructure/models/account.dart';
 import 'package:chinesequizapp/infrastructure/models/community.dart';
@@ -97,7 +98,21 @@ class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
                                       children: [
                                         Row(
                                           children: [
-                                            Image(image: AssetImage('assets/images/dummy.png'), width: 40, height: 40,),
+                                            Container(
+                                              width: 40,
+                                              height: 40,
+                                              decoration: BoxDecoration(
+                                                shape: BoxShape.circle,
+                                              ),
+                                              clipBehavior: Clip.antiAlias,
+                                              child: ImagePadding(
+                                                community.account?.profileUrl ?? 'dummy.png',
+                                                width: 40,
+                                                height: 40,
+                                                fit: BoxFit.cover,
+                                                isNetwork: community.account?.profileUrl != null,
+                                              ),
+                                            ),
                                             SizedBox(width: 8,),
                                             Text(community.userEmail, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)
                                           ],

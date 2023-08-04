@@ -108,7 +108,21 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                                 children: [
                                   Row(
                                     children: [
-                                      Image(image: AssetImage('assets/images/dummy.png'), width: 40, height: 40,),
+                                      Container(
+                                        width: 40,
+                                        height: 40,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                        ),
+                                        clipBehavior: Clip.antiAlias,
+                                        child: ImagePadding(
+                                          community.account?.profileUrl ?? 'dummy.png',
+                                          width: 40,
+                                          height: 40,
+                                          fit: BoxFit.cover,
+                                          isNetwork: community.account?.profileUrl != null,
+                                        ),
+                                      ),
                                       SizedBox(width: 8,),
                                       Text(community.userEmail, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)
                                     ],
@@ -192,9 +206,20 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    CircleAvatar(
-                                      backgroundImage: AssetImage('assets/images/dummy.png'),
-                                      radius: 20,
+                                    Container(
+                                      width: 40,
+                                      height: 40,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      child: ImagePadding(
+                                        item.account?.profileUrl ?? 'dummy.png',
+                                        width: 40,
+                                        height: 40,
+                                        fit: BoxFit.cover,
+                                        isNetwork: item.account?.profileUrl != null,
+                                      ),
                                     ),
                                     SizedBox(width: 8,),
                                     Expanded(

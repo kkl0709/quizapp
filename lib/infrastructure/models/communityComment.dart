@@ -1,3 +1,5 @@
+import 'package:chinesequizapp/infrastructure/models/account.dart';
+
 class CommunityComment {
   int id;
   int communityId;
@@ -5,6 +7,8 @@ class CommunityComment {
   String userEmail;
   String contents;
   DateTime createdAt;
+
+  Account? account;
 
   CommunityComment({
     required this.id,

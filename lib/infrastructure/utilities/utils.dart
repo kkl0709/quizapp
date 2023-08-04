@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
 
 class Utils {
   static String numberFormat(int number) {
@@ -24,5 +25,10 @@ class Utils {
     return dt.year == otherDt.year
         && dt.month == otherDt.month
         && dt.day == otherDt.day;
+  }
+
+  static void launchUrl(String url) {
+    debugPrint('launchUrl: $url');
+    UrlLauncher.launchUrl(Uri.parse(url));
   }
 }

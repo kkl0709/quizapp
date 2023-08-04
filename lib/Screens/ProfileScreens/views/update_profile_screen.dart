@@ -252,7 +252,7 @@ class UpdateProfileScreen extends GetView<ProfileScreenController> {
                                 const EdgeInsets.symmetric(vertical: 14.0),
                                 child: Center(
                                   child: HeadlineBodyOneBaseWidget(
-                                    title: '프로필 수정',
+                                    title: '이미지/닉네임 수정',
                                     titleColor:
                                     AppConstantsColor.buttonTextColor,
                                     fontSize: 16.0,

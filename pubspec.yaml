@@ -76,6 +76,7 @@ dependencies:
   hexcolor: ^3.0.1
   image_picker: ^1.0.1
   firebase_storage: ^11.2.5
+  url_launcher: ^6.1.12
 
 dev_dependencies:
   flutter_test:

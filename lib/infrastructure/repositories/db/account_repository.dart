@@ -171,4 +171,16 @@ class AccountRepository implements IAccountRepository {
       return DatabaseResp.success();
     }
   }
+
+  Future<List<Account>> getAccounts() async {
+    List<Map<String, dynamic>>? list = await QuizAppDatabaseService.I
+        .getConnection()
+        ?.collection(_collection)
+        .find(where.sortBy('email'))
+        .toList();
+    if (list != null) {
+      return list.map((e) => Account.fromJson(e)).toList();
+    }
+    return [];
+  }
 }

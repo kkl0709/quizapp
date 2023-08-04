@@ -1,3 +1,5 @@
+import 'package:chinesequizapp/infrastructure/models/account.dart';
+
 class Community {
   int id;
   int userAuthType;
@@ -5,6 +7,8 @@ class Community {
   String? imgUrl;
   String contents;
   DateTime createdAt;
+
+  Account? account;
 
   Community({
     required this.id,

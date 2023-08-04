@@ -1,8 +1,11 @@
 import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart';
+import 'package:chinesequizapp/infrastructure/models/account.dart';
 import 'package:chinesequizapp/infrastructure/models/community.dart';
 import 'package:chinesequizapp/infrastructure/models/communityComment.dart';
 import 'package:chinesequizapp/infrastructure/models/communityComment.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/account_repository.dart';
+import 'package:get/utils.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
 class CommunityRepository {
@@ -79,7 +82,13 @@ class CommunityRepository {
         .find(where.sortBy('_id', descending: true))
         .toList();
     if (list != null) {
-      return list.map((e) => Community.fromJson(e)).toList();
+      List<Community> communities = list.map((e) => Community.fromJson(e)).toList();
+      List<Account> accounts = await AccountRepository().getAccounts();
+      communities = communities.map((e) {
+        e.account = accounts.firstWhereOrNull((account) => account.email == e.userEmail);
+        return e;
+      }).toList();
+      return communities;
     }
 
     return [];
@@ -122,7 +131,13 @@ class CommunityRepository {
         .find(where.eq('communityId', communityId).sortBy('_id', descending: true))
         .toList();
     if (list != null) {
-      return list.map((e) => CommunityComment.fromJson(e)).toList();
+      List<CommunityComment> comments = list.map((e) => CommunityComment.fromJson(e)).toList();
+      List<Account> accounts = await AccountRepository().getAccounts();
+      comments = comments.map((e) {
+        e.account = accounts.firstWhereOrNull((account) => account.email == e.userEmail);
+        return e;
+      }).toList();
+      return comments;
     }
 
     return [];
