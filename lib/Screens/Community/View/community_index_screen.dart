@@ -79,7 +79,10 @@ class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
 
                         return InkWell(
                           onTap: () async {
-                            dynamic result = await Get.toNamed(RoutesConstants.communityDetailScreen, arguments: community);
+                            dynamic result = await Get.toNamed(RoutesConstants.communityDetailScreen, arguments: {
+                              'community': community,
+                              'isOpenComment': false,
+                            });
                             if (result != null) {
                               _refreshData();
                             }
@@ -131,7 +134,15 @@ class _CommunityIndexScreenState extends State<CommunityIndexScreen> {
                                           style: TextButton.styleFrom(
                                               padding: EdgeInsets.zero
                                           ),
-                                          onPressed: () {},
+                                          onPressed: () async {
+                                            dynamic result = await Get.toNamed(RoutesConstants.communityDetailScreen, arguments: {
+                                              'community': community,
+                                              'isOpenComment': true,
+                                            });
+                                            if (result != null) {
+                                              _refreshData();
+                                            }
+                                          },
                                           icon: Image(image: AssetImage('assets/images/comment.png'), width: 24, height: 24,),
                                           label: Text('댓글달기', style: TextStyle(fontSize: 12, color: HexColor('#696A6F')),),
                                         ),

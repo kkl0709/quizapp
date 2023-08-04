@@ -27,6 +27,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   late Account account;
   List<CommunityComment> communityCommentList = [];
   TextEditingController commentController = TextEditingController();
+  FocusNode commentFocusNode = FocusNode();
 
   @override
   void initState() {
@@ -58,14 +59,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
     this.account = account;
 
     Future.delayed(Duration.zero, () {
-      community = ModalRoute.of(context)!.settings.arguments as Community;
+      Map<String, dynamic> arguments = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+      community = arguments['community'] as Community;
+      bool isOpenComment = arguments['isOpenComment'] as bool;
       setState(() => isLoading = false);
 
-      _initComments();
+      _initComments(isOpenComment: isOpenComment);
     });
   }
 
-  Future<void> _initComments() async {
+  Future<void> _initComments({
+    bool isOpenComment = false,
+  }) async {
     setState(() => isLoadingComments = true);
 
     communityCommentList = await CommunityRepository().getCommunityComments(
@@ -73,6 +78,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
     );
 
     setState(() => isLoadingComments = false);
+
+    if (isOpenComment) {
+      commentFocusNode.requestFocus();
+    }
   }
 
   @override
@@ -285,6 +294,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                           Expanded(
                             child: TextField(
                                 controller: commentController,
+                                focusNode: commentFocusNode,
                                 maxLines: 1,
                                 onChanged: (m) => setState(() => {}),
                                 decoration: InputDecoration(
