@@ -139,7 +139,6 @@ class AccountRepository implements IAccountRepository {
   }
 
   Future<DatabaseResp> updateProfile(String email, {
-    required String nickname,
     required String newEmail,
     required int birthday,
     String? profileUrl,
@@ -149,8 +148,7 @@ class AccountRepository implements IAccountRepository {
         ?.collection(_collection)
         .updateOne(
       where.eq('email', email),
-      modify.set('nickname', nickname)
-          .set('profileUrl', profileUrl)
+      modify.set('profileUrl', profileUrl)
           .set('email', newEmail)
           .set('birthday', birthday),
     );

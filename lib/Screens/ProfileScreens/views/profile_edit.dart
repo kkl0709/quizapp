@@ -27,7 +27,6 @@ class _ProfileEditState extends State<ProfileEdit> {
   bool isProcessing = false;
   late Account account;
   final AccountRepository _accountRepository = AccountRepository();
-  TextEditingController _nicknameController = TextEditingController();
   TextEditingController _birthController = TextEditingController();
   TextEditingController _emailController = TextEditingController();
   Uint8List? _image;
@@ -53,7 +52,6 @@ class _ProfileEditState extends State<ProfileEdit> {
     }
     this.account = account;
 
-    _nicknameController.text = account.nickname ?? '';
     _birthController.text = account.birthday?.toString() ?? '';
     _emailController.text = account.email ?? '';
 
@@ -127,31 +125,6 @@ class _ProfileEditState extends State<ProfileEdit> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 18,),
-                  TextPadding('닉네임', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xff696A6F),),
-                  SizedBox(height: 6,),
-                  FormInputText(
-                    controller: _nicknameController,
-                    hintText: '닉네임을 입력해주세요.',
-                    maxLength: 8,
-                    fontSize: 14,
-                    counterText: '',
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Color(0xffEAEAEB),
-                      ),
-                    ),
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: Colors.black),
-                    onChanged: (e) => setState(() => {}),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextPadding('${_nicknameController.text.length}자 / 최대 8자', fontWeight: FontWeight.w500, fontSize: 11, color: Color(0xff525252),),
-                    ],
-                  ),
-
                   SizedBox(height: 18,),
 
                   TextPadding('생년월일', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xff696A6F),),
@@ -246,12 +219,6 @@ class _ProfileEditState extends State<ProfileEdit> {
       return;
     }
 
-    String nickname = _nicknameController.text;
-    if (nickname.isEmpty) {
-      Fluttertoast.showToast(msg: '닉네임을 입력해주세요');
-      return;
-    }
-
     String birth = _birthController.text;
     int? birthInteger = int.tryParse(birth);
     if (birth.isEmpty) {
@@ -288,7 +255,6 @@ class _ProfileEditState extends State<ProfileEdit> {
     }
 
     await _accountRepository.updateProfile(account.email!,
-      nickname: nickname,
       newEmail: email,
       birthday: birthInteger,
       profileUrl: downloadURL ?? account.profileUrl,
