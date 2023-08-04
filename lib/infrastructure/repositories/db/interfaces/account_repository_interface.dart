@@ -9,10 +9,6 @@ abstract class IAccountRepository {
   Future<DatabaseResp> createAccount(Account account);
   Future<DatabaseResp> updateAccount(
       String email, String newEmail, int birthday);
-  Future<DatabaseResp> updateProfile(String email, {
-    required String nickname,
-    String? profileUrl,
-  });
   Future<DatabaseResp> getAccountByEmail(String email);
   Future<DatabaseResp> deleteAccount(String email);
 }

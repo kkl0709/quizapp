@@ -28,6 +28,8 @@ class _ProfileEditState extends State<ProfileEdit> {
   late Account account;
   final AccountRepository _accountRepository = AccountRepository();
   TextEditingController _nicknameController = TextEditingController();
+  TextEditingController _birthController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
   Uint8List? _image;
 
   @override
@@ -52,6 +54,8 @@ class _ProfileEditState extends State<ProfileEdit> {
     this.account = account;
 
     _nicknameController.text = account.nickname ?? '';
+    _birthController.text = account.birthday?.toString() ?? '';
+    _emailController.text = account.email ?? '';
 
     setState(() => isLoading = false);
   }
@@ -147,6 +151,47 @@ class _ProfileEditState extends State<ProfileEdit> {
                       TextPadding('${_nicknameController.text.length}자 / 최대 8자', fontWeight: FontWeight.w500, fontSize: 11, color: Color(0xff525252),),
                     ],
                   ),
+
+                  SizedBox(height: 18,),
+
+                  TextPadding('생년월일', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xff696A6F),),
+                  SizedBox(height: 6,),
+                  FormInputText(
+                    controller: _birthController,
+                    hintText: '생년월일을 입력해주세요.',
+                    maxLength: 8,
+                    fontSize: 14,
+                    counterText: '',
+                    keyboardType: TextInputType.number,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: const BorderSide(
+                        color: Color(0xffEAEAEB),
+                      ),
+                    ),
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: Colors.black),
+                    onChanged: (e) => setState(() => {}),
+                  ),
+
+                  SizedBox(height: 18,),
+
+                  TextPadding('이메일', fontWeight: FontWeight.w500, fontSize: 14, color: Color(0xff696A6F),),
+                  SizedBox(height: 6,),
+                  FormInputText(
+                    controller: _emailController,
+                    hintText: '이메일을 입력해주세요.',
+                    fontSize: 14,
+                    counterText: '',
+                    keyboardType: TextInputType.emailAddress,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: const BorderSide(
+                        color: Color(0xffEAEAEB),
+                      ),
+                    ),
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14, color: Colors.black),
+                    onChanged: (e) => setState(() => {}),
+                  ),
                 ],),)),
                 SizedBox(height: 16,),
                 TextButton(
@@ -207,6 +252,28 @@ class _ProfileEditState extends State<ProfileEdit> {
       return;
     }
 
+    String birth = _birthController.text;
+    int? birthInteger = int.tryParse(birth);
+    if (birth.isEmpty) {
+      Fluttertoast.showToast(msg: '생년월일을 입력해주세요');
+      return;
+    } else if (birth.length != 8) {
+      Fluttertoast.showToast(msg: '생년월일은 8자리를 입력해주세요');
+      return;
+    } else if (birthInteger == null) {
+      Fluttertoast.showToast(msg: '생년월일 숫자만 입력해주세요');
+      return;
+    }
+
+    String email = _emailController.text;
+    if (email.isEmpty) {
+      Fluttertoast.showToast(msg: '이메일을 입력해주세요');
+      return;
+    } else if (email.isEmail == false) {
+      Fluttertoast.showToast(msg: '이메일 주소 형식을 확인해주세요');
+      return;
+    }
+
     setState(() => isProcessing = true);
     Utils.hideKeyboard(context);
 
@@ -222,8 +289,19 @@ class _ProfileEditState extends State<ProfileEdit> {
 
     await _accountRepository.updateProfile(account.email!,
       nickname: nickname,
+      newEmail: email,
+      birthday: birthInteger,
       profileUrl: downloadURL ?? account.profileUrl,
     );
+
+    final int code = await SharedPreferenceService.getAuthCode;
+    await SharedPreferenceService.saveLoggedIn(
+      true,
+      email,
+      code,
+    );
+
+    await _initData();
 
     Fluttertoast.showToast(
         msg: '프로필 정보가 수정됐습니다.',
@@ -235,5 +313,6 @@ class _ProfileEditState extends State<ProfileEdit> {
         fontSize: 16.0);
 
     setState(() => isProcessing = false);
+    Get.back();
   }
 }

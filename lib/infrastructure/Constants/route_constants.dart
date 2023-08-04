@@ -18,7 +18,6 @@ class RoutesConstants {
       "/passwordVerificationScreen";
   static const String progressScreen = "/progressScreen";
   static const String profileScreen = "/profileScreen";
-  static const String updateProfileScreen = "/updateProfileScreen";
   static const String topicSelectionScreen = "/topicSelectionScreen";
   static const String quizResultScreen = "/quizResultScreen";
   static const String viewResultScreen = "/viewResultScreen";

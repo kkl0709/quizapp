@@ -1,6 +1,7 @@
 import 'package:chinesequizapp/Screens/ProfileScreens/controller/profile_screen_controller.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
+import 'package:chinesequizapp/infrastructure/components/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,7 +32,7 @@ class UpdateProfileScreen extends GetView<ProfileScreenController> {
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Column(
+          child: controller.isLoading ? Loading() : Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 32.0),

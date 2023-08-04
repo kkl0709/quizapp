@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:typed_data';
 
 import 'package:chinesequizapp/Screens/AuthenticationScreens/View/password_authentication_screen.dart';
 import 'package:chinesequizapp/infrastructure/Constants/app_constants_color.dart';
@@ -57,13 +58,11 @@ class ProfileScreenController extends GetxController {
         account.value = resp.data;
       }
     }
-    textField1Controller.value.text =
-        (account.value.birthday ?? 0).toString(); // birth
+    textField1Controller.value.text = (account.value.birthday ?? 0).toString(); // birth
     textField2Controller.value.text = account.value.email ?? ""; // email
     var keyboardVisibilityController = KeyboardVisibilityController();
     // Query
-    print(
-        'Keyboard visibility direct query: ${keyboardVisibilityController.isVisible}');
+    print('Keyboard visibility direct query: ${keyboardVisibilityController.isVisible}');
 
     // Subscribe
     keyboardSubscription =
@@ -151,5 +150,10 @@ class ProfileScreenController extends GetxController {
           arguments:
               PasswordVerificationScreenArgs(email: account.value.email!));
     }
+  }
+
+  Future<void> onNavigateUpdateProfile() async {
+    await Get.toNamed(RoutesConstants.profileEdit);
+    refreshState();
   }
 }

@@ -138,9 +138,10 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
-  @override
   Future<DatabaseResp> updateProfile(String email, {
     required String nickname,
+    required String newEmail,
+    required int birthday,
     String? profileUrl,
   }) async {
     WriteResult? result = await QuizAppDatabaseService.I
@@ -148,11 +149,17 @@ class AccountRepository implements IAccountRepository {
         ?.collection(_collection)
         .updateOne(
       where.eq('email', email),
-      modify.set('nickname', nickname).set('profileUrl', profileUrl),
+      modify.set('nickname', nickname)
+          .set('profileUrl', profileUrl)
+          .set('email', newEmail)
+          .set('birthday', birthday),
     );
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
     } else {
+      final StatisticRepository statisticRepo = StatisticRepository();
+      await statisticRepo.updateStatisticEmail(email, newEmail);
+
       return DatabaseResp.success();
     }
   }

@@ -50,8 +50,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                     ),
                     Spacer(),
                     InkWell(
-                        onTap: () =>
-                            Get.toNamed(RoutesConstants.updateProfileScreen),
+                        onTap: () => controller.onNavigateUpdateProfile(),
                         child: Container(
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
@@ -77,9 +76,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                 padding: const EdgeInsets.symmetric(
                     horizontal: 20.0, vertical: 40.0),
                 child: GestureDetector(
-                  onTap: () {
-                    Get.toNamed(RoutesConstants.updateProfileScreen);
-                  },
+                  onTap: () => controller.onNavigateUpdateProfile(),
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
