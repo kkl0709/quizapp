@@ -6,8 +6,12 @@ import 'package:chinesequizapp/infrastructure/components/loading.dart';
 import 'package:chinesequizapp/infrastructure/models/account.dart';
 import 'package:chinesequizapp/infrastructure/models/community.dart';
 import 'package:chinesequizapp/infrastructure/models/communityComment.dart';
+import 'package:chinesequizapp/infrastructure/models/community_report.dart';
+import 'package:chinesequizapp/infrastructure/models/user_block.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/account_repository.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/community_report_repository.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/community_repository.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/user_block_repository.dart';
 import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -136,29 +140,60 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                                       Text(community.userEmail, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),)
                                     ],
                                   ),
-                                  if (isMyCommunity())...[
-                                    IconButton(
-                                      onPressed: () => CustomModals.showCommunityEtc(context,
-                                        onEdit: () async {
-                                          dynamic result = await Get.toNamed(RoutesConstants.communityCreateScreen, arguments: community);
-                                          if (result != null && result.runtimeType == Community) {
-                                            _refreshData();
-                                          }
-                                        },
-                                        onDelete: () async {
-                                          bool isSuccess = await CommunityRepository().deleteCommunity(id: community.id);
-                                          if (isSuccess) {
-                                            Fluttertoast.showToast(msg: '삭제되었습니다.');
-                                            Get.back(result: true);
-                                          } else {
-                                            Fluttertoast.showToast(msg: '삭제 중 오류가 발생하였습니다.');
-                                          }
-                                        },
-                                      ),
-                                      icon: Icon(Icons.more_horiz),
-                                      color: HexColor('#ACACAF'),
-                                    ),
-                                  ],
+                                  IconButton(
+                                    onPressed: () {
+                                      if (isMyCommunity()) {
+                                        CustomModals.showCommunityEtc(context,
+                                          onEdit: () async {
+                                            dynamic result = await Get.toNamed(RoutesConstants.communityCreateScreen, arguments: community);
+                                            if (result != null && result.runtimeType == Community) {
+                                              _refreshData();
+                                            }
+                                          },
+                                          onDelete: () async {
+                                            bool isSuccess = await CommunityRepository().deleteCommunity(id: community.id);
+                                            if (isSuccess) {
+                                              Fluttertoast.showToast(msg: '삭제되었습니다.');
+                                              Get.back(result: true);
+                                            } else {
+                                              Fluttertoast.showToast(msg: '삭제 중 오류가 발생하였습니다.');
+                                            }
+                                          },
+                                        );
+                                      } else {
+                                        CustomModals.showCommunityReport(context,
+                                          onUserBlock: () async {
+                                            UserBlock? userBlock = await UserBlockRepository().createUserBlock(
+                                              userEmail: account.email!,
+                                              targetUserEmail: community.userEmail,
+                                              createdAt: DateTime.now(),
+                                            );
+                                            if (userBlock != null) {
+                                              Fluttertoast.showToast(msg: '해당 사용자를 차단하였습니다.');
+                                              Get.back(result: true);
+                                            } else {
+                                              Fluttertoast.showToast(msg: '차단 중 오류가 발생하였습니다.');
+                                            }
+                                          },
+                                          onReport: () async {
+                                            CommunityReport? communityReport = await CommunityReportRepository().createCommunityReport(
+                                              userEmail: account.email!,
+                                              communityId: community.id,
+                                              createdAt: DateTime.now(),
+                                            );
+                                            if (communityReport != null) {
+                                              Fluttertoast.showToast(msg: '해당 게시글을 신고하였습니다.');
+                                              Get.back(result: true);
+                                            } else {
+                                              Fluttertoast.showToast(msg: '신고 중 오류가 발생하였습니다.');
+                                            }
+                                          },
+                                        );
+                                      }
+                                    },
+                                    icon: Icon(Icons.more_horiz),
+                                    color: HexColor('#ACACAF'),
+                                  ),
                                 ],
                               ),
                               Container(

@@ -113,7 +113,7 @@ class CustomModals {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 24,),
-                TextPadding(title, fontWeight: FontWeight.w700, fontSize: 18, color: Color(0xff1E1F27), padding: EdgeInsets.symmetric(horizontal: 24),),
+                TextPadding(title, fontWeight: FontWeight.w700, fontSize: 14, color: Color(0xff1E1F27), padding: EdgeInsets.symmetric(horizontal: 24),),
                 SizedBox(height: 24,),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 24),
@@ -235,6 +235,94 @@ class CustomModals {
                           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 13),
                           child: Text(
                             '댓글 삭제',
+                            style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16, color: Color(0xff616161)),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20,),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
+  static void showCommunityReport(BuildContext context, {
+    required VoidCallback onUserBlock,
+    required VoidCallback onReport,
+  }) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      useRootNavigator: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(24),
+          topRight: Radius.circular(24),
+        ),
+      ),
+      builder: (BuildContext context) {
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setState) {
+            return Padding(
+              padding: MediaQuery.of(context).viewInsets,
+              child: SingleChildScrollView(
+                child: Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const ImagePadding('modal-tab.png', width: 37.5, height: 4, padding: EdgeInsets.symmetric(vertical: 10),),
+                      const SizedBox(height: 13,),
+                      TextButton(
+                        onPressed: () {
+                          Get.back();
+                          showDoubleButtonPopup(
+                            title: '사용자를 차단 시 해당 사용자가 작성한 게시물이 모두 보이지 않게 됩니다.\n정말 사용자를 차단 하시겠습니까?',
+                            leftText: '취소',
+                            rightText: '확인',
+                            onPressedRB: () => onUserBlock(),
+                          );
+                        },
+                        style: TextButton.styleFrom(
+                          minimumSize: Size.zero,
+                          padding: EdgeInsets.zero,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        child: Container(
+                          width: double.infinity,
+                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 13),
+                          child: Text(
+                            '사용자 차단',
+                            style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16, color: Color(0xff616161)),
+                          ),
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Get.back();
+                          showDoubleButtonPopup(
+                            title: '게시글 신고 시 해당 게시글이 보이지 않게 됩니다.\n정말 게시글을 신고 하시겠습니까?',
+                            leftText: '취소',
+                            rightText: '확인',
+                            onPressedRB: () => onReport(),
+                          );
+                        },
+                        style: TextButton.styleFrom(
+                          minimumSize: Size.zero,
+                          padding: EdgeInsets.zero,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        child: Container(
+                          width: double.infinity,
+                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 13),
+                          child: Text(
+                            '게시글 신고',
                             style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16, color: Color(0xff616161)),
                           ),
                         ),

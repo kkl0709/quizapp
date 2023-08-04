@@ -3,8 +3,12 @@ import 'package:chinesequizapp/infrastructure/models/account.dart';
 import 'package:chinesequizapp/infrastructure/models/community.dart';
 import 'package:chinesequizapp/infrastructure/models/communityComment.dart';
 import 'package:chinesequizapp/infrastructure/models/communityComment.dart';
+import 'package:chinesequizapp/infrastructure/models/community_report.dart';
+import 'package:chinesequizapp/infrastructure/models/user_block.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/account_repository.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/community_report_repository.dart';
+import 'package:chinesequizapp/infrastructure/repositories/db/user_block_repository.dart';
 import 'package:get/utils.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
@@ -75,7 +79,9 @@ class CommunityRepository {
     return 0;
   }
 
-  Future<List<Community>> getCommunities() async {
+  Future<List<Community>> getCommunities({
+    required String userEmail,
+  }) async {
     List<Map<String, dynamic>>? list = await QuizAppDatabaseService.I
         .getConnection()
         ?.collection(_communityCollection)
@@ -88,6 +94,20 @@ class CommunityRepository {
         e.account = accounts.firstWhereOrNull((account) => account.email == e.userEmail);
         return e;
       }).toList();
+
+      // 사용자 차단 여부 확인
+      List<UserBlock> userBlocks = await UserBlockRepository().getUserBlocks(
+        userEmail: userEmail,
+      );
+      communities = communities.where((e) => userBlocks.indexWhere((userBlock) => userBlock.targetUserEmail == e.userEmail) < 0).toList();
+
+      // 게시글 신고 여부 확인
+      List<CommunityReport> communityReports = await CommunityReportRepository().getCommunityReports(
+        userEmail: userEmail,
+      );
+      communities = communities.where((e) => communityReports.indexWhere((communityReport) => communityReport.communityId == e.id) < 0).toList();
+
+
       return communities;
     }
 
