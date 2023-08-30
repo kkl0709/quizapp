@@ -5,18 +5,19 @@ import 'package:chinesequizapp/infrastructure/models/response/database_resp.dart
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/interfaces/account_repository_interface.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/statistic_repository.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
 class AccountRepository implements IAccountRepository {
   final String _collection = DatabaseConstants.databaseAccountsCollection;
   final QuizAppDatabaseService db = QuizAppDatabaseService.I;
 
+  final _firestore = FirebaseFirestore.instance;
+
   @override
   Future<DatabaseResp> validateAccount(String email) async {
-    final Map<String, dynamic>? document = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .findOne({"email": email});
+    final Map<String, dynamic>? document =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).findOne({"email": email});
     if (document != null) {
       return DatabaseResp.error(error: DbRespError.emailExists);
     } else {
@@ -24,8 +25,17 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
-  Future<DatabaseResp> validateAccountByAuth(String email,
-      {required AuthType authType}) async {
+  // 1.
+  Future<DatabaseResp> validateAccountFirestore(String email) async {
+    final document = await _firestore.collection(_collection).doc(email).get();
+    if (document.exists) {
+      return DatabaseResp.error(error: DbRespError.emailExists);
+    } else {
+      return DatabaseResp.success();
+    }
+  }
+
+  Future<DatabaseResp> validateAccountByAuth(String email, {required AuthType authType}) async {
     final Map<String, dynamic>? document = await QuizAppDatabaseService.I
         .getConnection()
         ?.collection(_collection)
@@ -38,14 +48,31 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 2.
+  Future<DatabaseResp> validateAccountByAuthFirestore(String email, {required AuthType authType}) async {
+    try {
+      final documents = await _firestore
+          .collection(_collection)
+          .where("email", isEqualTo: email)
+          .where("authType", isEqualTo: authType.code)
+          .get();
+
+      if (documents.docs.isNotEmpty) {
+        return DatabaseResp.success();
+      } else {
+        return DatabaseResp.error(error: DbRespError.emailExists);
+      }
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.emailExists);
+    }
+  }
+
   @override
-  Future<DatabaseResp> resetPassword(String email, String password,
-      {int? authType}) async {
+  Future<DatabaseResp> resetPassword(String email, String password, {int? authType}) async {
     final WriteResult? result = await QuizAppDatabaseService.I
         .getConnection()
         ?.collection(_collection)
-        .updateOne(where.eq("email", email).eq("authType", authType ?? 0),
-            modify.set("password", password));
+        .updateOne(where.eq("email", email).eq("authType", authType ?? 0), modify.set("password", password));
 
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedChangingPassword);
@@ -54,12 +81,30 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 3.
+  Future<DatabaseResp> resetPasswordFirestore(String email, String password, {int? authType}) async {
+    try {
+      final documents = await _firestore
+          .collection(_collection)
+          .where("email", isEqualTo: email)
+          .where("authType", isEqualTo: authType ?? 0)
+          .get();
+
+      if (documents.docs.isEmpty) {
+        return DatabaseResp.error(error: DbRespError.failedChangingPassword);
+      }
+
+      await _firestore.collection(_collection).doc(documents.docs.first.id).update({"password": password});
+      return DatabaseResp.success();
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedChangingPassword);
+    }
+  }
+
   @override
   Future<DatabaseResp> getAccountByEmail(String email) async {
-    final Map<String, dynamic>? document = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .findOne({"email": email});
+    final Map<String, dynamic>? document =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).findOne({"email": email});
     if (document == null) {
       return DatabaseResp.error(error: DbRespError.failedLoadingAccount);
     } else {
@@ -67,12 +112,20 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 4.
+  Future<DatabaseResp> getAccountByEmailFirestore(String email) async {
+    final document = await _firestore.collection(_collection).doc(email).get();
+    if (document.exists) {
+      return DatabaseResp.success(data: Account.fromJson(document.data() as Map<String, dynamic>));
+    } else {
+      return DatabaseResp.error(error: DbRespError.failedLoadingAccount);
+    }
+  }
+
   @override
   Future<DatabaseResp> createAccount(Account account) async {
-    final WriteResult? result = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .insertOne(account.toJson());
+    final WriteResult? result =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).insertOne(account.toJson());
     if (result?.document != null) {
       if (account.email != null) {
         StatisticRepository repository = StatisticRepository();
@@ -84,13 +137,21 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 5.
+  Future<DatabaseResp> createAccountFirestore(Account account) async {
+    try {
+      await _firestore.collection(_collection).doc(account.email).set(account.toJson());
+      return DatabaseResp.success(data: account);
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.registrationFailed);
+    }
+  }
+
   @override
   Future<DatabaseResp> login(String email, String password) async {
-    final emailExists = await QuizAppDatabaseService.I
-            .getConnection()
-            ?.collection(_collection)
-            .findOne({"email": email}) !=
-        null;
+    final emailExists =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).findOne({"email": email}) !=
+            null;
 
     final Map<String, dynamic>? document = await QuizAppDatabaseService.I
         .getConnection()
@@ -107,26 +168,35 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 6.
+  Future<DatabaseResp> loginFirestore(String email, String password) async {
+    final document = await _firestore.collection(_collection).doc(email).get();
+
+    if (document.exists) {
+      Account account = Account.fromJson(document.data() as Map<String, dynamic>);
+      if (account.password == password) {
+        return DatabaseResp.success(data: account);
+      } else {
+        return DatabaseResp.error(error: DbRespError.wrongPassword);
+      }
+    } else {
+      return DatabaseResp.error(error: DbRespError.wrongAccount);
+    }
+  }
+
   @override
-  Future<DatabaseResp> updateAccount(
-      String email, String newEmail, int birthday) async {
+  Future<DatabaseResp> updateAccount(String email, String newEmail, int birthday) async {
     WriteResult? result;
     if (email == newEmail) {
-      result = await QuizAppDatabaseService.I
-          .getConnection()
-          ?.collection(_collection)
-          .updateOne(
-        where.eq('email', email),
-        modify.set('birthday', birthday),
-      );
+      result = await QuizAppDatabaseService.I.getConnection()?.collection(_collection).updateOne(
+            where.eq('email', email),
+            modify.set('birthday', birthday),
+          );
     } else {
-      result = await QuizAppDatabaseService.I
-          .getConnection()
-          ?.collection(_collection)
-          .updateOne(
-        where.eq('email', email),
-        modify.set('email', newEmail).set('birthday', birthday),
-      );
+      result = await QuizAppDatabaseService.I.getConnection()?.collection(_collection).updateOne(
+            where.eq('email', email),
+            modify.set('email', newEmail).set('birthday', birthday),
+          );
     }
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
@@ -138,20 +208,29 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
-  Future<DatabaseResp> updateProfile(String email, {
+  // 7.
+  Future<DatabaseResp> updateAccountFirestore(String email, String newEmail, int birthday) async {
+    try {
+      await _firestore.collection(_collection).doc(email).update({
+        'email': newEmail,
+        'birthday': birthday,
+      });
+      return DatabaseResp.success();
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
+    }
+  }
+
+  Future<DatabaseResp> updateProfile(
+    String email, {
     required String newEmail,
     required int birthday,
     String? profileUrl,
   }) async {
-    WriteResult? result = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .updateOne(
-      where.eq('email', email),
-      modify.set('profileUrl', profileUrl)
-          .set('email', newEmail)
-          .set('birthday', birthday),
-    );
+    WriteResult? result = await QuizAppDatabaseService.I.getConnection()?.collection(_collection).updateOne(
+          where.eq('email', email),
+          modify.set('profileUrl', profileUrl).set('email', newEmail).set('birthday', birthday),
+        );
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
     } else {
@@ -162,18 +241,50 @@ class AccountRepository implements IAccountRepository {
     }
   }
 
+  // 8.
+  Future<DatabaseResp> updateProfileFirestore(
+      String email, {
+        required String newEmail,
+        required int birthday,
+        String? profileUrl,
+      }) async {
+    try {
+      await _firestore.collection(_collection).doc(email).update({
+        'email': newEmail,
+        'birthday': birthday,
+        'profileUrl': profileUrl,
+      });
+
+      final StatisticRepository statisticRepo = StatisticRepository();
+      await statisticRepo.updateStatisticEmail(email, newEmail);
+
+      return DatabaseResp.success();
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedUpdatingAccount);
+    }
+  }
+
+
   @override
   Future<DatabaseResp> deleteAccount(String email) async {
-    final WriteResult? result = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .deleteOne({"email": email});
+    final WriteResult? result =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).deleteOne({"email": email});
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedDeletingAccount);
     } else {
       final StatisticRepository statisticRepo = StatisticRepository();
       statisticRepo.deleteStatistic(email);
       return DatabaseResp.success();
+    }
+  }
+
+  // 9.
+  Future<DatabaseResp> deleteAccountFirestore(String email) async {
+    try {
+      await _firestore.collection(_collection).doc(email).delete();
+      return DatabaseResp.success();
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedDeletingAccount);
     }
   }
 
@@ -187,5 +298,11 @@ class AccountRepository implements IAccountRepository {
       return list.map((e) => Account.fromJson(e)).toList();
     }
     return [];
+  }
+
+  // 10.
+  Future<List<Account>> getAccountsFirestore() async {
+    final snapshot = await _firestore.collection(_collection).orderBy('email').get();
+    return snapshot.docs.map((doc) => Account.fromJson(doc.data() as Map<String, dynamic>)).toList();
   }
 }

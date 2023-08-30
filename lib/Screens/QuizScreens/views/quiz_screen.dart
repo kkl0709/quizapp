@@ -14,6 +14,7 @@ class QuizScreen extends GetView<QuizScreenController> {
 
   @override
   Widget build(BuildContext context) {
+    //Get.put(QuizScreenController());
     return Obx(
       () => Scaffold(
         backgroundColor: controller.bgColor.value,
