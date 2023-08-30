@@ -22,3 +22,4 @@ flutter pub run build_runner build
 flutter clean
 flutter pub cache repair
 
+# Tetra
