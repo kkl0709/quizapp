@@ -2,6 +2,7 @@ import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart'
 import 'package:chinesequizapp/infrastructure/models/response/database_resp.dart';
 import 'package:chinesequizapp/infrastructure/models/version.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class VersionRepository {
   final String _collection = DatabaseConstants.databaseVersionCollection;
@@ -28,6 +29,25 @@ class VersionRepository {
       return DatabaseResp.error(error: DbRespError.failedLoadingAccount);
     } else {
       return DatabaseResp.success(data: Version.fromJson(version));
+    }
+  }
+
+  Future<DatabaseResp> getVersionFirestore() async {
+    try {
+      QuerySnapshot querySnapshot = await FirebaseFirestore.instance
+          .collection(_collection)
+          .where("version", isEqualTo: "updateVersion")
+          .limit(1)
+          .get();
+      if (querySnapshot.docs.isNotEmpty) {
+        return DatabaseResp.success(
+            data: Version.fromJson(querySnapshot.docs[0].data()! as Map<String, dynamic>));
+      } else {
+        return DatabaseResp.error(error: DbRespError.failedLoadingAccount);
+      }
+    } catch (e) {
+      print(e);
+      return DatabaseResp.error(error: DbRespError.failedLoadingAccount);
     }
   }
 }

@@ -110,7 +110,7 @@ class ProfileScreenController extends GetxController {
     // Validate
     if (account.value.email != textField2Controller.value.text) {
       final resp =
-          await _repository.validateAccount(textField2Controller.value.text);
+          await _repository.validateAccountFirestore(textField2Controller.value.text);
       if (resp.isException == true && resp.error == DbRespError.emailExists) {
         Fluttertoast.showToast(
             msg: DbRespError.emailExists.message,

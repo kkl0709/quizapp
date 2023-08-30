@@ -4,11 +4,14 @@ import 'package:chinesequizapp/infrastructure/models/response/database_resp.dart
 import 'package:chinesequizapp/infrastructure/models/statistic.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/interfaces/statistic_interface.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
 class StatisticRepository implements IStatisticRepository {
   final String _collection = DatabaseConstants.databaseStatisticsCollection;
+  final CollectionReference _collectionFirestore =
+      FirebaseFirestore.instance.collection(DatabaseConstants.databaseStatisticsCollection);
   final QuizAppDatabaseService db = QuizAppDatabaseService.I;
 
   @override
@@ -26,11 +29,20 @@ class StatisticRepository implements IStatisticRepository {
   }
 
   @override
+  Future<DatabaseResp> initStatisticFirestore(String email) async {
+    try {
+      DocumentReference docRef = _collectionFirestore.doc(email);
+      await docRef.set(Statistic.init(email).toJson());
+      return DatabaseResp.success();
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedAddingStatistic);
+    }
+  }
+
+  @override
   Future<DatabaseResp> getStatistic(String email) async {
-    final Map<String, dynamic>? statistic = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .findOne({"email": email});
+    final Map<String, dynamic>? statistic =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).findOne({"email": email});
     if (statistic == null) {
       return DatabaseResp.error(error: DbRespError.failedLoadingStatistic);
     } else {
@@ -39,8 +51,25 @@ class StatisticRepository implements IStatisticRepository {
   }
 
   @override
-  Future<DatabaseResp> updateStatistic(
-      Statistic statistic, bool isCorrect) async {
+  Future<DatabaseResp> getStatisticFirestore(String email) async {
+    try {
+      DocumentSnapshot docSnap = await FirebaseFirestore.instance
+          .collection(DatabaseConstants.databaseStatisticsCollection!)
+          .doc(email)
+          .get();
+      if (docSnap.exists) {
+        return DatabaseResp.success(data: Statistic.fromJson(docSnap.data() as Map<String, dynamic>));
+      } else {
+        return DatabaseResp.error(error: DbRespError.failedLoadingStatistic);
+      }
+    } catch (e) {
+      print(e);
+      return DatabaseResp.error(error: DbRespError.failedLoadingStatistic);
+    }
+  }
+
+  @override
+  Future<DatabaseResp> updateStatistic(Statistic statistic, bool isCorrect) async {
     DateTime today = DateTime.now();
     if (today.year == statistic.lastSubmittedAt?.year &&
         today.month == statistic.lastSubmittedAt?.month &&
@@ -56,8 +85,8 @@ class StatisticRepository implements IStatisticRepository {
     newDateList.add(todayObj);
 
     List<MonthlyAccuracy> accuracyList = List.from(statistic.acurracyList);
-    MonthlyAccuracy? monthlyAccuracy = accuracyList.firstWhereOrNull((date) =>
-        date.month?.year == today.year && date.month?.month == today.month);
+    MonthlyAccuracy? monthlyAccuracy = accuracyList
+        .firstWhereOrNull((date) => date.month?.year == today.year && date.month?.month == today.month);
 
     /// When there is no accuracy for the current month
     if (monthlyAccuracy == null) {
@@ -69,10 +98,8 @@ class StatisticRepository implements IStatisticRepository {
         ),
       );
     } else {
-      if (monthlyAccuracy.totalCorrected != null &&
-          monthlyAccuracy.totalSolved != null) {
-        int newTotalCorrected =
-            monthlyAccuracy.totalCorrected! + (isCorrect ? 1 : 0);
+      if (monthlyAccuracy.totalCorrected != null && monthlyAccuracy.totalSolved != null) {
+        int newTotalCorrected = monthlyAccuracy.totalCorrected! + (isCorrect ? 1 : 0);
         int newTotalSolved = monthlyAccuracy.totalSolved! + 1;
         // final newMonthlyAccuracy = monthlyAccuracy.copyWith(
         //   totalCorrected: newTotalCorrected,
@@ -84,8 +111,8 @@ class StatisticRepository implements IStatisticRepository {
           newTotalSolved,
         );
 
-        accuracyList.removeWhere((date) =>
-            date.month?.year == today.year && date.month?.month == today.month);
+        accuracyList
+            .removeWhere((date) => date.month?.year == today.year && date.month?.month == today.month);
         accuracyList.add(newMonthlyAccuracy);
       }
     }
@@ -102,8 +129,7 @@ class StatisticRepository implements IStatisticRepository {
     final WriteResult? result = await QuizAppDatabaseService.I
         .getConnection()
         ?.collection(_collection)
-        .replaceOne(
-            where.eq("email", statistic.email), updatedStatistic.toJson());
+        .replaceOne(where.eq("email", statistic.email), updatedStatistic.toJson());
     // .updateOne(where.eq("email", email), modify.set("password", password));
 
     if (result?.document != null) {
@@ -114,15 +140,79 @@ class StatisticRepository implements IStatisticRepository {
   }
 
   @override
-  Future<DatabaseResp> updateStatisticEmail(
-      String email, String newEmail) async {
-    final WriteResult? result = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .updateOne(
-          where.eq('email', email),
-          modify.set('email', newEmail),
+  Future<DatabaseResp> updateStatisticFirestore(Statistic statistic, bool isCorrect) async {
+    DateTime today = DateTime.now();
+    try {
+      if (today.year == statistic.lastSubmittedAt?.year &&
+          today.month == statistic.lastSubmittedAt?.month &&
+          today.day == statistic.lastSubmittedAt?.day) {
+        return DatabaseResp.error(error: DbRespError.alreadySubmittedToday);
+      }
+      DateObject todayObj = DateObject(
+        today.year,
+        today.month,
+        today.day,
+      );
+      List<DateObject> newDateList = List.from(statistic.dateList);
+      newDateList.add(todayObj);
+
+      List<MonthlyAccuracy> accuracyList = List.from(statistic.acurracyList);
+      MonthlyAccuracy? monthlyAccuracy = accuracyList
+          .firstWhereOrNull((date) => date.month?.year == today.year && date.month?.month == today.month);
+
+      /// When there is no accuracy for the current month
+      if (monthlyAccuracy == null) {
+        accuracyList.add(
+          MonthlyAccuracy(
+            DateObject(todayObj.year, todayObj.month, 0),
+            isCorrect ? 1 : 0,
+            1,
+          ),
         );
+      } else {
+        if (monthlyAccuracy.totalCorrected != null && monthlyAccuracy.totalSolved != null) {
+          int newTotalCorrected = monthlyAccuracy.totalCorrected! + (isCorrect ? 1 : 0);
+          int newTotalSolved = monthlyAccuracy.totalSolved! + 1;
+          // final newMonthlyAccuracy = monthlyAccuracy.copyWith(
+          //   totalCorrected: newTotalCorrected,
+          //   totalSolved: newTotalSolved,
+          // );
+          final MonthlyAccuracy newMonthlyAccuracy = MonthlyAccuracy(
+            monthlyAccuracy.month,
+            newTotalCorrected,
+            newTotalSolved,
+          );
+
+          accuracyList
+              .removeWhere((date) => date.month?.year == today.year && date.month?.month == today.month);
+          accuracyList.add(newMonthlyAccuracy);
+        }
+      }
+      int updatedTotalSolved = (statistic.totalSolved ?? 0) + 1;
+      int updatedLevel = updatedTotalSolved ~/ 10;
+      updatedLevel = (updatedLevel > 5) ? 5 : updatedLevel;
+
+      Statistic updatedStatistic = statistic.copyWith(
+          lastSubmittedAt: todayObj,
+          dateList: newDateList,
+          acurracyList: accuracyList,
+          totalSolved: updatedTotalSolved,
+          level: updatedLevel);
+
+      await _collectionFirestore.doc(statistic.email).set(updatedStatistic.toJson(), SetOptions(merge: true));
+      return DatabaseResp.success(data: updatedStatistic);
+    } catch (e) {
+      return DatabaseResp.error(error: DbRespError.failedLoadingStatistic);
+    }
+  }
+
+  @override
+  Future<DatabaseResp> updateStatisticEmail(String email, String newEmail) async {
+    final WriteResult? result =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).updateOne(
+              where.eq('email', email),
+              modify.set('email', newEmail),
+            );
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedUpdatingEmail);
     } else {
@@ -131,15 +221,43 @@ class StatisticRepository implements IStatisticRepository {
   }
 
   @override
+  Future<DatabaseResp> updateStatisticEmailFirestore(String email, String newEmail) async {
+    try {
+      await FirebaseFirestore.instance
+          .collection(DatabaseConstants.databaseStatisticsCollection)
+          .doc(email)
+          .update({'email': newEmail});
+
+      return DatabaseResp.success();
+    } catch (e) {
+      print(e);
+      return DatabaseResp.error(error: DbRespError.failedUpdatingEmail);
+    }
+  }
+
+  @override
   Future<DatabaseResp> deleteStatistic(String email) async {
-    final WriteResult? result = await QuizAppDatabaseService.I
-        .getConnection()
-        ?.collection(_collection)
-        .deleteOne({'email': email});
+    final WriteResult? result =
+        await QuizAppDatabaseService.I.getConnection()?.collection(_collection).deleteOne({'email': email});
     if (result?.isFailure == true) {
       return DatabaseResp.error(error: DbRespError.failedDeletingAccount);
     } else {
       return DatabaseResp.success();
+    }
+  }
+
+  @override
+  Future<DatabaseResp> deleteStatisticFirestore(String email) async {
+    try {
+      await FirebaseFirestore.instance
+          .collection(DatabaseConstants.databaseStatisticsCollection!)
+          .doc(email)
+          .delete();
+
+      return DatabaseResp.success();
+    } catch (e) {
+      print(e);
+      return DatabaseResp.error(error: DbRespError.failedDeletingAccount);
     }
   }
 }

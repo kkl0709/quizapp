@@ -48,8 +48,7 @@ class MembershipController extends GetxController {
 
   /// TODO:: KM - 로그인 구현
   Future<void> validateAccount() async {
-    final resp =
-        await _repository.validateAccount(textField1Controller.value.text);
+    final resp = await _repository.validateAccountFirestore(textField1Controller.value.text);
     if (resp.isException == true && resp.error == DbRespError.emailExists) {
       emailTextFieldError.value = DbRespError.emailExists.message;
     } else {
@@ -61,8 +60,7 @@ class MembershipController extends GetxController {
     _account = Account(
         authType: 0,
         email: textField1Controller.value.text,
-        password:
-            EncryptionHelper.encrpytPassword(textField2Controller.value.text),
+        password: EncryptionHelper.encrpytPassword(textField2Controller.value.text),
         name: textField4Controller.value.text,
         birthday: int.parse(textField5Controller.value.text),
         gender: gender.value,
