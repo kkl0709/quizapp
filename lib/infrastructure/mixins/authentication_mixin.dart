@@ -71,7 +71,7 @@ class AuthenticationHelper {
 
   static Future<void> _createAccount(
       account.Account account, AuthType type) async {
-    DatabaseResp dbResp = await _repository.validateAccountFirestore(
+    DatabaseResp dbResp = await _repository.validateAccount(
       account.email ?? '',
     );
 
@@ -81,7 +81,7 @@ class AuthenticationHelper {
       }
     } else {
       DatabaseResp validResp = await _repository
-          .validateAccountByAuthFirestore(account.email ?? '', authType: type);
+          .validateAccountByAuth(account.email ?? '', authType: type);
 
       if (validResp.isException == true) {
         Fluttertoast.showToast(

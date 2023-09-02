@@ -6,12 +6,10 @@
       "cancel": "取消"
     }
   },
-
   "splashScreen": {
     "title": "四自我训练",
     "content": "一切都是我的认知"
   },
-
   "homeScreen": {
     "title": "欢迎来到无形规则的世界。",
     "content": "Tetra 是它自己认知中的一切\n表明你要离开了。",
@@ -19,7 +17,6 @@
       "start": "开始自我训练"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Self-Coaching",
     "content": "Tetra 是它自己认知中的一切 表明你要离开了。 写下教练开始后立即想到的单词或句子。",
@@ -29,7 +26,6 @@
       "start": "开始辅导"
     }
   },
-
   "quizResultScreen": {
     "title": "利乐自我辅导",
     "content": "在下面的框中输入想到的内容",
@@ -47,7 +43,6 @@
       "result": "查看结果"
     }
   },
-
   "viewResultScreen": {
     "title": "象限自我训练结果",
     "resultContent1": "我想收到'",
@@ -60,7 +55,6 @@
       "return": "返回"
     }
   },
-
   "onBoardingScreen": {
     "title": "利乐自我辅导",
     "content1": "选择您的语言以使用该应用程序",
@@ -70,7 +64,6 @@
       "start": "开始"
     }
   },
-
   "loginScreen": {
     "title": "四自我训练",
     "content": "一切都是我的认知",
@@ -79,7 +72,6 @@
     "findPassword": "找回密码",
     "snsLogin": "轻松登录"
   },
-
   "membershipScreen": {
     "signUp": "加入会员",
     "email": "电子邮件地址",
@@ -95,7 +87,6 @@
     "inputBirth": "请在您的个人资料中输入您的出生日期 ",
     "logout": "您确定要退出吗？"
   },
-
   "emailLoginScreen": {
     "title": "四自我训练",
     "content": "一切都是我的认知",
@@ -105,7 +96,6 @@
       "login": "login"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "重置密码",
     "content": "请重新设置您的密码",
@@ -115,7 +105,6 @@
       "done": "完全的"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "邮箱验证",
     "content": "请输入您的电子邮件地址",
@@ -125,7 +114,6 @@
       "next": "下一个"
     }
   },
-
   "emailVerificationScreen": {
     "title": "验证码",
     "content": "请输入您的验证码",
@@ -135,7 +123,6 @@
       "next": "下一个"
     }
   },
-
   "profileScreen": {
     "men": "男",
     "women": "女",
@@ -146,7 +133,6 @@
     "accountDelete": "账号删除",
     "logout": "注销"
   },
-
   "updateProfileScreen": {
     "birth": "出生日期",
     "email": "电子邮件",
@@ -155,7 +141,6 @@
       "done": "完全的"
     }
   },
-
   "dailyQuizScreen": {
     "title": "每日测验",
     "content": "Tetra是宇宙生命的起源",
@@ -172,7 +157,6 @@
       "submit": "提交"
     }
   },
-
   "quizScreen": {
     "title": "完成今天的测验\n明天也请来吧！",
     "content": "Tetra是宇宙生命的起源",
@@ -181,7 +165,6 @@
       "true": "回答"
     }
   },
-
   "progressScreen": {
     "progress": "进度",
     "quizComplete": "测验完成",
@@ -198,5 +181,33 @@
     "completeQuizTitle": "共完成 个测验",
     "completeQuizTotal1": "",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "Q1. 你从父母那里得到的最令你难忘的是什么?\n(如果你没有父母, 你希望得到的是什么?)",
+    "questions_2": "Q2. 你最希望从孩子那里得到的是什么?\n(如果你没有孩子, 你将来希望从孩子那里得到什么?)",
+    "questions_3": "Q3. 你的思考、言语和行动的动机是什么?",
+    "questions_4": "Q4. 你从配偶那里得到的最令你难忘的是什么?\n(如果你未婚, 你现在的或未来的男/女朋友给你的最难忘的是什么?)",
+    "questions_5": "Q5. 你想给父母的最令你难忘的是什么?\n(如果你没有父母, 你希望给的是什么?)",
+    "questions_6": "Q6. 你给孩子的最难忘的是什么?\n(如果你没有孩子, 你将来希望给孩子的是什么?)",
+    "questions_7": "Q7. 你给自己的最难忘的是什么?",
+    "questions_8": "Q8. 你给配偶的最难忘的是什么?\n(如果你未婚, 你想给现在的或未来的男/女朋友的是什么?)",
+    "questions_9": "Q9. 你希望从父母那里得到但未得到的是什么?\n(如果你没有父母, 你希望得到但未得到的是什么?)",
+    "questions_10": "Q10. 你希望从孩子那里得到但未得到的是什么?\n(如果你没有孩子, 你认为将来可能得不到的是什么?)",
+    "questions_11": "Q11. 你希望得到但自己给不了的是什么?",
+    "questions_12": "Q12. 你希望从配偶那里得到但未得到的是什么?\n(如果你未婚, 你希望从现在的或未来的男/女朋友那里得到但可能得不到的是什么?)",
+    "insert": "请输入",
+    "basicResult": "基本解释结果",
+    "saveGallery": "保存到相册",
+    "consultReserve": "预约深度咨询",
+    "consultTimeReserve": "预约咨询时间",
+    "month": "月",
+    "year": "年",
+    "next": "下一步",
+    "day": "日",
+    "am_9": "上午9点",
+    "am_11": "上午11点",
+    "pm_5": "下午5点",
+    "consult_30m": "咨询时间30分钟",
+    "consult_phone_number": "请输入您的咨询电话号码。"
   }
 }

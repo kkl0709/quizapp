@@ -6,12 +6,10 @@
       "cancel": "annuler"
     }
   },
-
   "splashScreen": {
     "title": "auto-coaching tétra",
     "content": "tout est ma perception"
   },
-
   "homeScreen": {
     "title": "Bienvenue dans le monde des règles invisibles.",
     "content": "Tetra est tout dans sa propre perception\nmontrez que vous partez.",
@@ -19,7 +17,6 @@
       "start": "Se lancer dans l'auto-coaching"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Self-Coaching",
     "content": "Tetra est tout dans sa propre perception montrez que vous partez. Notez les mots ou les phrases qui vous viennent à l'esprit immédiatement après le début du coaching.",
@@ -29,7 +26,6 @@
       "start": "commencer l'entraînement"
     }
   },
-
   "quizResultScreen": {
     "title": "Tetra Auto-Coaching",
     "content": "Entrez ce qui vous vient à l'esprit dans la case ci-dessous",
@@ -47,7 +43,6 @@
       "result": "Voir les résultats"
     }
   },
-
   "viewResultScreen": {
     "title": "Quadrant des résultats de l'auto-coaching",
     "resultContent1": "Je veux recevoir '",
@@ -60,7 +55,6 @@
       "return": "revenir"
     }
   },
-
   "onBoardingScreen": {
     "title": "Tetra Auto-Coaching",
     "content1": "Choisissez votre langue pour utiliser l'application",
@@ -70,7 +64,6 @@
       "start": "Commencer"
     }
   },
-
   "loginScreen": {
     "title": "auto-coaching tétra",
     "content": "tout est ma perception",
@@ -79,7 +72,6 @@
     "findPassword": "trouvez le mot de passe",
     "snsLogin": "connexion facile"
   },
-
   "membershipScreen": {
     "signUp": "rejoindre l'adhésion",
     "email": "Adresse e-mail",
@@ -95,7 +87,6 @@
     "inputBirth": "Veuillez entrer votre date de naissance dans votre profi",
     "logout": "Êtes-vous sûr de vouloir vous déconnecter?"
   },
-
   "emailLoginScreen": {
     "title": "auto-coaching tétra",
     "content": "tout est ma perception",
@@ -105,7 +96,6 @@
       "login": "connexion"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "Réinitialisez votre mot de passe",
     "content": "Veuillez réinitialiser votre mot de passe",
@@ -115,7 +105,6 @@
       "done": "complet"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "Vérification par e-mail",
     "content": "Veuillez saisir votre adresse e-mail",
@@ -125,7 +114,6 @@
       "next": "suivant"
     }
   },
-
   "emailVerificationScreen": {
     "title": "Code d'authentification",
     "content": "Veuillez entrer votre code de vérification",
@@ -135,7 +123,6 @@
       "next": "suivant"
     }
   },
-
   "profileScreen": {
     "men": "Hommes",
     "women": "femmes",
@@ -146,7 +133,6 @@
     "accountDelete": "suppression de compte",
     "logout": "déconnexion"
   },
-
   "updateProfileScreen": {
     "birth": "Date de naissance",
     "email": "e-mail",
@@ -155,7 +141,6 @@
       "done": "complet"
     }
   },
-
   "dailyQuizScreen": {
     "title": "quiz quotidien",
     "content": "Tetra est l'origine de la vie dans l'univers.",
@@ -172,7 +157,6 @@
       "submit": "soumettre"
     }
   },
-
   "quizScreen": {
     "title": "Quiz du jour terminé\nS'il vous plaît venez demain aussi!",
     "content": "Tetra est l'origine de la vie dans l'univers.",
@@ -181,7 +165,6 @@
       "true": "répondre"
     }
   },
-
   "progressScreen": {
     "progress": "Progrès",
     "quizComplete": "achèvement du quiz",
@@ -198,5 +181,37 @@
     "completeQuizTitle": "questionnaires remplis",
     "completeQuizTotal1": "Un total de",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "Q1. Quel est le souvenir le plus marquant que vous ayez reçu de vos parents?\n(Si vous n'avez pas de parents, qu'auriez-vous aimé recevoir?)",
+    "questions_2": "Q2. Qu'aimeriez-vous le plus recevoir de vos enfants?\n(Si vous n'avez pas d'enfants, qu'aimeriez-vous recevoir d'eux à l'avenir?)",
+    "questions_3": "Q3. Quelle est la motivation de vos pensées, paroles et actions?",
+    "questions_4": "Q4. Quel est le souvenir le plus marquant que vous ayez reçu de votre conjoint?\n(Si vous n'êtes pas marié, qu'aimeriez-vous recevoir de votre petit(e) ami(e) actuel(le) ou futur(e)?)",
+    "questions_5": "Q5. Qu'aimeriez-vous offrir à vos parents?\n(Si vous n'avez pas de parents, qu'auriez-vous aimé offrir?)",
+    "questions_6": "Q6. Quel est le souvenir le plus marquant que vous ayez donné à vos enfants?\n(Si vous n'avez pas d'enfants, qu'aimeriez-vous leur donner à l'avenir?)",
+    "questions_7": "Q7. Quel est le souvenir le plus marquant que vous vous êtes donné?",
+    "questions_8": "Q8. Quel est le souvenir le plus marquant que vous ayez donné à votre conjoint?\n(Si vous n'êtes pas marié, qu'aimeriez-vous donner à votre petit(e) ami(e) actuel(le) ou futur(e)?)",
+    "questions_9": "Q9. Qu'auriez-vous aimé recevoir de vos parents mais n'avez pas reçu?\n(Si vous n'avez pas de parents, qu'auriez-vous aimé recevoir?)",
+    "questions_10": "Q10. Qu'auriez-vous aimé recevoir de vos enfants mais n'avez pas reçu?\n(Si vous n'avez pas d'enfants, que pensez-vous ne pas recevoir d'eux à l'avenir?)",
+    "questions_11": "Q11. Qu'auriez-vous aimé vous donner à vous-même mais n'avez pas pu?",
+    "questions_12": "Q12. Qu'auriez-vous aimé recevoir de votre conjoint mais n'avez pas reçu?\n(Si vous n'êtes pas marié, qu'auriez-vous aimé recevoir de votre petit(e) ami(e) actuel(le)?)",
+    "questions_13": "Q13. Qu'auriez-vous aimé offrir à vos parents mais n'avez pas pu?\n(Si vous n'avez pas de parents, qu'auriez-vous aimé offrir?)",
+    "questions_14": "Q14. Qu'auriez-vous aimé donner à vos enfants mais n'avez pas pu?\n(Si vous n'avez pas d'enfants, que pensez-vous ne pas pouvoir leur donner à l'avenir?)",
+    "questions_15": "Q15. Qu'auriez-vous aimé vous donner à vous-même mais n'avez pas pu?",
+    "questions_16": "Q16. Qu'auriez-vous aimé donner à votre conjoint mais n'avez pas pu?\n(Si vous n'êtes pas marié, qu'auriez-vous aimé donner à votre petit(e) ami(e) actuel(le) ou futur(e)?)",
+    "insert": "Veuillez saisir",
+    "basicResult": "Résultat d'interprétation de base",
+    "saveGallery": "Sauvegarder dans la galerie",
+    "consultReserve": "Réserver une consultation approfondie",
+    "consultTimeReserve": "Réserver l'heure de consultation",
+    "month": "Mois",
+    "year": "Année",
+    "next": "Suivant",
+    "day": "Jour",
+    "am_9": "9h du matin",
+    "am_11": "11h du matin",
+    "pm_5": "5h de l'après-midi",
+    "consult_30m": "Durée de la consultation : 30 minutes",
+    "consult_phone_number": "Veuillez saisir votre numéro de téléphone pour la consultation."
   }
 }

@@ -48,7 +48,7 @@ class MembershipController extends GetxController {
 
   /// TODO:: KM - 로그인 구현
   Future<void> validateAccount() async {
-    final resp = await _repository.validateAccountFirestore(textField1Controller.value.text);
+    final resp = await _repository.validateAccount(textField1Controller.value.text);
     if (resp.isException == true && resp.error == DbRespError.emailExists) {
       emailTextFieldError.value = DbRespError.emailExists.message;
     } else {

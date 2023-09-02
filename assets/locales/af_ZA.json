@@ -6,12 +6,10 @@
       "cancel": "kanselleer"
     }
   },
-
   "splashScreen": {
     "title": "tetra selfafrigting",
     "content": "alles is my persepsie"
   },
-
   "homeScreen": {
     "title": "Welkom by die wêreld van onsigbare reëls.",
     "content": "Tetra is alles in sy eie persepsie\nwys dat jy weggaan.",
@@ -19,7 +17,6 @@
       "start": "Aan die gang met selfafrigting"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Self-Afrigting",
     "content": "Tetra is alles in sy eie persepsie wys dat jy weggaan. Skryf die woorde of sinne neer wat by jou opkom onmiddellik nadat afrigting begin het.",
@@ -29,7 +26,6 @@
       "start": "begin afrig"
     }
   },
-
   "quizResultScreen": {
     "title": "Tetra Self Afrigting",
     "content": "Tik wat by jou opkom in die blokkie hieronder",
@@ -47,7 +43,6 @@
       "result": "Bekyk resultate"
     }
   },
-
   "viewResultScreen": {
     "title": "Kwadrant Self-Afrigting Resultate",
     "resultContent1": "Ek wil '",
@@ -60,7 +55,6 @@
       "return": "terugkeer"
     }
   },
-
   "onBoardingScreen": {
     "title": "Tetra Self Afrigting",
     "content1": "Kies jou taal om die toepassing te gebruik",
@@ -70,7 +64,6 @@
       "start": "begin"
     }
   },
-
   "loginScreen": {
     "title": "tetra selfafrigting",
     "content": "alles is my persepsie",
@@ -79,7 +72,6 @@
     "findPassword": "vind wagwoord",
     "snsLogin": "maklike aanmelding"
   },
-
   "membershipScreen": {
     "signUp": "sluit by die lidmaatskap aan",
     "email": "E-pos adres",
@@ -95,7 +87,6 @@
     "inputBirth": "Voer asseblief jou geboortedatum in jou profiel in",
     "logout": "Is jy seker jy wil afmeld?"
   },
-
   "emailLoginScreen": {
     "title": "tetra selfafrigting",
     "content": "alles is my persepsie",
@@ -105,7 +96,6 @@
       "login": "로그인"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "Stel jou wagwoord terug",
     "content": "Stel asseblief jou wagwoord terug",
@@ -115,7 +105,6 @@
       "done": "voltooi"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "E-pos verifikasie",
     "content": "Voer asseblief jou e-posadres in",
@@ -125,7 +114,6 @@
       "next": "volgende"
     }
   },
-
   "emailVerificationScreen": {
     "title": "Bekragtigingskode",
     "content": "Voer asseblief jou verifikasiekode in",
@@ -135,7 +123,6 @@
       "next": "volgende"
     }
   },
-
   "profileScreen": {
     "men": "Mans",
     "women": "vrouens",
@@ -146,7 +133,6 @@
     "accountDelete": "rekening uitvee",
     "logout": "uitteken"
   },
-
   "updateProfileScreen": {
     "birth": "Geboortedatum",
     "email": "e-pos",
@@ -155,7 +141,6 @@
       "done": "voltooi"
     }
   },
-
   "dailyQuizScreen": {
     "title": "daaglikse vasvra",
     "content": "Tetra is die oorsprong van lewe in die heelal.",
@@ -172,7 +157,6 @@
       "submit": "Indien"
     }
   },
-
   "quizScreen": {
     "title": "Het vandag se vasvra voltooi\nKom asseblief môre ook!",
     "content": "Tetra is die oorsprong van lewe in die heelal.",
@@ -181,7 +165,6 @@
       "true": "antwoord"
     }
   },
-
   "progressScreen": {
     "progress": "Vordering",
     "quizComplete": "vasvra voltooiing",
@@ -198,5 +181,37 @@
     "completeQuizTitle": "vasvrae voltooi",
     "completeQuizTotal1": "Altesaam",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "V1. Wat is die mees onthouwaardige ding wat u van u ouers ontvang het?\n(As u nie ouers het nie, wat sou u wou hê?)",
+    "questions_2": "V2. Wat is die ding wat jy die meeste van jou kinders wil hê?\n(As jy geen kinders het nie, wat sou jy in die toekoms van jou kinders wil hê?)",
+    "questions_3": "V3. Wat is die motivering agter jou gedagtes, woorde en dade?",
+    "questions_4": "V4. Wat is die mees onthouwaardige ding wat u van u eggenoot ontvang het?\n(As jy ongetroud is, wat sou jy van jou huidige of toekomstige geliefde wou hê?)",
+    "questions_5": "V5. Wat wil jy aan jou ouers gee?\n(As jy nie ouers het nie, wat sou jy wou gee?)",
+    "questions_6": "V6. Wat is die mees onthouwaardige ding wat jy aan jou kinders gee?\n(As jy geen kinders het nie, wat sou jy in die toekoms aan jou kinders wil gee?)",
+    "questions_7": "V7. Wat is die mees onthouwaardige ding wat jy vir jouself gee?",
+    "questions_8": "V8. Wat is die mees onthouwaardige ding wat jy aan jou eggenoot gee?\n(As jy ongetroud is, wat sou jy aan jou huidige of toekomstige geliefde wou gee?)",
+    "questions_9": "V9. Wat wou jy van jou ouers hê, maar het nie gekry nie?\n(As jy nie ouers het nie, wat sou jy wou hê maar het nie gekry nie?)",
+    "questions_10": "V10. Wat sou jy van jou kinders wou hê maar het nie gekry nie?\n(As jy geen kinders het nie, wat dink jy sou jy in die toekoms van jou kinders nie kon kry nie?)",
+    "questions_11": "V11. Wat wil jy vir jouself hê maar het nie gekry nie?",
+    "questions_12": "V12. Wat sou jy van jou eggenoot wou hê maar het nie gekry nie?\n(As jy ongetroud is, wat sou jy van jou huidige geliefde wou hê maar het nie gekry nie?)",
+    "questions_13": "V13. Wat sou jy aan jou ouers wou gee maar kon nie?\n(As jy nie ouers het nie, wat sou jy wou gee maar kon nie?)",
+    "questions_14": "V14. Wat sou jy aan jou kinders wou gee maar kon nie?\n(As jy geen kinders het nie, wat dink jy sou jy nie in die toekoms aan jou kinders kon gee nie?)",
+    "questions_15": "V15. Wat sou jy vir jouself wou gee maar kon nie?",
+    "questions_16": "V16. Wat kon jy nie aan jou eggenoot gee nie?\n(As jy ongetroud is, wat sou jy aan jou huidige of toekomstige geliefde wou gee maar kon nie?)",
+    "insert": "Voer asseblief in",
+    "basicResult": "Basiese interpretasie resultaat",
+    "saveGallery": "Stoor resultate in galerij",
+    "consultReserve": "Diep konsultasie bespreking",
+    "consultTimeReserve": "Konsultasie tyd bespreking",
+    "month": "Maand",
+    "year": "Jaar",
+    "next": "Volgende",
+    "day": "Dag",
+    "am_9": "OG 9 uur",
+    "am_11": "OG 11 uur",
+    "pm_5": "NM 5 uur",
+    "consult_30m": "Konsultasie tyd 30 minute",
+    "consult_phone_number": "Voer asseblief die telefoonnommer in waarop u konsultasie wil ontvang."
   }
 }

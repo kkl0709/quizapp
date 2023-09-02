@@ -22,6 +22,14 @@ import 'package:chinesequizapp/Screens/OnBordingScreens/views/onBoarding_screen.
 import 'package:chinesequizapp/Screens/ProfileScreens/views/profile_edit.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/Views/progress_screen_view.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/bindding/progress_screen_binding.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/binddings/consult_binding.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/binddings/consult_call_binding.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/binddings/questions_binding.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/binddings/result_binding.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/views/consult_call_screen.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/views/consult_screen.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/views/questions_screen.dart';
+import 'package:chinesequizapp/Screens/QuestionScreen/views/result_screen.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/binddings/daily_quiz_binding_screen.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/binddings/quiz_screen_bindding.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/views/daily_quiz_screen.dart';
@@ -55,7 +63,7 @@ class AppPages {
         name: RoutesConstants.loginScreen,
         page: () => const LoginScreen(),
         binding: LoginBinding(),
-        transitionDuration: Duration(milliseconds: 500),
+        //transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino //tr
         ),
     GetPage(
@@ -143,34 +151,53 @@ class AppPages {
         transition: Transition.cupertino //tr
         ),
     GetPage(
-      name: RoutesConstants.communityIndexScreen,
-      page: () => CommunityIndexScreen(),
-      transitionDuration: Duration(milliseconds: 500),
-      transition: Transition.cupertino
-    ),
+        name: RoutesConstants.communityIndexScreen,
+        page: () => CommunityIndexScreen(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
     GetPage(
-      name: RoutesConstants.lectureDetailScreen,
-      page: () => LectureDetailScreen(),
-      transitionDuration: Duration(milliseconds: 500),
-      transition: Transition.cupertino
-    ),
+        name: RoutesConstants.lectureDetailScreen,
+        page: () => LectureDetailScreen(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
     GetPage(
         name: RoutesConstants.communityDetailScreen,
         page: () => CommunityDetailScreen(),
         transitionDuration: Duration(milliseconds: 500),
-        transition: Transition.cupertino
-    ),
+        transition: Transition.cupertino),
     GetPage(
         name: RoutesConstants.communityCreateScreen,
         page: () => CommunityCreateScreen(),
         transitionDuration: Duration(milliseconds: 500),
-        transition: Transition.cupertino
-    ),
+        transition: Transition.cupertino),
     GetPage(
         name: RoutesConstants.profileEdit,
         page: () => ProfileEdit(),
         transitionDuration: Duration(milliseconds: 500),
-        transition: Transition.cupertino
-    ),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.questionScreen,
+        page: () => QuestionScreen(),
+        binding: QuestionsBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.resultScreen,
+        page: () => ResultScreen(),
+        binding: ResultBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.consultScreen,
+        page: () => ConsultScreen(),
+        binding: ConsultBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.consultCallScreen,
+        page: () => ConsultCallScreen(),
+        binding: ConsultCallBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
   ];
 }

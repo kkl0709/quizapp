@@ -14,8 +14,7 @@ class RoutesConstants {
   static const String memberShipScreen = "/memberShipScreen";
   static const String emailVerificationScreen = "/emailVerificationScreen";
   static const String otpVerificationScreen = "/numberVerificationScreen";
-  static const String passwordVerificationScreen =
-      "/passwordVerificationScreen";
+  static const String passwordVerificationScreen = "/passwordVerificationScreen";
   static const String progressScreen = "/progressScreen";
   static const String profileScreen = "/profileScreen";
   static const String topicSelectionScreen = "/topicSelectionScreen";
@@ -26,6 +25,12 @@ class RoutesConstants {
   static const String communityIndexScreen = "/communityIndexScreen";
   static const String lectureDetailScreen = "/lectureDetailScreen";
   static const String communityDetailScreen = "/communityDetailScreen";
-  static const String communityCreateScreen =  "/communityCreateScreen";
-  static const String profileEdit =  "/profileEdit";
+  static const String communityCreateScreen = "/communityCreateScreen";
+  static const String profileEdit = "/profileEdit";
+
+  // 0901 김기남 수정
+  static const String questionScreen = "/questionScreen";
+  static const String resultScreen = "/resultScreen";
+  static const String consultScreen = "/consultScreen";
+  static const String consultCallScreen = "/consultCallScreen";
 }

@@ -3,10 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class DailyQuizController extends GetxController {
-
-
-  
- 
   Rx<Color> bgColor = AppConstantsColor.whiteColor.obs;
 
   Rx<DateTime> currentDateTime = DateTime.now().obs;
@@ -17,4 +13,3 @@ class DailyQuizController extends GetxController {
 
   RxBool isClick = false.obs;
 }
-

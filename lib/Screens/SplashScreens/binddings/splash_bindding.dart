@@ -4,11 +4,10 @@ import 'package:get/get.dart';
 import '../controller/splash_controller.dart';
 
 class SplashBinding extends Bindings {
-  final WidgetRef? ref;
-  SplashBinding({this.ref});
+  SplashBinding();
 
   @override
   void dependencies() {
-    Get.lazyPut(() => SplashController(ref: ref));
+    Get.lazyPut(() => SplashController());
   }
 }

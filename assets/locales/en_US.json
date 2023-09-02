@@ -6,12 +6,10 @@
       "cancel": "cancel"
     }
   },
-
   "splashScreen": {
     "title": "tetra self coaching",
     "content": "everything is my perception"
   },
-
   "homeScreen": {
     "title": "Welcome to the world of invisible rules.",
     "content": "Tetra is everything in its own perception\nshow that you are leaving.",
@@ -19,7 +17,6 @@
       "start": "Getting started with self-coaching"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Self-Coaching",
     "content": "Tetra is everything in its own perception show that you are leaving. Write down the words or sentences that come to mind immediately after coaching begins.",
@@ -29,7 +26,6 @@
       "start": "start coaching"
     }
   },
-
   "quizResultScreen": {
     "title": "Tetra Self Coaching",
     "content": "Enter what comes to mind in the box below",
@@ -47,7 +43,6 @@
       "result": "View Results"
     }
   },
-
   "viewResultScreen": {
     "title": "Quadrant Self-Coaching Results",
     "resultContent1": "I want to receive '",
@@ -60,7 +55,6 @@
       "return": "return"
     }
   },
-
   "onBoardingScreen": {
     "title": "Tetra Self Coaching",
     "content1": "Choose your language to use the app",
@@ -70,7 +64,6 @@
       "start": "get started"
     }
   },
-
   "loginScreen": {
     "title": "tetra self coaching",
     "content": "everything is my perception",
@@ -79,7 +72,6 @@
     "findPassword": "find password",
     "snsLogin": "easy login"
   },
-
   "membershipScreen": {
     "signUp": "join the membership",
     "email": "Email Address",
@@ -95,7 +87,6 @@
     "inputBirth": "Please enter your date of birth in your profile",
     "logout": "Are you sure you want to log out?"
   },
-
   "emailLoginScreen": {
     "title": "tetra self coaching",
     "content": "everything is my perception",
@@ -105,7 +96,6 @@
       "login": "login"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "Reset your password",
     "content": "Please reset your password",
@@ -115,7 +105,6 @@
       "done": "complete"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "Email verification",
     "content": "Please enter your email address",
@@ -125,7 +114,6 @@
       "next": "next"
     }
   },
-
   "emailVerificationScreen": {
     "title": "Authentication code",
     "content": "Please enter your verification code",
@@ -135,7 +123,6 @@
       "next": "next"
     }
   },
-
   "profileScreen": {
     "men": "Men",
     "women": "Women",
@@ -146,7 +133,6 @@
     "accountDelete": "account deletion",
     "logout": "logout"
   },
-
   "updateProfileScreen": {
     "birth": "Date of birth",
     "email": "email",
@@ -155,7 +141,6 @@
       "done": "complete"
     }
   },
-
   "dailyQuizScreen": {
     "title": "daily quiz",
     "content": "Tetra is the origin of life in the universe.",
@@ -172,7 +157,6 @@
       "submit": "submit"
     }
   },
-
   "quizScreen": {
     "title": "Completed Today's Quiz\nPlease come tomorrow too!",
     "content": "Tetra is the origin of life in the universe.",
@@ -181,7 +165,6 @@
       "true": "answer"
     }
   },
-
   "progressScreen": {
     "progress": "Progress",
     "quizComplete": "quiz completion",
@@ -198,5 +181,37 @@
     "completeQuizTitle": "quizzes completed",
     "completeQuizTotal1": "A total of",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "Q1. What is the most memorable thing you've received from your parents?\n(If you don't have parents, what did you wish to receive?)",
+    "questions_2": "Q2. What is the most desired thing you wish to receive from your children?\n(If you don't have children, what would you wish to receive from your future children?)",
+    "questions_3": "Q3. What motivates your thoughts, words, and actions?",
+    "questions_4": "Q4. What is the most memorable thing you've received from your spouse?\n(If you're not married, what would you like to receive from your current or future partner?)",
+    "questions_5": "Q5. What would you like to give to your parents?\n(If you don't have parents, what did you wish to give?)",
+    "questions_6": "Q6. What is the most memorable thing you've given to your children?\n(If you don't have children, what would you wish to give to your future children?)",
+    "questions_7": "Q7. What is the most memorable thing you've given to yourself?",
+    "questions_8": "Q8. What is the most memorable thing you've given to your spouse?\n(If you're not married, what would you like to give to your current or future partner?)",
+    "questions_9": "Q9. What did you wish to receive from your parents but didn't?\n(If you don't have parents, what did you wish to receive but didn't?)",
+    "questions_10": "Q10. What did you wish to receive from your children but didn't?\n(If you don't have children, what do you think you might not receive from your future children?)",
+    "questions_11": "Q11. What did you wish to give yourself but couldn't?",
+    "questions_12": "Q12. What did you wish to receive from your spouse but didn't?\n(If you're not married, what did you wish to receive from your current partner but didn't?)",
+    "questions_13": "Q13. What did you wish to give to your parents but couldn't?\n(If you don't have parents, what did you wish to give but couldn't?)",
+    "questions_14": "Q14. What did you wish to give to your children but couldn't?\n(If you don't have children, what do you think you might not be able to give to your future children?)",
+    "questions_15": "Q15. What did you wish to give yourself but couldn't?",
+    "questions_16": "Q16. What did you wish to give to your spouse but couldn't?\n(If you're not married, what would you wish to give to your current or future partner but haven't?)",
+    "insert": "Please enter",
+    "basicResult": "Basic Interpretation Results",
+    "saveGallery": "Save to Gallery",
+    "consultReserve": "Reserve for In-depth Consultation",
+    "consultTimeReserve": "Reserve Consultation Time",
+    "month": "Month",
+    "year": "Year",
+    "next": "Next",
+    "day": "Day",
+    "am_9": "9 AM",
+    "am_11": "11 AM",
+    "pm_5": "5 PM",
+    "consult_30m": "Consultation Time 30 minutes",
+    "consult_phone_number": "Please enter the phone number for consultation."
   }
 }

@@ -134,13 +134,6 @@ class LocaleKeys {
   static const profileScreen_email = 'profileScreen_email';
   static const profileScreen_birth = 'profileScreen_birth';
   static const profileScreen_privatePolicy = 'profileScreen_privatePolicy';
-  //
-  static const profileScreen_really_accountDelete =
-      'profileScreen_really_accountDelete';
-  static const profileScreenController_check_birth =
-      'profileScreenController_check_birth';
-
-  //
   static const profileScreen_accountDelete = 'profileScreen_accountDelete';
   static const profileScreen_logout = 'profileScreen_logout';
   static const updateProfileScreen_birth = 'updateProfileScreen_birth';
@@ -182,6 +175,38 @@ class LocaleKeys {
       'progressScreen_completeQuizTotal1';
   static const progressScreen_completeQuizTotal2 =
       'progressScreen_completeQuizTotal2';
+  static const questionScreen_questions_1 = 'questionScreen_questions_1';
+  static const questionScreen_questions_2 = 'questionScreen_questions_2';
+  static const questionScreen_questions_3 = 'questionScreen_questions_3';
+  static const questionScreen_questions_4 = 'questionScreen_questions_4';
+  static const questionScreen_questions_5 = 'questionScreen_questions_5';
+  static const questionScreen_questions_6 = 'questionScreen_questions_6';
+  static const questionScreen_questions_7 = 'questionScreen_questions_7';
+  static const questionScreen_questions_8 = 'questionScreen_questions_8';
+  static const questionScreen_questions_9 = 'questionScreen_questions_9';
+  static const questionScreen_questions_10 = 'questionScreen_questions_10';
+  static const questionScreen_questions_11 = 'questionScreen_questions_11';
+  static const questionScreen_questions_12 = 'questionScreen_questions_12';
+  static const questionScreen_insert = 'questionScreen_insert';
+  static const questionScreen_basicResult = 'questionScreen_basicResult';
+  static const questionScreen_saveGallery = 'questionScreen_saveGallery';
+  static const questionScreen_consultReserve = 'questionScreen_consultReserve';
+  static const questionScreen_consultTimeReserve =
+      'questionScreen_consultTimeReserve';
+  static const questionScreen_month = 'questionScreen_month';
+  static const questionScreen_year = 'questionScreen_year';
+  static const questionScreen_next = 'questionScreen_next';
+  static const questionScreen_day = 'questionScreen_day';
+  static const questionScreen_am_9 = 'questionScreen_am_9';
+  static const questionScreen_am_11 = 'questionScreen_am_11';
+  static const questionScreen_pm_5 = 'questionScreen_pm_5';
+  static const questionScreen_consult_30m = 'questionScreen_consult_30m';
+  static const questionScreen_consult_phone_number =
+      'questionScreen_consult_phone_number';
+  static const questionScreen_questions_13 = 'questionScreen_questions_13';
+  static const questionScreen_questions_14 = 'questionScreen_questions_14';
+  static const questionScreen_questions_15 = 'questionScreen_questions_15';
+  static const questionScreen_questions_16 = 'questionScreen_questions_16';
 }
 
 class Locales {
@@ -274,11 +299,6 @@ class Locales {
     'profileScreen_email': 'e-mail',
     'profileScreen_birth': 'data de nascimento',
     'profileScreen_privatePolicy': 'política de Privacidade',
-    //
-    'profileScreen_really_accountDelete':
-        'Tem certeza de que deseja excluir sua conta?',
-    'profileScreenController_check_birth': 'Verifique sua data de nascimento',
-    //
     'profileScreen_accountDelete': 'exclusão de conta',
     'profileScreen_logout': 'sair',
     'updateProfileScreen_birth': 'data de nascimento',
@@ -318,6 +338,45 @@ class Locales {
     'progressScreen_completeQuizTitle': 'questionários concluídos',
     'progressScreen_completeQuizTotal1': 'Um total de',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. Entre as coisas que recebeu dos seus pais, qual é a que mais se lembra?\n(Se seus pais não estão presentes, o que você gostaria de ter recebido?)',
+    'questionScreen_questions_2':
+        'Q2. O que mais gostaria de receber dos seus filhos?\n(Se não tem filhos, o que gostaria de receber dos seus filhos no futuro?)',
+    'questionScreen_questions_3':
+        'Q3. O que motiva os seus pensamentos, palavras e ações?',
+    'questionScreen_questions_4':
+        'Q4. O que mais se lembra de ter recebido do seu cônjuge após o casamento?\n(Se não é casado, o que gostaria de receber do seu atual ou futuro parceiro?)',
+    'questionScreen_questions_5':
+        'Q5. O que gostaria de dar aos seus pais?\n(Se seus pais não estão presentes, o que gostaria de ter dado?)',
+    'questionScreen_questions_6':
+        'Q6. O que mais se lembra de ter dado aos seus filhos?\n(Se não tem filhos, o que gostaria de dar aos seus filhos no futuro?)',
+    'questionScreen_questions_7':
+        'Q7. O que mais se lembra de ter dado a si mesmo?',
+    'questionScreen_questions_8':
+        'Q8. O que mais se lembra de ter dado ao seu cônjuge após o casamento?\n(Se não é casado, o que gostaria de dar ao seu atual ou futuro parceiro?)',
+    'questionScreen_questions_9':
+        'Q9. O que gostaria de ter recebido dos seus pais, mas não recebeu?\n(Se seus pais não estão presentes, o que gostaria de ter recebido?)',
+    'questionScreen_questions_10':
+        'Q10. O que gostaria de ter recebido dos seus filhos, mas não recebeu?\n(Se não tem filhos, o que acha que não receberá dos seus filhos no futuro?)',
+    'questionScreen_questions_11':
+        'Q11. O que gostaria de receber de si mesmo mas ainda não recebeu?',
+    'questionScreen_questions_12':
+        'Q12. O que gostaria de ter recebido do seu cônjuge após o casamento, mas não recebeu?\n(Se não é casado, o que gostaria de ter recebido do seu atual ou futuro parceiro?)',
+    'questionScreen_insert': 'Insira por favor',
+    'questionScreen_basicResult': 'Resultado básico da interpretação',
+    'questionScreen_saveGallery': 'Guardar no galeria',
+    'questionScreen_consultReserve': 'Marcar consulta aprofundada',
+    'questionScreen_consultTimeReserve': 'Reservar hora da consulta',
+    'questionScreen_month': 'mês',
+    'questionScreen_year': 'ano',
+    'questionScreen_next': 'Seguinte',
+    'questionScreen_day': 'dia',
+    'questionScreen_am_9': '9 da manhã',
+    'questionScreen_am_11': '11 da manhã',
+    'questionScreen_pm_5': '5 da tarde',
+    'questionScreen_consult_30m': '30 minutos de consulta',
+    'questionScreen_consult_phone_number':
+        'Por favor, introduza o número de telefone para a consulta.',
   };
   static const ko_KR = {
     'common_button_back': '뒤로가기',
@@ -403,17 +462,12 @@ class Locales {
     'profileScreen_email': '이메일',
     'profileScreen_birth': '생년월일',
     'profileScreen_privatePolicy': '개인정보보호 처리방침',
-    //
-    'profileScreen_really_accountDelete': '정말 계정을 삭제 하시겠습니까?',
-    'profileScreenController_check_birth': '생년월일을 확인해주세요',
-    //
     'profileScreen_accountDelete': '계정삭제',
     'profileScreen_logout': '로그아웃',
     'updateProfileScreen_birth': '생년월일',
     'updateProfileScreen_email': '이메일',
     'updateProfileScreen_password': '비밀번호 변경',
     'updateProfileScreen_button_done': '완료',
-
     'dailyQuizScreen_title': '매일 퀴즈',
     'dailyQuizScreen_content': '테트라는 우주 생명의 기원입니다.',
     'dailyQuizScreen_true': '맞았어요',
@@ -445,6 +499,48 @@ class Locales {
     'progressScreen_completeQuizTitle': '완료한 퀴즈',
     'progressScreen_completeQuizTotal1': '총',
     'progressScreen_completeQuizTotal2': '번',
+    'questionScreen_questions_1':
+        'Q1. 부모님께 받은 것 중 가장 생각나는 것이 어떤건가요?\n(부모님이 안 계신 경우, 받고 싶었던 것이 어떤건가요?',
+    'questionScreen_questions_2':
+        'Q2. 자녀에게 가장 받고 싶은것이\n어떤건가요?\n(자녀가 없는 경우, 미래에 자녀에게 받고 싶은것이 어떤건가요?)',
+    'questionScreen_questions_3': 'Q3. 자신의 생각과 말, 그리고 행동의 동기가 되는것은 어떤건가요?',
+    'questionScreen_questions_4':
+        'Q4. 결혼한 배우자에게 받는 것 중 가장 생각나는 것은 어떤건가요?\n(미혼인 경우, 현재 이성친구 혹은 미래의 이성친구에게 받고 싶은것은 어떤 건가요?)',
+    'questionScreen_questions_5':
+        'Q5. 부모님께 드리고 싶은 것은 어떤건가요?\n(부모님이 안 계신 경우, 드리고 싶었던 건이 어떤건가요?)',
+    'questionScreen_questions_6':
+        'Q6. 자녀에게 주는 것중 가장 생각나는 것이 어떤건가요?\n(자녀가 없는 경우, 미래에 자녀에게 주고 싶은것이 어떤건가요?)',
+    'questionScreen_questions_7': 'Q7. 자신 스스로에게 주는 것 중 가장 생각나는 것이 어떤건가요?',
+    'questionScreen_questions_8':
+        'Q8. 결혼한 배우자에게 주는 것 중 가장 생각나는 것은 어떤건가요?\n(미혼인 경우, 현재 이성친구 혹은 미래의 이성친구에게 주고 싶은것은 어떤 건가요?)',
+    'questionScreen_questions_9':
+        'Q9. 부모님께 받고 싶었지만 받지 못 한것은 어떤건가요?\n (부모님이 안 계신 경우, 받고 싶었지만 받지 못한 것은 어떤건가요?)',
+    'questionScreen_questions_10':
+        'Q10. 자녀에게 받고 싶지만\n받지 못한것은 어떤건가요?\n자녀가 없는 경우, 미래의 자녀에게 받지 못할것 같은 것은 무엇인가요?)',
+    'questionScreen_questions_11': 'Q11. 자신에게 받고 싶지만 받지 못하는 것은 어떤건가요?',
+    'questionScreen_questions_12':
+        'Q12. 결혼한 배우자에게 받고싶지만 받지 못하는 것은 어떤건가요?\n미혼인 경우, 현재 이성친구에게 받고 싶지만 받지 못하는 것은 어떤건가요?)',
+    'questionScreen_questions_13':
+        'Q13. 부모님께 드리고 싶지만 드리지 못하는 것은 어떤건가요?\n(부모님이 안 계신 경우, 드리고 싶었던 것은 어떤건가요?)',
+    'questionScreen_questions_14':
+        'Q14. 자녀에게 주고 싶지만 주지 못하는 것은 어떤건가요?\n자녀가 없는 경우, 미래의 자녀에게 주지 못할 것 같은것은 어떤건가요?)',
+    'questionScreen_questions_15': 'Q15. 자신에게 주고 싶지만 주지 못하는 것은 어떤건가요?',
+    'questionScreen_questions_16':
+        'Q16. 결혼한 배우자에게 주지 못하는 것은 어떤건가요?\n미혼인 경우, 현재 이성친구 혹은 미래의 이성친구에게 주고 싶지만 주지 못하는 것은 어떤건가요?)',
+    'questionScreen_insert': '입력해주세요',
+    'questionScreen_basicResult': '기본 해석 결과',
+    'questionScreen_saveGallery': '결과 갤러리 저장',
+    'questionScreen_consultReserve': '심화 상담 예약',
+    'questionScreen_consultTimeReserve': '상담 시간 예약',
+    'questionScreen_month': '월',
+    'questionScreen_year': '년',
+    'questionScreen_next': '다음',
+    'questionScreen_day': '일',
+    'questionScreen_am_9': '오전 9시',
+    'questionScreen_am_11': '오전 11시',
+    'questionScreen_pm_5': '오후 5시',
+    'questionScreen_consult_30m': '상담 시간 30분',
+    'questionScreen_consult_phone_number': '상담 받으실 전화번호를\n입력해주세요.',
   };
   static const es_ES = {
     'common_button_back': 'regresa',
@@ -537,12 +633,6 @@ class Locales {
     'profileScreen_email': 'correo electrónico',
     'profileScreen_birth': 'fecha de nacimiento',
     'profileScreen_privatePolicy': 'política de privacidad',
-    //
-    'profileScreen_really_accountDelete':
-        '¿Está seguro de que desea eliminar su cuenta?',
-    'profileScreenController_check_birth':
-        'Por favor verifique su fecha de nacimiento',
-    //
     'profileScreen_accountDelete': 'eliminación de cuenta',
     'profileScreen_logout': 'cierre de sesión',
     'updateProfileScreen_birth': 'fecha de nacimiento',
@@ -582,6 +672,53 @@ class Locales {
     'progressScreen_completeQuizTitle': 'cuestionarios completados',
     'progressScreen_completeQuizTotal1': 'Un total de',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. ¿Cuál es la cosa más memorable que has recibido de tus padres?\n(Si no tienes padres, ¿qué te gustaría haber recibido?)',
+    'questionScreen_questions_2':
+        'Q2. ¿Qué es lo que más deseas recibir de tus hijos?\n(Si no tienes hijos, ¿qué te gustaría recibir de tus hijos en el futuro?)',
+    'questionScreen_questions_3':
+        'Q3. ¿Qué motiva tus pensamientos, palabras y acciones?',
+    'questionScreen_questions_4':
+        'Q4. ¿Cuál es la cosa más memorable que has recibido de tu cónyuge?\n(Si no estás casado/a, ¿qué te gustaría recibir de tu pareja actual o futura?)',
+    'questionScreen_questions_5':
+        'Q5. ¿Qué te gustaría dar a tus padres?\n(Si no tienes padres, ¿qué te hubiera gustado dar?)',
+    'questionScreen_questions_6':
+        'Q6. ¿Cuál es la cosa más memorable que has dado a tus hijos?\n(Si no tienes hijos, ¿qué te gustaría dar a tus hijos en el futuro?)',
+    'questionScreen_questions_7':
+        'Q7. ¿Cuál es la cosa más memorable que te has dado a ti mismo/a?',
+    'questionScreen_questions_8':
+        'Q8. ¿Cuál es la cosa más memorable que has dado a tu cónyuge?\n(Si no estás casado/a, ¿qué te gustaría dar a tu pareja actual o futura?)',
+    'questionScreen_questions_9':
+        'Q9. ¿Qué te gustaría haber recibido de tus padres pero no lo hiciste?\n(Si no tienes padres, ¿qué te hubiera gustado recibir pero no lo hiciste?)',
+    'questionScreen_questions_10':
+        'Q10. ¿Qué te gustaría haber recibido de tus hijos pero no lo hiciste?\n(Si no tienes hijos, ¿qué crees que no recibirás de tus hijos en el futuro?)',
+    'questionScreen_questions_11':
+        'Q11. ¿Qué te gustaría haber dado a ti mismo/a pero no pudiste?',
+    'questionScreen_questions_12':
+        'Q12. ¿Qué te gustaría haber recibido de tu cónyuge pero no lo hiciste?\n(Si no estás casado/a, ¿qué te gustaría haber recibido de tu pareja actual pero no lo hiciste?)',
+    'questionScreen_questions_13':
+        'Q13. ¿Qué te hubiera gustado dar a tus padres pero no pudiste?\n(Si no tienes padres, ¿qué te hubiera gustado dar pero no pudiste?)',
+    'questionScreen_questions_14':
+        'Q14. ¿Qué te hubiera gustado dar a tus hijos pero no pudiste?\n(Si no tienes hijos, ¿qué crees que no podrás dar a tus hijos en el futuro?)',
+    'questionScreen_questions_15':
+        'Q15. ¿Qué te hubiera gustado darte a ti mismo/a pero no pudiste?',
+    'questionScreen_questions_16':
+        'Q16. ¿Qué te hubiera gustado dar a tu cónyuge pero no pudiste?\n(Si no estás casado/a, ¿qué te gustaría dar a tu pareja actual o futura pero no lo has hecho?)',
+    'questionScreen_insert': 'Por favor, ingrese',
+    'questionScreen_basicResult': 'Resultado básico de interpretación',
+    'questionScreen_saveGallery': 'Guardar en galería',
+    'questionScreen_consultReserve': 'Reservar consulta en profundidad',
+    'questionScreen_consultTimeReserve': 'Reservar hora de consulta',
+    'questionScreen_month': 'Mes',
+    'questionScreen_year': 'Año',
+    'questionScreen_next': 'Siguiente',
+    'questionScreen_day': 'Día',
+    'questionScreen_am_9': '9 AM',
+    'questionScreen_am_11': '11 AM',
+    'questionScreen_pm_5': '5 PM',
+    'questionScreen_consult_30m': 'Tiempo de consulta 30 minutos',
+    'questionScreen_consult_phone_number':
+        'Por favor, ingrese el número de teléfono para la consulta.',
   };
   static const de_AT = {
     'common_button_back': 'Geh zurück',
@@ -677,12 +814,6 @@ class Locales {
     'profileScreen_email': 'Email',
     'profileScreen_birth': 'Geburtsdatum',
     'profileScreen_privatePolicy': 'Datenschutz-Bestimmungen',
-    //
-    'profileScreen_really_accountDelete':
-        'Sind Sie sicher, dass Sie Ihr Konto löschen möchten?',
-    'profileScreenController_check_birth':
-        'Bitte überprüfen Sie Ihr Geburtsdatum',
-    //
     'profileScreen_accountDelete': 'Kontolöschung',
     'profileScreen_logout': 'Abmelden',
     'updateProfileScreen_birth': 'Geburtsdatum',
@@ -723,6 +854,51 @@ class Locales {
     'progressScreen_completeQuizTitle': 'Tests abgeschlossen',
     'progressScreen_completeQuizTotal1': 'Insgesamt',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'F1. Was ist das Erinnerungswürdigste, das Sie von Ihren Eltern erhalten haben?\n(Wenn Sie keine Eltern haben, was würden Sie gerne bekommen?)',
+    'questionScreen_questions_2':
+        'F2. Was würden Sie gerne am meisten von Ihren Kindern bekommen?\n(Wenn Sie keine Kinder haben, was würden Sie gerne in der Zukunft von Ihren Kindern bekommen?)',
+    'questionScreen_questions_3':
+        'F3. Was motiviert Ihre Gedanken, Worte und Taten?',
+    'questionScreen_questions_4':
+        'F4. Was ist das Erinnerungswürdigste, das Sie von Ihrem Ehepartner erhalten haben?\n(Wenn Sie ledig sind, was würden Sie gerne von Ihrem aktuellen oder zukünftigen Partner bekommen?)',
+    'questionScreen_questions_5':
+        'F5. Was würden Sie Ihren Eltern gerne geben?\n(Wenn Sie keine Eltern haben, was würden Sie gerne geben?)',
+    'questionScreen_questions_6':
+        'F6. Was ist das Erinnerungswürdigste, das Sie Ihren Kindern gegeben haben?\n(Wenn Sie keine Kinder haben, was würden Sie gerne Ihren zukünftigen Kindern geben?)',
+    'questionScreen_questions_7':
+        'F7. Was ist das Erinnerungswürdigste, das Sie sich selbst gegeben haben?',
+    'questionScreen_questions_8':
+        'F8. Was ist das Erinnerungswürdigste, das Sie Ihrem Ehepartner gegeben haben?\n(Wenn Sie ledig sind, was würden Sie gerne Ihrem aktuellen oder zukünftigen Partner geben?)',
+    'questionScreen_questions_9':
+        'F9. Was hätten Sie gerne von Ihren Eltern bekommen, konnten aber nicht?\n(Wenn Sie keine Eltern haben, was hätten Sie gerne bekommen, konnten aber nicht?)',
+    'questionScreen_questions_10':
+        'F10. Was hätten Sie gerne von Ihren Kindern bekommen, konnten aber nicht?\n(Wenn Sie keine Kinder haben, was glauben Sie, werden Sie in der Zukunft von Ihren Kindern nicht bekommen können?)',
+    'questionScreen_questions_11':
+        'F11. Was hätten Sie sich selbst gerne gegeben, konnten aber nicht?',
+    'questionScreen_questions_12':
+        'F12. Was hätten Sie gerne von Ihrem Ehepartner bekommen, konnten aber nicht?\n(Wenn Sie ledig sind, was hätten Sie gerne von Ihrem aktuellen Partner bekommen, konnten aber nicht?)',
+    'questionScreen_questions_13':
+        'F13. Was hätten Sie Ihren Eltern gerne gegeben, konnten aber nicht?\n(Wenn Sie keine Eltern haben, was hätten Sie gerne gegeben, konnten aber nicht?)',
+    'questionScreen_questions_14':
+        'F14. Was hätten Sie Ihren Kindern gerne gegeben, konnten aber nicht?\n(Wenn Sie keine Kinder haben, was glauben Sie, werden Sie in der Zukunft Ihren Kindern nicht geben können?)',
+    'questionScreen_questions_15':
+        'F15. Was hätten Sie sich selbst gerne gegeben, konnten aber nicht?',
+    'questionScreen_insert': 'Bitte eingeben',
+    'questionScreen_basicResult': 'Grundlegendes Interpretationsergebnis',
+    'questionScreen_saveGallery': 'Ergebnisse in der Galerie speichern',
+    'questionScreen_consultReserve': 'Tiefgehende Beratung buchen',
+    'questionScreen_consultTimeReserve': 'Beratungszeit buchen',
+    'questionScreen_month': 'Monat',
+    'questionScreen_year': 'Jahr',
+    'questionScreen_next': 'Weiter',
+    'questionScreen_day': 'Tag',
+    'questionScreen_am_9': '9 Uhr morgens',
+    'questionScreen_am_11': '11 Uhr morgens',
+    'questionScreen_pm_5': '5 Uhr nachmittags',
+    'questionScreen_consult_30m': 'Beratungszeit 30 Minuten',
+    'questionScreen_consult_phone_number':
+        'Bitte geben Sie die Telefonnummer ein, unter der Sie beraten werden möchten.',
   };
   static const ja_JP = {
     'common_button_back': '戻る',
@@ -808,10 +984,6 @@ class Locales {
     'profileScreen_email': 'Eメール',
     'profileScreen_birth': '生年月日',
     'profileScreen_privatePolicy': '個人情報保護処理方針',
-    //
-    'profileScreen_really_accountDelete': '本当にアカウントを削除してもよろしいですか？',
-    'profileScreenController_check_birth': '生年月日を確認してください',
-    //
     'profileScreen_accountDelete': 'アカウントの削除',
     'profileScreen_logout': 'ログアウト',
     'updateProfileScreen_birth': '生年月日',
@@ -849,6 +1021,41 @@ class Locales {
     'progressScreen_completeQuizTitle': '完了したクイズの合計',
     'progressScreen_completeQuizTotal1': '',
     'progressScreen_completeQuizTotal2': '回',
+    'questionScreen_questions_1':
+        'Q1. あなたの両親からもらったものの中で最も記憶に残るものは何ですか？\n(両親がいない場合、何をもらいたかったですか？)',
+    'questionScreen_questions_2':
+        'Q2. あなたの子供たちから最も受け取りたいものは何ですか？\n(子供がいない場合、将来的に子供たちから何を受け取りたいですか？)',
+    'questionScreen_questions_3': 'Q3. あなたの考え、言葉、行動の背後にある主なインスピレーションは何ですか？',
+    'questionScreen_questions_4':
+        'Q4. あなたの結婚相手からもらった最も記憶に残るものは何ですか？\n(結婚していない場合、現在または将来のパートナーから何をもらいたかったですか？)',
+    'questionScreen_questions_5':
+        'Q5. あなたは両親に何を与えたいですか？\n(両親がいない場合、何を与えたかったですか？)',
+    'questionScreen_questions_6':
+        'Q6. あなたが子供たちに与えた最も記憶に残るものは何ですか？\n(子供がいない場合、将来的に子供たちに何を与えたいですか？)',
+    'questionScreen_questions_7': 'Q7. あなた自身に与えた最も記憶に残るものは何ですか？',
+    'questionScreen_questions_8':
+        'Q8. あなたの結婚相手に与えた最も記憶に残るものは何ですか？\n(結婚していない場合、現在または将来のパートナーに何を与えたかったですか？)',
+    'questionScreen_questions_9':
+        'Q9. あなたは両親から何をもらうべきだったが、もらえなかったのは何ですか？\n(両親がいない場合、何をもらいたかったですか？)',
+    'questionScreen_questions_10':
+        'Q10. あなたは子供たちから何をもらうべきだったが、もらえなかったのは何ですか？\n(子供がいない場合、将来的に子供たちから何をもらえなかったか考えてみてください。)',
+    'questionScreen_questions_11': 'Q11. あなた自身から何を得ることを望んでいますが、まだ得られていませんか？',
+    'questionScreen_questions_12':
+        'Q12. あなたの結婚相手から何をもらうべきだったが、もらえなかったのは何ですか？\n(結婚していない場合、現在または将来のパートナーから何をもらいたかったですか？)',
+    'questionScreen_insert': '挿入',
+    'questionScreen_basicResult': '基本的な結果',
+    'questionScreen_saveGallery': 'ギャラリーに保存',
+    'questionScreen_consultReserve': '詳細な相談の予約',
+    'questionScreen_consultTimeReserve': '相談時間の予約',
+    'questionScreen_month': '月',
+    'questionScreen_year': '年',
+    'questionScreen_next': '次へ',
+    'questionScreen_day': '日',
+    'questionScreen_am_9': '午前9時',
+    'questionScreen_am_11': '午前11時',
+    'questionScreen_pm_5': '午後5時',
+    'questionScreen_consult_30m': '30分の相談',
+    'questionScreen_consult_phone_number': '相談のための電話番号を入力してください。',
   };
   static const zh_CN = {
     'common_button_back': '回去',
@@ -934,10 +1141,6 @@ class Locales {
     'profileScreen_email': '电子邮件',
     'profileScreen_birth': '出生日期',
     'profileScreen_privatePolicy': '隐私政策',
-    //
-    'profileScreen_really_accountDelete': '您确定要删除您的帐户吗？',
-    'profileScreenController_check_birth': '请检查您的出生日期',
-    //
     'profileScreen_accountDelete': '账号删除',
     'profileScreen_logout': '注销',
     'updateProfileScreen_birth': '出生日期',
@@ -975,6 +1178,39 @@ class Locales {
     'progressScreen_completeQuizTitle': '共完成 个测验',
     'progressScreen_completeQuizTotal1': '',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. 你从父母那里得到的最令你难忘的是什么?\n(如果你没有父母, 你希望得到的是什么?)',
+    'questionScreen_questions_2':
+        'Q2. 你最希望从孩子那里得到的是什么?\n(如果你没有孩子, 你将来希望从孩子那里得到什么?)',
+    'questionScreen_questions_3': 'Q3. 你的思考、言语和行动的动机是什么?',
+    'questionScreen_questions_4':
+        'Q4. 你从配偶那里得到的最令你难忘的是什么?\n(如果你未婚, 你现在的或未来的男/女朋友给你的最难忘的是什么?)',
+    'questionScreen_questions_5': 'Q5. 你想给父母的最令你难忘的是什么?\n(如果你没有父母, 你希望给的是什么?)',
+    'questionScreen_questions_6': 'Q6. 你给孩子的最难忘的是什么?\n(如果你没有孩子, 你将来希望给孩子的是什么?)',
+    'questionScreen_questions_7': 'Q7. 你给自己的最难忘的是什么?',
+    'questionScreen_questions_8':
+        'Q8. 你给配偶的最难忘的是什么?\n(如果你未婚, 你想给现在的或未来的男/女朋友的是什么?)',
+    'questionScreen_questions_9':
+        'Q9. 你希望从父母那里得到但未得到的是什么?\n(如果你没有父母, 你希望得到但未得到的是什么?)',
+    'questionScreen_questions_10':
+        'Q10. 你希望从孩子那里得到但未得到的是什么?\n(如果你没有孩子, 你认为将来可能得不到的是什么?)',
+    'questionScreen_questions_11': 'Q11. 你希望得到但自己给不了的是什么?',
+    'questionScreen_questions_12':
+        'Q12. 你希望从配偶那里得到但未得到的是什么?\n(如果你未婚, 你希望从现在的或未来的男/女朋友那里得到但可能得不到的是什么?)',
+    'questionScreen_insert': '请输入',
+    'questionScreen_basicResult': '基本解释结果',
+    'questionScreen_saveGallery': '保存到相册',
+    'questionScreen_consultReserve': '预约深度咨询',
+    'questionScreen_consultTimeReserve': '预约咨询时间',
+    'questionScreen_month': '月',
+    'questionScreen_year': '年',
+    'questionScreen_next': '下一步',
+    'questionScreen_day': '日',
+    'questionScreen_am_9': '上午9点',
+    'questionScreen_am_11': '上午11点',
+    'questionScreen_pm_5': '下午5点',
+    'questionScreen_consult_30m': '咨询时间30分钟',
+    'questionScreen_consult_phone_number': '请输入您的咨询电话号码。',
   };
   static const it_IT = {
     'common_button_back': 'torna indietro',
@@ -1066,12 +1302,6 @@ class Locales {
     'profileScreen_email': 'e-mail',
     'profileScreen_birth': 'Data di nascita',
     'profileScreen_privatePolicy': 'politica sulla riservatezza',
-    //
-    'profileScreen_really_accountDelete':
-        'Sei sicuro di voler eliminare il tuo account?',
-    'profileScreenController_check_birth':
-        'Si prega di controllare la data di nascita',
-    //
     'profileScreen_accountDelete': 'cancellazione dell\'account',
     'profileScreen_logout': 'logout',
     'updateProfileScreen_birth': 'Data di nascita',
@@ -1111,6 +1341,53 @@ class Locales {
     'progressScreen_completeQuizTitle': 'quiz completati',
     'progressScreen_completeQuizTotal1': 'Un totale di',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. Cosa ricordi di più che hai ricevuto dai tuoi genitori?\n(Se non hai i genitori, cosa avresti voluto ricevere da loro?)',
+    'questionScreen_questions_2':
+        'Q2. Cosa vorresti ricevere di più dai tuoi figli?\n(Se non hai figli, cosa vorresti ricevere dai tuoi futuri figli?)',
+    'questionScreen_questions_3':
+        'Q3. Qual è la motivazione principale dietro i tuoi pensieri, parole e azioni?',
+    'questionScreen_questions_4':
+        'Q4. Cosa ricordi di più che hai ricevuto dal tuo coniuge?\n(Se non sei sposato, cosa vorresti ricevere dal tuo attuale o futuro partner?)',
+    'questionScreen_questions_5':
+        'Q5. Cosa vorresti dare ai tuoi genitori?\n(Se non hai i genitori, cosa avresti voluto dare loro?)',
+    'questionScreen_questions_6':
+        'Q6. Cosa ricordi di più che hai dato ai tuoi figli?\n(Se non hai figli, cosa vorresti dare ai tuoi futuri figli?)',
+    'questionScreen_questions_7': 'Q7. Cosa ricordi di più che ti sei dato?',
+    'questionScreen_questions_8':
+        'Q8. Cosa ricordi di più che hai dato al tuo coniuge?\n(Se non sei sposato, cosa vorresti dare al tuo attuale o futuro partner?)',
+    'questionScreen_questions_9':
+        'Q9. Cosa avresti voluto ricevere dai tuoi genitori ma non hai ricevuto?\n(Se non hai i genitori, cosa avresti voluto ricevere?)',
+    'questionScreen_questions_10':
+        'Q10. Cosa vorresti ricevere dai tuoi figli ma non hai ricevuto?\n(Se non hai figli, cosa pensi non potresti ricevere dai tuoi futuri figli?)',
+    'questionScreen_questions_11':
+        'Q11. Cosa vorresti ricevere da te stesso ma non hai ricevuto?',
+    'questionScreen_questions_12':
+        'Q12. Cosa vorresti ricevere dal tuo coniuge ma non hai ricevuto?\n(Se non sei sposato, cosa vorresti ricevere dal tuo attuale partner?)',
+    'questionScreen_questions_13':
+        'Q13. Cosa avresti voluto dare ai tuoi genitori ma non hai potuto?\n(Se non hai i genitori, cosa avresti voluto dare?)',
+    'questionScreen_questions_14':
+        'Q14. Cosa vorresti dare ai tuoi figli ma non hai potuto?\n(Se non hai figli, cosa pensi non potresti dare ai tuoi futuri figli?)',
+    'questionScreen_questions_15':
+        'Q15. Cosa vorresti darti ma non hai potuto?',
+    'questionScreen_questions_16':
+        'Q16. Cosa vorresti dare al tuo coniuge ma non hai potuto?\n(Se non sei sposato, cosa vorresti dare al tuo attuale o futuro partner?)',
+    'questionScreen_insert': 'Inserisci',
+    'questionScreen_basicResult': 'Risultato di base',
+    'questionScreen_saveGallery': 'Salva nella galleria',
+    'questionScreen_consultReserve': 'Prenota una consulenza approfondita',
+    'questionScreen_consultTimeReserve':
+        'Prenota un appuntamento di consulenza',
+    'questionScreen_month': 'Mese',
+    'questionScreen_year': 'Anno',
+    'questionScreen_next': 'Avanti',
+    'questionScreen_day': 'Giorno',
+    'questionScreen_am_9': '9 del mattino',
+    'questionScreen_am_11': '11 del mattino',
+    'questionScreen_pm_5': '5 del pomeriggio',
+    'questionScreen_consult_30m': '30 minuti di consulenza',
+    'questionScreen_consult_phone_number':
+        'Inserisci il tuo numero di telefono per la consulenza.',
   };
   static const en_US = {
     'common_button_back': 'go back',
@@ -1199,11 +1476,6 @@ class Locales {
     'profileScreen_email': 'email',
     'profileScreen_birth': 'birth date',
     'profileScreen_privatePolicy': 'Privacy Policy',
-    //
-    'profileScreen_really_accountDelete':
-        'Are you sure you want to delete your account?',
-    'profileScreenController_check_birth': 'Please check your date of birth',
-    //
     'profileScreen_accountDelete': 'account deletion',
     'profileScreen_logout': 'logout',
     'updateProfileScreen_birth': 'Date of birth',
@@ -1241,6 +1513,53 @@ class Locales {
     'progressScreen_completeQuizTitle': 'quizzes completed',
     'progressScreen_completeQuizTotal1': 'A total of',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. What is the most memorable thing you\'ve received from your parents?\n(If you don\'t have parents, what did you wish to receive?)',
+    'questionScreen_questions_2':
+        'Q2. What is the most desired thing you wish to receive from your children?\n(If you don\'t have children, what would you wish to receive from your future children?)',
+    'questionScreen_questions_3':
+        'Q3. What motivates your thoughts, words, and actions?',
+    'questionScreen_questions_4':
+        'Q4. What is the most memorable thing you\'ve received from your spouse?\n(If you\'re not married, what would you like to receive from your current or future partner?)',
+    'questionScreen_questions_5':
+        'Q5. What would you like to give to your parents?\n(If you don\'t have parents, what did you wish to give?)',
+    'questionScreen_questions_6':
+        'Q6. What is the most memorable thing you\'ve given to your children?\n(If you don\'t have children, what would you wish to give to your future children?)',
+    'questionScreen_questions_7':
+        'Q7. What is the most memorable thing you\'ve given to yourself?',
+    'questionScreen_questions_8':
+        'Q8. What is the most memorable thing you\'ve given to your spouse?\n(If you\'re not married, what would you like to give to your current or future partner?)',
+    'questionScreen_questions_9':
+        'Q9. What did you wish to receive from your parents but didn\'t?\n(If you don\'t have parents, what did you wish to receive but didn\'t?)',
+    'questionScreen_questions_10':
+        'Q10. What did you wish to receive from your children but didn\'t?\n(If you don\'t have children, what do you think you might not receive from your future children?)',
+    'questionScreen_questions_11':
+        'Q11. What did you wish to give yourself but couldn\'t?',
+    'questionScreen_questions_12':
+        'Q12. What did you wish to receive from your spouse but didn\'t?\n(If you\'re not married, what did you wish to receive from your current partner but didn\'t?)',
+    'questionScreen_questions_13':
+        'Q13. What did you wish to give to your parents but couldn\'t?\n(If you don\'t have parents, what did you wish to give but couldn\'t?)',
+    'questionScreen_questions_14':
+        'Q14. What did you wish to give to your children but couldn\'t?\n(If you don\'t have children, what do you think you might not be able to give to your future children?)',
+    'questionScreen_questions_15':
+        'Q15. What did you wish to give yourself but couldn\'t?',
+    'questionScreen_questions_16':
+        'Q16. What did you wish to give to your spouse but couldn\'t?\n(If you\'re not married, what would you wish to give to your current or future partner but haven\'t?)',
+    'questionScreen_insert': 'Please enter',
+    'questionScreen_basicResult': 'Basic Interpretation Results',
+    'questionScreen_saveGallery': 'Save to Gallery',
+    'questionScreen_consultReserve': 'Reserve for In-depth Consultation',
+    'questionScreen_consultTimeReserve': 'Reserve Consultation Time',
+    'questionScreen_month': 'Month',
+    'questionScreen_year': 'Year',
+    'questionScreen_next': 'Next',
+    'questionScreen_day': 'Day',
+    'questionScreen_am_9': '9 AM',
+    'questionScreen_am_11': '11 AM',
+    'questionScreen_pm_5': '5 PM',
+    'questionScreen_consult_30m': 'Consultation Time 30 minutes',
+    'questionScreen_consult_phone_number':
+        'Please enter the phone number for consultation.',
   };
   static const hi_IN = {
     'common_button_back': 'वापस जाओ',
@@ -1332,11 +1651,6 @@ class Locales {
     'profileScreen_email': 'ईमेल',
     'profileScreen_birth': 'जन्म तिथि',
     'profileScreen_privatePolicy': 'गोपनीयता नीति',
-    //
-    'profileScreen_really_accountDelete':
-        'क्या आप इस खाते को हटाने के लिए सुनिश्चित हैं?',
-    'profileScreenController_check_birth': 'कृपया अपनी जन्मतिथि जांचें',
-    //
     'profileScreen_accountDelete': 'खाता विलोपन',
     'profileScreen_logout': 'लॉगआउट',
     'updateProfileScreen_birth': 'जन्म तिथि',
@@ -1375,6 +1689,53 @@ class Locales {
     'progressScreen_completeQuizTitle': 'क्विज़ पूरे हुए',
     'progressScreen_completeQuizTotal1': 'कुल',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. आपके माता-पिता से मिलने वाली चीज़ में सबसे अधिक यादगार चीज़ क्या है?\n(अगर आपके माता-पिता नहीं हैं, तो आपको क्या मिलना चाहिए था?)',
+    'questionScreen_questions_2':
+        'Q2. आपके बच्चों से सबसे अधिक क्या प्राप्त होना चाहिए?\n(अगर आपके पास बच्चे नहीं हैं, तो भविष्य में आपको अपने बच्चों से क्या मिलना चाहिए?)',
+    'questionScreen_questions_3':
+        'Q3. आपकी विचार, वाक्य और क्रियावली के पीछे प्रमुख प्रेरणा क्या है?',
+    'questionScreen_questions_4':
+        'Q4. आपके विवाहित जीवन संगी से मिलने वाली सबसे अधिक यादगार चीज़ क्या है?\n(अगर आप अविवाहित हैं, तो आपको अपने वर्तमान या भविष्य के साथी से क्या मिलना चाहिए था?)',
+    'questionScreen_questions_5':
+        'Q5. आप अपने माता-पिता को क्या देना चाहते हैं?\n(अगर आपके माता-पिता नहीं हैं, तो आपको क्या देना चाहिए था?)',
+    'questionScreen_questions_6':
+        'Q6. आपके द्वारा अपने बच्चों को दी जाने वाली सबसे अधिक यादगार चीज़ क्या है?\n(अगर आपके पास बच्चे नहीं हैं, तो भविष्य में आप अपने बच्चों को क्या देना चाहते हैं?)',
+    'questionScreen_questions_7':
+        'Q7. आपने अपने आप को सबसे अधिक यादगार चीज़ क्या दी है?',
+    'questionScreen_questions_8':
+        'Q8. आपके द्वारा अपने विवाहित जीवन संगी को दी जाने वाली सबसे अधिक यादगार चीज़ क्या है?\n(अगर आप अविवाहित हैं, तो आपको अपने वर्तमान या भविष्य के साथी को क्या देना चाहिए था?)',
+    'questionScreen_questions_9':
+        'Q9. आपको अपने माता-पिता से मिलना चाहिए था, लेकिन आपको नहीं मिला?\n(अगर आपके माता-पिता नहीं हैं, तो आपको क्या मिलना चाहिए था?)',
+    'questionScreen_questions_10':
+        'Q10. आपको अपने बच्चों से मिलना चाहिए था, लेकिन आपको नहीं मिला?\n(अगर आपके पास बच्चे नहीं हैं, तो भविष्य में आपको अपने बच्चों से क्या नहीं मिल सकता था?)',
+    'questionScreen_questions_11':
+        'Q11. आप अपने आप से क्या प्राप्त करना चाहते हैं लेकिन नहीं कर पा रहे हैं?',
+    'questionScreen_questions_12':
+        'Q12. आपको अपने विवाहित जीवन संगी से मिलना चाहिए था, लेकिन आपको नहीं मिला?\n(अगर आप अविवाहित हैं, तो आपको अपने वर्तमान साथी से क्या मिलना चाहिए था?)',
+    'questionScreen_questions_13':
+        'Q13. आपको अपने माता-पिता को देना चाहिए था, लेकिन आप नहीं कर पाए?\n(अगर आपके माता-पिता नहीं हैं, तो आपको क्या देना चाहिए था?)',
+    'questionScreen_questions_14':
+        'Q14. आपको अपने बच्चों को देना चाहिए था, लेकिन आप नहीं कर पाए?\n(अगर आपके पास बच्चे नहीं हैं, तो भविष्य में आपको अपने बच्चों को क्या नहीं दे सकते थे?)',
+    'questionScreen_questions_15':
+        'Q15. आप अपने आप को क्या देना चाहते हैं लेकिन नहीं कर पा रहे हैं?',
+    'questionScreen_questions_16':
+        'Q16. आपको अपने विवाहित जीवन संगी को देना चाहिए था, लेकिन आप नहीं कर पाए?\n(अगर आप अविवाहित हैं, तो आपको अपने वर्तमान या भविष्य के साथी को क्या देना चाहिए था?)',
+    'questionScreen_insert': 'डालें',
+    'questionScreen_basicResult': 'मौलिक परिणाम',
+    'questionScreen_saveGallery': 'गैलरी में सहेजें',
+    'questionScreen_consultReserve': 'विस्तृत परामर्श के लिए बुक करें',
+    'questionScreen_consultTimeReserve': 'परामर्श समय की आरक्षण',
+    'questionScreen_month': 'महीना',
+    'questionScreen_year': 'वर्ष',
+    'questionScreen_next': 'अगला',
+    'questionScreen_day': 'दिन',
+    'questionScreen_am_9': 'सुबह 9 बजे',
+    'questionScreen_am_11': 'सुबह 11 बजे',
+    'questionScreen_pm_5': 'शाम 5 बजे',
+    'questionScreen_consult_30m': '30 मिनट परामर्श',
+    'questionScreen_consult_phone_number':
+        'परामर्श के लिए अपना फोन नंबर डालें।',
   };
   static const af_ZA = {
     'common_button_back': 'gaan terug',
@@ -1464,12 +1825,6 @@ class Locales {
     'profileScreen_email': 'e-pos',
     'profileScreen_birth': 'geboorte datum',
     'profileScreen_privatePolicy': 'Privaatheidsbeleid',
-    //
-    'profileScreen_really_accountDelete':
-        'Is jy seker jy wil jou rekening uitvee?',
-    'profileScreenController_check_birth':
-        'Kontroleer asseblief jou geboortedatum',
-    //
     'profileScreen_accountDelete': 'rekening uitvee',
     'profileScreen_logout': 'uitteken',
     'updateProfileScreen_birth': 'Geboortedatum',
@@ -1508,6 +1863,53 @@ class Locales {
     'progressScreen_completeQuizTitle': 'vasvrae voltooi',
     'progressScreen_completeQuizTotal1': 'Altesaam',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'V1. Wat is die mees onthouwaardige ding wat u van u ouers ontvang het?\n(As u nie ouers het nie, wat sou u wou hê?)',
+    'questionScreen_questions_2':
+        'V2. Wat is die ding wat jy die meeste van jou kinders wil hê?\n(As jy geen kinders het nie, wat sou jy in die toekoms van jou kinders wil hê?)',
+    'questionScreen_questions_3':
+        'V3. Wat is die motivering agter jou gedagtes, woorde en dade?',
+    'questionScreen_questions_4':
+        'V4. Wat is die mees onthouwaardige ding wat u van u eggenoot ontvang het?\n(As jy ongetroud is, wat sou jy van jou huidige of toekomstige geliefde wou hê?)',
+    'questionScreen_questions_5':
+        'V5. Wat wil jy aan jou ouers gee?\n(As jy nie ouers het nie, wat sou jy wou gee?)',
+    'questionScreen_questions_6':
+        'V6. Wat is die mees onthouwaardige ding wat jy aan jou kinders gee?\n(As jy geen kinders het nie, wat sou jy in die toekoms aan jou kinders wil gee?)',
+    'questionScreen_questions_7':
+        'V7. Wat is die mees onthouwaardige ding wat jy vir jouself gee?',
+    'questionScreen_questions_8':
+        'V8. Wat is die mees onthouwaardige ding wat jy aan jou eggenoot gee?\n(As jy ongetroud is, wat sou jy aan jou huidige of toekomstige geliefde wou gee?)',
+    'questionScreen_questions_9':
+        'V9. Wat wou jy van jou ouers hê, maar het nie gekry nie?\n(As jy nie ouers het nie, wat sou jy wou hê maar het nie gekry nie?)',
+    'questionScreen_questions_10':
+        'V10. Wat sou jy van jou kinders wou hê maar het nie gekry nie?\n(As jy geen kinders het nie, wat dink jy sou jy in die toekoms van jou kinders nie kon kry nie?)',
+    'questionScreen_questions_11':
+        'V11. Wat wil jy vir jouself hê maar het nie gekry nie?',
+    'questionScreen_questions_12':
+        'V12. Wat sou jy van jou eggenoot wou hê maar het nie gekry nie?\n(As jy ongetroud is, wat sou jy van jou huidige geliefde wou hê maar het nie gekry nie?)',
+    'questionScreen_questions_13':
+        'V13. Wat sou jy aan jou ouers wou gee maar kon nie?\n(As jy nie ouers het nie, wat sou jy wou gee maar kon nie?)',
+    'questionScreen_questions_14':
+        'V14. Wat sou jy aan jou kinders wou gee maar kon nie?\n(As jy geen kinders het nie, wat dink jy sou jy nie in die toekoms aan jou kinders kon gee nie?)',
+    'questionScreen_questions_15':
+        'V15. Wat sou jy vir jouself wou gee maar kon nie?',
+    'questionScreen_questions_16':
+        'V16. Wat kon jy nie aan jou eggenoot gee nie?\n(As jy ongetroud is, wat sou jy aan jou huidige of toekomstige geliefde wou gee maar kon nie?)',
+    'questionScreen_insert': 'Voer asseblief in',
+    'questionScreen_basicResult': 'Basiese interpretasie resultaat',
+    'questionScreen_saveGallery': 'Stoor resultate in galerij',
+    'questionScreen_consultReserve': 'Diep konsultasie bespreking',
+    'questionScreen_consultTimeReserve': 'Konsultasie tyd bespreking',
+    'questionScreen_month': 'Maand',
+    'questionScreen_year': 'Jaar',
+    'questionScreen_next': 'Volgende',
+    'questionScreen_day': 'Dag',
+    'questionScreen_am_9': 'OG 9 uur',
+    'questionScreen_am_11': 'OG 11 uur',
+    'questionScreen_pm_5': 'NM 5 uur',
+    'questionScreen_consult_30m': 'Konsultasie tyd 30 minute',
+    'questionScreen_consult_phone_number':
+        'Voer asseblief die telefoonnommer in waarop u konsultasie wil ontvang.',
   };
   static const ru_RU = {
     'common_button_back': 'возвращаться',
@@ -1598,12 +2000,6 @@ class Locales {
     'profileScreen_email': 'электронная почта',
     'profileScreen_birth': 'Дата рождения',
     'profileScreen_privatePolicy': 'политика конфиденциальности',
-    //
-    'profileScreen_really_accountDelete':
-        'Вы уверены, что хотите удалить свой аккаунт?',
-    'profileScreenController_check_birth':
-        'Пожалуйста, проверьте дату своего рождения',
-    //
     'profileScreen_accountDelete': 'удаление аккаунта',
     'profileScreen_logout': 'выход',
     'updateProfileScreen_birth': 'Дата рождения',
@@ -1643,6 +2039,45 @@ class Locales {
     'progressScreen_completeQuizTitle': 'пройдено викторин',
     'progressScreen_completeQuizTotal1': 'Всего',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. Что из того, что вы получили от родителей, вам наиболее запомнилось?\n(Если у вас нет родителей, что бы вы хотели получить?)',
+    'questionScreen_questions_2':
+        'Q2. Что вы бы хотели получить от своих детей?\n(Если у вас нет детей, что бы вы хотели получить от своих будущих детей?)',
+    'questionScreen_questions_3':
+        'Q3. Что мотивирует ваши мысли, слова и поступки?',
+    'questionScreen_questions_4':
+        'Q4. Что вам наиболее запомнилось из того, что вы получили от супруга после свадьбы?\n(Если вы не женаты/замужем, что бы вы хотели получить от своего текущего или будущего партнера?)',
+    'questionScreen_questions_5':
+        'Q5. Что бы вы хотели дать своим родителям?\n(Если у вас нет родителей, что бы вы хотели бы дать?)',
+    'questionScreen_questions_6':
+        'Q6. Что из того, что вы дали своим детям, вам наиболее запомнилось?\n(Если у вас нет детей, что бы вы хотели дать своим будущим детям?)',
+    'questionScreen_questions_7':
+        'Q7. Что вам наиболее запомнилось из того, что вы дали себе?',
+    'questionScreen_questions_8':
+        'Q8. Что из того, что вы дали своему супругу после свадьбы, вам наиболее запомнилось?\n(Если вы не женаты/замужем, что бы вы хотели дать своему текущему или будущему партнеру?)',
+    'questionScreen_questions_9':
+        'Q9. Что бы вы хотели получить от своих родителей, но не получили?\n(Если у вас нет родителей, что бы вы хотели бы получить?)',
+    'questionScreen_questions_10':
+        'Q10. Что бы вы хотели получить от своих детей, но не получили?\n(Если у вас нет детей, что, по вашему мнению, вы не получите от своих будущих детей?)',
+    'questionScreen_questions_11':
+        'Q11. Что бы вы хотели получить для себя, но до сих пор не получили?',
+    'questionScreen_questions_12':
+        'Q12. Что бы вы хотели получить от своего супруга после свадьбы, но не получили?\n(Если вы не женаты/замужем, что бы вы хотели получить от вашего текущего или будущего партнера?)',
+    'questionScreen_insert': 'Пожалуйста, введите',
+    'questionScreen_basicResult': 'Основной результат интерпретации',
+    'questionScreen_saveGallery': 'Сохранить в галерее',
+    'questionScreen_consultReserve': 'Забронировать консультацию',
+    'questionScreen_consultTimeReserve': 'Забронировать время для консультации',
+    'questionScreen_month': 'месяц',
+    'questionScreen_year': 'год',
+    'questionScreen_next': 'Далее',
+    'questionScreen_day': 'день',
+    'questionScreen_am_9': '9 утра',
+    'questionScreen_am_11': '11 утра',
+    'questionScreen_pm_5': '5 вечера',
+    'questionScreen_consult_30m': 'Консультация 30 минут',
+    'questionScreen_consult_phone_number':
+        'Пожалуйста, введите ваш номер телефона для консультации.',
   };
   static const ar_AR = {
     'common_button_back': 'عُد',
@@ -1732,10 +2167,6 @@ class Locales {
     'profileScreen_email': 'بريد إلكتروني',
     'profileScreen_birth': 'تاريخ الميلاد',
     'profileScreen_privatePolicy': 'سياسة الخصوصية',
-    //
-    'profileScreen_really_accountDelete': 'هل انت متأكد انك تريد حذف حسابك؟',
-    'profileScreenController_check_birth': 'يرجى التحقق من تاريخ ميلادك',
-    //
     'profileScreen_accountDelete': 'حذف الحساب',
     'profileScreen_logout': 'تسجيل الخروج',
     'updateProfileScreen_birth': 'تاريخ الميلاد',
@@ -1773,6 +2204,52 @@ class Locales {
     'progressScreen_completeQuizTitle': 'اختبارًا قصيرًا',
     'progressScreen_completeQuizTotal1': 'تم إكمال ما مجموعه',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. ما هو أكثر شيء تذكره قد تلقيته من والديك؟\n(إذا لم تكن لديك والدين، ما هو الشيء الذي كنت تود الحصول عليه؟)',
+    'questionScreen_questions_2':
+        'Q2. ما هو الشيء الذي تود الحصول عليه من أطفالك بشكل أكبر؟\n(إذا لم يكن لديك أطفال، ما هو الشيء الذي تود الحصول عليه من أطفالك في المستقبل؟)',
+    'questionScreen_questions_3':
+        'Q3. ما هو الدافع وراء أفكارك وكلماتك وأفعالك؟',
+    'questionScreen_questions_4':
+        'Q4. ما هو أكثر شيء تذكره قد تلقيته من زوجك؟\n(إذا كنت أعزب، ما هو الشيء الذي تود الحصول عليه من صديقك الحالي أو المستقبلي؟)',
+    'questionScreen_questions_5':
+        'Q5. ما هو الشيء الذي تود تقديمه لوالديك؟\n(إذا لم تكن لديك والدين، ما هو الشيء الذي كنت تود تقديمه؟)',
+    'questionScreen_questions_6':
+        'Q6. ما هو أكثر شيء تذكره قد قدمته لأطفالك؟\n(إذا لم يكن لديك أطفال، ما هو الشيء الذي تود تقديمه لأطفالك في المستقبل؟)',
+    'questionScreen_questions_7': 'Q7. ما هو أكثر شيء تذكره قد قدمته لنفسك؟',
+    'questionScreen_questions_8':
+        'Q8. ما هو أكثر شيء تذكره قد قدمته لزوجك؟\n(إذا كنت أعزب، ما هو الشيء الذي تود تقديمه لصديقك الحالي أو المستقبلي؟)',
+    'questionScreen_questions_9':
+        'Q9. ما هو الشيء الذي كنت تود الحصول عليه من والديك ولكن لم تتمكن؟\n(إذا لم تكن لديك والدين، ما هو الشيء الذي كنت تود الحصول عليه ولكن لم تتمكن؟)',
+    'questionScreen_questions_10':
+        'Q10. ما هو الشيء الذي كنت تود الحصول عليه من أطفالك ولكن لم تتمكن؟\n(إذا لم يكن لديك أطفال، ما هو الشيء الذي تعتقد أنك لن تتمكن من الحصول عليه من أطفالك في المستقبل؟)',
+    'questionScreen_questions_11':
+        'Q11. ما هو الشيء الذي تود الحصول عليه لنفسك ولكن لم تتمكن؟',
+    'questionScreen_questions_12':
+        'Q12. ما هو الشيء الذي كنت تود الحصول عليه من زوجك ولكن لم تتمكن؟\n(إذا كنت أعزب، ما هو الشيء الذي كنت تود الحصول عليه من صديقك الحالي ولكن لم تتمكن؟)',
+    'questionScreen_questions_13':
+        'Q13. ما هو الشيء الذي كنت تود تقديمه لوالديك ولكن لم تتمكن؟\n(إذا لم تكن لديك والدين، ما هو الشيء الذي كنت تود تقديمه ولكن لم تتمكن؟)',
+    'questionScreen_questions_14':
+        'Q14. ما هو الشيء الذي كنت تود تقديمه لأطفالك ولكن لم تتمكن؟\n(إذا لم يكن لديك أطفال، ما هو الشيء الذي تعتقد أنك لن تتمكن من تقديمه لأطفالك في المستقبل؟)',
+    'questionScreen_questions_15':
+        'Q15. ما هو الشيء الذي كنت تود تقديمه لنفسك ولكن لم تتمكن؟',
+    'questionScreen_questions_16':
+        'Q16. ما هو الشيء الذي كنت لا تستطيع تقديمه لزوجك؟\n(إذا كنت أعزب، ما هو الشيء الذي كنت تود تقديمه لصديقك الحالي أو المستقبلي ولكن لم تتمكن؟)',
+    'questionScreen_insert': 'الرجاء إدخال',
+    'questionScreen_basicResult': 'نتيجة التفسير الأساسية',
+    'questionScreen_saveGallery': 'حفظ النتائج في المعرض',
+    'questionScreen_consultReserve': 'حجز استشارة عميقة',
+    'questionScreen_consultTimeReserve': 'حجز وقت الاستشارة',
+    'questionScreen_month': 'شهر',
+    'questionScreen_year': 'سنة',
+    'questionScreen_next': 'التالي',
+    'questionScreen_day': 'يوم',
+    'questionScreen_am_9': 'الساعة 9 صباحًا',
+    'questionScreen_am_11': 'الساعة 11 صباحًا',
+    'questionScreen_pm_5': 'الساعة 5 مساءً',
+    'questionScreen_consult_30m': 'وقت الاستشارة 30 دقيقة',
+    'questionScreen_consult_phone_number':
+        'يرجى إدخال رقم الهاتف الذي ترغب في استقبال الاستشارة عليه.',
   };
   static const fr_FR = {
     'common_button_back': 'Retour',
@@ -1868,12 +2345,6 @@ class Locales {
     'profileScreen_email': 'e-mail',
     'profileScreen_birth': 'date de naissance',
     'profileScreen_privatePolicy': 'politique de confidentialité',
-    //
-    'profileScreen_really_accountDelete':
-        'Êtes-vous sûr de vouloir supprimer votre compte ?',
-    'profileScreenController_check_birth':
-        'Veuillez vérifier votre date de naissance',
-    //
     'profileScreen_accountDelete': 'suppression de compte',
     'profileScreen_logout': 'déconnexion',
     'updateProfileScreen_birth': 'Date de naissance',
@@ -1914,5 +2385,52 @@ class Locales {
     'progressScreen_completeQuizTitle': 'questionnaires remplis',
     'progressScreen_completeQuizTotal1': 'Un total de',
     'progressScreen_completeQuizTotal2': '',
+    'questionScreen_questions_1':
+        'Q1. Quel est le souvenir le plus marquant que vous ayez reçu de vos parents?\n(Si vous n\'avez pas de parents, qu\'auriez-vous aimé recevoir?)',
+    'questionScreen_questions_2':
+        'Q2. Qu\'aimeriez-vous le plus recevoir de vos enfants?\n(Si vous n\'avez pas d\'enfants, qu\'aimeriez-vous recevoir d\'eux à l\'avenir?)',
+    'questionScreen_questions_3':
+        'Q3. Quelle est la motivation de vos pensées, paroles et actions?',
+    'questionScreen_questions_4':
+        'Q4. Quel est le souvenir le plus marquant que vous ayez reçu de votre conjoint?\n(Si vous n\'êtes pas marié, qu\'aimeriez-vous recevoir de votre petit(e) ami(e) actuel(le) ou futur(e)?)',
+    'questionScreen_questions_5':
+        'Q5. Qu\'aimeriez-vous offrir à vos parents?\n(Si vous n\'avez pas de parents, qu\'auriez-vous aimé offrir?)',
+    'questionScreen_questions_6':
+        'Q6. Quel est le souvenir le plus marquant que vous ayez donné à vos enfants?\n(Si vous n\'avez pas d\'enfants, qu\'aimeriez-vous leur donner à l\'avenir?)',
+    'questionScreen_questions_7':
+        'Q7. Quel est le souvenir le plus marquant que vous vous êtes donné?',
+    'questionScreen_questions_8':
+        'Q8. Quel est le souvenir le plus marquant que vous ayez donné à votre conjoint?\n(Si vous n\'êtes pas marié, qu\'aimeriez-vous donner à votre petit(e) ami(e) actuel(le) ou futur(e)?)',
+    'questionScreen_questions_9':
+        'Q9. Qu\'auriez-vous aimé recevoir de vos parents mais n\'avez pas reçu?\n(Si vous n\'avez pas de parents, qu\'auriez-vous aimé recevoir?)',
+    'questionScreen_questions_10':
+        'Q10. Qu\'auriez-vous aimé recevoir de vos enfants mais n\'avez pas reçu?\n(Si vous n\'avez pas d\'enfants, que pensez-vous ne pas recevoir d\'eux à l\'avenir?)',
+    'questionScreen_questions_11':
+        'Q11. Qu\'auriez-vous aimé vous donner à vous-même mais n\'avez pas pu?',
+    'questionScreen_questions_12':
+        'Q12. Qu\'auriez-vous aimé recevoir de votre conjoint mais n\'avez pas reçu?\n(Si vous n\'êtes pas marié, qu\'auriez-vous aimé recevoir de votre petit(e) ami(e) actuel(le)?)',
+    'questionScreen_questions_13':
+        'Q13. Qu\'auriez-vous aimé offrir à vos parents mais n\'avez pas pu?\n(Si vous n\'avez pas de parents, qu\'auriez-vous aimé offrir?)',
+    'questionScreen_questions_14':
+        'Q14. Qu\'auriez-vous aimé donner à vos enfants mais n\'avez pas pu?\n(Si vous n\'avez pas d\'enfants, que pensez-vous ne pas pouvoir leur donner à l\'avenir?)',
+    'questionScreen_questions_15':
+        'Q15. Qu\'auriez-vous aimé vous donner à vous-même mais n\'avez pas pu?',
+    'questionScreen_questions_16':
+        'Q16. Qu\'auriez-vous aimé donner à votre conjoint mais n\'avez pas pu?\n(Si vous n\'êtes pas marié, qu\'auriez-vous aimé donner à votre petit(e) ami(e) actuel(le) ou futur(e)?)',
+    'questionScreen_insert': 'Veuillez saisir',
+    'questionScreen_basicResult': 'Résultat d\'interprétation de base',
+    'questionScreen_saveGallery': 'Sauvegarder dans la galerie',
+    'questionScreen_consultReserve': 'Réserver une consultation approfondie',
+    'questionScreen_consultTimeReserve': 'Réserver l\'heure de consultation',
+    'questionScreen_month': 'Mois',
+    'questionScreen_year': 'Année',
+    'questionScreen_next': 'Suivant',
+    'questionScreen_day': 'Jour',
+    'questionScreen_am_9': '9h du matin',
+    'questionScreen_am_11': '11h du matin',
+    'questionScreen_pm_5': '5h de l\'après-midi',
+    'questionScreen_consult_30m': 'Durée de la consultation : 30 minutes',
+    'questionScreen_consult_phone_number':
+        'Veuillez saisir votre numéro de téléphone pour la consultation.',
   };
 }

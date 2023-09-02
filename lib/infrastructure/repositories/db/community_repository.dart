@@ -57,7 +57,7 @@ class CommunityRepository {
     required DateTime createdAt,
   }) async {
     Community community = Community(
-      id: await getCommunityCreateIdFirestore(),
+      id: await getCommunityCreateId(),
       userAuthType: userAuthType,
       userEmail: userEmail,
       imgUrl: imgUrl,
@@ -182,14 +182,14 @@ class CommunityRepository {
     }).toList();
 
     // 사용자 차단 여부 확인
-    List<UserBlock> userBlocks = await UserBlockRepository().getUserBlocksFirestore(userEmail: userEmail);
+    List<UserBlock> userBlocks = await UserBlockRepository().getUserBlocks(userEmail: userEmail);
     communities = communities
         .where((e) => userBlocks.indexWhere((userBlock) => userBlock.targetUserEmail == e.userEmail) < 0)
         .toList();
 
     // 게시글 신고 여부 확인
     List<CommunityReport> communityReports =
-        await CommunityReportRepository().getCommunityReportsFirestore(userEmail: userEmail);
+        await CommunityReportRepository().getCommunityReports(userEmail: userEmail);
     communities = communities
         .where(
             (e) => communityReports.indexWhere((communityReport) => communityReport.communityId == e.id) < 0)
@@ -234,7 +234,7 @@ class CommunityRepository {
     required DateTime createdAt,
   }) async {
     CommunityComment comment = CommunityComment(
-      id: await getCommentCreateIdFirestore(),
+      id: await getCommentCreateId(),
       communityId: communityId,
       userAuthType: userAuthType,
       userEmail: userEmail,
@@ -305,7 +305,7 @@ class CommunityRepository {
   Future<bool> deleteCommunityFirestore({
     required int id,
   }) async {
-    await deleteCommunityCommentByCommunityIdFirestore(communityId: id);
+    await deleteCommunityCommentByCommunityId(communityId: id);
     await _communityCollectionFirestore.doc(id.toString()).delete();
 
     return true; // Firestore에서는 성공 여부를 직접 확인하는 방법이 없으므로, 호출이 성공적으로 완료되면 항상 true를 반환합니다.

@@ -14,7 +14,7 @@ class QuizScreen extends GetView<QuizScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    //Get.put(QuizScreenController());
+    Get.put(QuizScreenController());
     return Obx(
       () => Scaffold(
         backgroundColor: controller.bgColor.value,
@@ -97,6 +97,7 @@ class QuizScreen extends GetView<QuizScreenController> {
                     onTap: () {
                       // final result =
                       Get.toNamed(RoutesConstants.dailyQuizScreen);
+
                       // if (result != null) {
                       //   controller.isQuizComplete.value = true;
                       // }

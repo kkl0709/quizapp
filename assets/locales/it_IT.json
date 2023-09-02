@@ -6,12 +6,10 @@
       "cancel": "annullare"
     }
   },
-
   "splashScreen": {
     "title": "auto-allenamento tetra",
     "content": "tutto è la mia percezione"
   },
-
   "homeScreen": {
     "title": "Benvenuti nel mondo delle regole invisibili.",
     "content": "Tetra è tutto nella sua stessa percezione\nmostra che te ne vai.",
@@ -19,7 +17,6 @@
       "start": "Iniziare con l'auto-coaching"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Self-Coaching",
     "content": "Tetra è tutto nella sua stessa percezione mostra che te ne vai. Annota le parole o le frasi che ti vengono in mente subito dopo l'inizio del coaching.",
@@ -29,7 +26,6 @@
       "start": "iniziare ad allenare"
     }
   },
-
   "quizResultScreen": {
     "title": "Tetra Self Coaching",
     "content": "Inserisci ciò che ti viene in mente nella casella sottostante",
@@ -47,7 +43,6 @@
       "result": "vedi i risultati"
     }
   },
-
   "viewResultScreen": {
     "title": "Risultati del quadrante Self-Coaching",
     "resultContent1": "Voglio ricevere '",
@@ -60,7 +55,6 @@
       "return": "ritorna"
     }
   },
-
   "onBoardingScreen": {
     "title": "Tetra Self Coaching",
     "content1": "Scegli la lingua per utilizzare l'app",
@@ -70,7 +64,6 @@
       "start": "iniziare"
     }
   },
-
   "loginScreen": {
     "title": "auto-allenamento tetra",
     "content": "tutto è la mia percezione",
@@ -79,7 +72,6 @@
     "findPassword": "rova la password 찾기",
     "snsLogin": "facile accesso"
   },
-
   "membershipScreen": {
     "signUp": "unisciti al tesseramento",
     "email": "Indirizzo e-mail",
@@ -95,7 +87,6 @@
     "inputBirth": "Inserisci la tua data di nascita nel tuo profilo",
     "logout": "Sei sicuro di voler uscire?"
   },
-
   "emailLoginScreen": {
     "title": "auto-allenamento tetra",
     "content": "tutto è la mia percezione",
@@ -105,7 +96,6 @@
       "login": "login"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "Reimposta la tua password",
     "content": "Per favore reimposta la tua password",
@@ -115,7 +105,6 @@
       "done": "completare"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "Verifica e-mail",
     "content": "Inserisci il tuo indirizzo email",
@@ -125,7 +114,6 @@
       "next": "Prossimo"
     }
   },
-
   "emailVerificationScreen": {
     "title": "Codice di autenticazione",
     "content": "Inserisci il tuo codice di verifica",
@@ -135,7 +123,6 @@
       "next": "Prossimo"
     }
   },
-
   "profileScreen": {
     "men": "Uomini",
     "women": "donne",
@@ -146,7 +133,6 @@
     "accountDelete": "cancellazione dell'account",
     "logout": "logout"
   },
-
   "updateProfileScreen": {
     "birth": "Data di nascita",
     "email": "e-mail",
@@ -155,7 +141,6 @@
       "done": "completare"
     }
   },
-
   "dailyQuizScreen": {
     "title": "quiz quotidiano",
     "content": "Tetra è l'origine della vita nell'universo.",
@@ -172,7 +157,6 @@
       "submit": "invia"
     }
   },
-
   "quizScreen": {
     "title": "Hai completato il quiz di oggi\nPer favore, vieni anche domani!",
     "content": "Tetra è l'origine della vita nell'universo.",
@@ -181,7 +165,6 @@
       "true": "risposta"
     }
   },
-
   "progressScreen": {
     "progress": "Avanzamento",
     "quizComplete": "completamento del quiz",
@@ -198,5 +181,37 @@
     "completeQuizTitle": "quiz completati",
     "completeQuizTotal1": "Un totale di",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "Q1. Cosa ricordi di più che hai ricevuto dai tuoi genitori?\n(Se non hai i genitori, cosa avresti voluto ricevere da loro?)",
+    "questions_2": "Q2. Cosa vorresti ricevere di più dai tuoi figli?\n(Se non hai figli, cosa vorresti ricevere dai tuoi futuri figli?)",
+    "questions_3": "Q3. Qual è la motivazione principale dietro i tuoi pensieri, parole e azioni?",
+    "questions_4": "Q4. Cosa ricordi di più che hai ricevuto dal tuo coniuge?\n(Se non sei sposato, cosa vorresti ricevere dal tuo attuale o futuro partner?)",
+    "questions_5": "Q5. Cosa vorresti dare ai tuoi genitori?\n(Se non hai i genitori, cosa avresti voluto dare loro?)",
+    "questions_6": "Q6. Cosa ricordi di più che hai dato ai tuoi figli?\n(Se non hai figli, cosa vorresti dare ai tuoi futuri figli?)",
+    "questions_7": "Q7. Cosa ricordi di più che ti sei dato?",
+    "questions_8": "Q8. Cosa ricordi di più che hai dato al tuo coniuge?\n(Se non sei sposato, cosa vorresti dare al tuo attuale o futuro partner?)",
+    "questions_9": "Q9. Cosa avresti voluto ricevere dai tuoi genitori ma non hai ricevuto?\n(Se non hai i genitori, cosa avresti voluto ricevere?)",
+    "questions_10": "Q10. Cosa vorresti ricevere dai tuoi figli ma non hai ricevuto?\n(Se non hai figli, cosa pensi non potresti ricevere dai tuoi futuri figli?)",
+    "questions_11": "Q11. Cosa vorresti ricevere da te stesso ma non hai ricevuto?",
+    "questions_12": "Q12. Cosa vorresti ricevere dal tuo coniuge ma non hai ricevuto?\n(Se non sei sposato, cosa vorresti ricevere dal tuo attuale partner?)",
+    "questions_13": "Q13. Cosa avresti voluto dare ai tuoi genitori ma non hai potuto?\n(Se non hai i genitori, cosa avresti voluto dare?)",
+    "questions_14": "Q14. Cosa vorresti dare ai tuoi figli ma non hai potuto?\n(Se non hai figli, cosa pensi non potresti dare ai tuoi futuri figli?)",
+    "questions_15": "Q15. Cosa vorresti darti ma non hai potuto?",
+    "questions_16": "Q16. Cosa vorresti dare al tuo coniuge ma non hai potuto?\n(Se non sei sposato, cosa vorresti dare al tuo attuale o futuro partner?)",
+    "insert": "Inserisci",
+    "basicResult": "Risultato di base",
+    "saveGallery": "Salva nella galleria",
+    "consultReserve": "Prenota una consulenza approfondita",
+    "consultTimeReserve": "Prenota un appuntamento di consulenza",
+    "month": "Mese",
+    "year": "Anno",
+    "next": "Avanti",
+    "day": "Giorno",
+    "am_9": "9 del mattino",
+    "am_11": "11 del mattino",
+    "pm_5": "5 del pomeriggio",
+    "consult_30m": "30 minuti di consulenza",
+    "consult_phone_number": "Inserisci il tuo numero di telefono per la consulenza."
   }
 }

@@ -12,7 +12,6 @@ import 'package:launch_review/launch_review.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 class SplashController extends GetxController {
-  final WidgetRef? ref;
   Rx<Color> bgColor = Colors.white.obs;
   final VersionRepository _repository = VersionRepository();
 
@@ -20,12 +19,11 @@ class SplashController extends GetxController {
   Rx<String> updateVersion = ''.obs;
   Rx<Version> version = Version().obs;
 
-  SplashController({this.ref});
 
   @override
   void onInit() {
     print("native splash");
-    Future.delayed(Duration(seconds: 2), () async {
+    Future.delayed(Duration(microseconds: 100), () async {
       getUpdateVersion().then((value) async {
         if (value) {
           _showMyDialog(

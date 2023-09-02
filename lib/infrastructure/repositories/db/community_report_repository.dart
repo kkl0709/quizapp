@@ -62,7 +62,7 @@ class CommunityReportRepository {
     required DateTime createdAt,
   }) async {
     CommunityReport community = CommunityReport(
-      id: await getCommunityReportCreateIdFirestore(),
+      id: await getCommunityReportCreateId(),
       userEmail: userEmail,
       communityId: communityId,
       createdAt: createdAt,

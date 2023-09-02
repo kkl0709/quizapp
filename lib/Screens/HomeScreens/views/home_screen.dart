@@ -64,7 +64,9 @@ class HomeScreen extends GetView<HomeScreenController> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.toNamed(RoutesConstants.topicSelectionScreen);
+                        //Get.toNamed(RoutesConstants.topicSelectionScreen);
+                        Get.toNamed(RoutesConstants.questionScreen);
+                        //Get.toNamed(RoutesConstants.consultScreen);
                       },
                       child: ClipRect(
                         child: BackdropFilter(

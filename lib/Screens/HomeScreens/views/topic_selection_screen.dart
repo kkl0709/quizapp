@@ -106,9 +106,10 @@ class TopicSelectionScreen extends GetView<TopicSelectionController> {
             ),
             InkWell(
               onTap: () {
-                Get.toNamed(RoutesConstants.quizResultScreen, arguments: {
+                /*Get.toNamed(RoutesConstants.quizResultScreen, arguments: {
                   'sub': controller.textFieldController.value.text
-                });
+                });*/
+
               },
               child: Container(
                 decoration: BoxDecoration(

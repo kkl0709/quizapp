@@ -6,12 +6,10 @@
       "cancel": "cancelar"
     }
   },
-
   "splashScreen": {
     "title": "autoentrenamiento tetra",
     "content": "todo es mi percepción"
   },
-
   "homeScreen": {
     "title": "Bienvenido al mundo de las reglas invisibles.",
     "content": "Tetra es todo en su propia percepción.\ndemuestra que te vas.",
@@ -19,7 +17,6 @@
       "start": "Comenzando con el auto-entrenamiento"
     }
   },
-
   "topicSelectionScreen": {
     "title": "Tetra Autoentrenamiento",
     "content": "Tetra es todo en su propia percepción. demuestra que te vas. Escriba las palabras u oraciones que le vengan a la mente inmediatamente después de que comience el entrenamiento.",
@@ -29,7 +26,6 @@
       "start": "empezar a entrenar"
     }
   },
-
   "quizResultScreen": {
     "title": "Autoentrenamiento Tetra",
     "content": "Escribe lo que te venga a la mente en el cuadro de abajo",
@@ -47,7 +43,6 @@
       "result": "Ver resultados"
     }
   },
-
   "viewResultScreen": {
     "title": "Resultados de autoentrenamiento del cuadrante",
     "resultContent1": "quiero recibir'",
@@ -60,7 +55,6 @@
       "return": "volver"
     }
   },
-
   "onBoardingScreen": {
     "title": "Autoentrenamiento Tetra",
     "content1": "Elige tu idioma para usar la aplicación",
@@ -70,7 +64,6 @@
       "start": "Empezar"
     }
   },
-
   "loginScreen": {
     "title": "autoentrenamiento tetra",
     "content": "todo es mi percepción",
@@ -79,7 +72,6 @@
     "findPassword": "busque la contraseña",
     "snsLogin": "inicio de sesión fácil"
   },
-
   "membershipScreen": {
     "signUp": "unirse a la membresía",
     "email": "Dirección de correo electrónico",
@@ -95,7 +87,6 @@
     "inputBirth": "Por favor ingrese su fecha de nacimiento en su perfil",
     "logout": "¿Está seguro de que desea cerrar la sesión?"
   },
-
   "emailLoginScreen": {
     "title": "autoentrenamiento tetra",
     "content": "todo es mi percepción",
@@ -105,7 +96,6 @@
       "login": "login"
     }
   },
-
   "passwordAuthenticationScreen": {
     "title": "Restablece tu contraseña",
     "content": "por favor, cambie su contraseña",
@@ -115,7 +105,6 @@
       "done": "completo"
     }
   },
-
   "emailAuthenticationScreen": {
     "title": "Verificación de correo electrónico",
     "content": "Por favor, introduzca su dirección de correo electrónico",
@@ -125,7 +114,6 @@
       "next": "próximo"
     }
   },
-
   "emailVerificationScreen": {
     "title": "Código de autenticación",
     "content": "Por favor ingrese su código de verificación",
@@ -135,7 +123,6 @@
       "next": "próximo"
     }
   },
-
   "profileScreen": {
     "men": "Hombres",
     "women": "mujeres",
@@ -146,7 +133,6 @@
     "accountDelete": "eliminación de cuenta",
     "logout": "cierre de sesión"
   },
-
   "updateProfileScreen": {
     "birth": "fecha de nacimiento",
     "email": "correo electrónico",
@@ -155,7 +141,6 @@
       "done": "completo"
     }
   },
-
   "dailyQuizScreen": {
     "title": "prueba diaria",
     "content": "Tetra es el origen de la vida en el universo.",
@@ -172,7 +157,6 @@
       "submit": "entregar"
     }
   },
-
   "quizScreen": {
     "title": "Cuestionario de hoy completado\n¡Ven mañana también!",
     "content": "Tetra es el origen de la vida en el universo.",
@@ -181,7 +165,6 @@
       "true": "respuesta"
     }
   },
-
   "progressScreen": {
     "progress": "Progreso",
     "quizComplete": "finalización del cuestionario",
@@ -198,5 +181,37 @@
     "completeQuizTitle": "cuestionarios completados",
     "completeQuizTotal1": "Un total de",
     "completeQuizTotal2": ""
+  },
+  "questionScreen": {
+    "questions_1": "Q1. ¿Cuál es la cosa más memorable que has recibido de tus padres?\n(Si no tienes padres, ¿qué te gustaría haber recibido?)",
+    "questions_2": "Q2. ¿Qué es lo que más deseas recibir de tus hijos?\n(Si no tienes hijos, ¿qué te gustaría recibir de tus hijos en el futuro?)",
+    "questions_3": "Q3. ¿Qué motiva tus pensamientos, palabras y acciones?",
+    "questions_4": "Q4. ¿Cuál es la cosa más memorable que has recibido de tu cónyuge?\n(Si no estás casado/a, ¿qué te gustaría recibir de tu pareja actual o futura?)",
+    "questions_5": "Q5. ¿Qué te gustaría dar a tus padres?\n(Si no tienes padres, ¿qué te hubiera gustado dar?)",
+    "questions_6": "Q6. ¿Cuál es la cosa más memorable que has dado a tus hijos?\n(Si no tienes hijos, ¿qué te gustaría dar a tus hijos en el futuro?)",
+    "questions_7": "Q7. ¿Cuál es la cosa más memorable que te has dado a ti mismo/a?",
+    "questions_8": "Q8. ¿Cuál es la cosa más memorable que has dado a tu cónyuge?\n(Si no estás casado/a, ¿qué te gustaría dar a tu pareja actual o futura?)",
+    "questions_9": "Q9. ¿Qué te gustaría haber recibido de tus padres pero no lo hiciste?\n(Si no tienes padres, ¿qué te hubiera gustado recibir pero no lo hiciste?)",
+    "questions_10": "Q10. ¿Qué te gustaría haber recibido de tus hijos pero no lo hiciste?\n(Si no tienes hijos, ¿qué crees que no recibirás de tus hijos en el futuro?)",
+    "questions_11": "Q11. ¿Qué te gustaría haber dado a ti mismo/a pero no pudiste?",
+    "questions_12": "Q12. ¿Qué te gustaría haber recibido de tu cónyuge pero no lo hiciste?\n(Si no estás casado/a, ¿qué te gustaría haber recibido de tu pareja actual pero no lo hiciste?)",
+    "questions_13": "Q13. ¿Qué te hubiera gustado dar a tus padres pero no pudiste?\n(Si no tienes padres, ¿qué te hubiera gustado dar pero no pudiste?)",
+    "questions_14": "Q14. ¿Qué te hubiera gustado dar a tus hijos pero no pudiste?\n(Si no tienes hijos, ¿qué crees que no podrás dar a tus hijos en el futuro?)",
+    "questions_15": "Q15. ¿Qué te hubiera gustado darte a ti mismo/a pero no pudiste?",
+    "questions_16": "Q16. ¿Qué te hubiera gustado dar a tu cónyuge pero no pudiste?\n(Si no estás casado/a, ¿qué te gustaría dar a tu pareja actual o futura pero no lo has hecho?)",
+    "insert": "Por favor, ingrese",
+    "basicResult": "Resultado básico de interpretación",
+    "saveGallery": "Guardar en galería",
+    "consultReserve": "Reservar consulta en profundidad",
+    "consultTimeReserve": "Reservar hora de consulta",
+    "month": "Mes",
+    "year": "Año",
+    "next": "Siguiente",
+    "day": "Día",
+    "am_9": "9 AM",
+    "am_11": "11 AM",
+    "pm_5": "5 PM",
+    "consult_30m": "Tiempo de consulta 30 minutos",
+    "consult_phone_number": "Por favor, ingrese el número de teléfono para la consulta."
   }
 }

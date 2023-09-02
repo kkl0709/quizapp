@@ -35,7 +35,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   shared_preferences: any
-  get: any
   get_cli: ^1.8.1
   syncfusion_flutter_datepicker: any
   flutter_keyboard_visibility: ^5.4.1
@@ -62,7 +61,7 @@ dependencies:
 
   # screenshot
   screenshot: ^2.1.0
-  image_gallery_saver: ^2.0.2
+  image_gallery_saver: ^2.0.3
 
   # version check function lib
   package_info_plus: ^4.0.2
@@ -78,6 +77,10 @@ dependencies:
   url_launcher: ^6.1.12
   extended_image: ^8.1.0
   cloud_firestore: ^4.9.0
+  sizer: ^2.0.15
+  flutter_widget_to_image: ^0.0.1
+  path_provider: ^2.1.1
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:

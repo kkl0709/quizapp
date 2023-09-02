@@ -73,7 +73,7 @@ class UserBlockRepository {
     required DateTime createdAt,
   }) async {
     UserBlock community = UserBlock(
-      id: await getUserBlockCreateIdFirestore(),
+      id: await getUserBlockCreateId(),
       userEmail: userEmail,
       targetUserEmail: targetUserEmail,
       createdAt: createdAt,
