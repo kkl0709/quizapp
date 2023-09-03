@@ -23,96 +23,101 @@ class ConsultCallScreen extends GetView<ConsultCallController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70.0),
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-            child: Row(
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Get.back();
-                  },
-                  child: Icon(
-                    Icons.arrow_back_ios_new,
+    return GestureDetector(
+      onTap: () {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(70.0),
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Get.back();
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios_new,
+                    ),
                   ),
-                ),
-                SizedBox(width: 4.0),
-                //Text(controller.noReserveDate.toString())
-              ],
+                  SizedBox(width: 4.0),
+                  //Text(controller.noReserveDate.toString())
+                ],
+              ),
             ),
           ),
         ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              "questionScreen_consult_phone_number".tr,
-              style: TextStyle(
-                color: Color(0xFF1E1F27),
-                fontWeight: FontWeight.w700,
-                fontSize: 20,
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                "questionScreen_consult_phone_number".tr,
+                style: TextStyle(
+                  color: Color(0xFF1E1F27),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20,
+                ),
               ),
-            ),
-            SizedBox(height: 20),
-            FormInputText(
-              hintText: '010-1234-5678',
-              controller: controller.phoneTEC.value,
-              onChanged: (value) {
-                if (value.length < previousLength) {
-                  // 지우는 동작이므로 '-' 문자 추가 로직을 실행하지 않음
-                  controller.tecChanged();
-                } else {
-                  if (controller.phoneTEC.value.text.length == 3 ||
-                      controller.phoneTEC.value.text.length == 8) {
-                    controller.phoneTEC.value.text += '-';
-                    controller.phoneTEC.value.selection = TextSelection.fromPosition(
-                        TextPosition(offset: controller.phoneTEC.value.text.length));
+              SizedBox(height: 20),
+              FormInputText(
+                hintText: '010-1234-5678',
+                controller: controller.phoneTEC.value,
+                onChanged: (value) {
+                  if (value.length < previousLength) {
+                    // 지우는 동작이므로 '-' 문자 추가 로직을 실행하지 않음
+                    controller.tecChanged();
+                  } else {
+                    if (controller.phoneTEC.value.text.length == 3 ||
+                        controller.phoneTEC.value.text.length == 8) {
+                      controller.phoneTEC.value.text += '-';
+                      controller.phoneTEC.value.selection = TextSelection.fromPosition(
+                          TextPosition(offset: controller.phoneTEC.value.text.length));
+                    }
+                    controller.tecChanged();
                   }
-                  controller.tecChanged();
-                }
-                previousLength = value.length; // 현재의 길이를 저장
-              },
-              keyboardType: TextInputType.number,
-            ),
-            Expanded(child: SizedBox()),
-            GetBuilder<ConsultCallController>(
-              builder: (controller) => ElevatedButton(
-                onPressed: controller.phoneTEC.value.text.isEmpty
-                    ? null
-                    : () async {
-                        final consultModel = ConsultModel(
-                          phoneNumber: controller.phoneTEC.value.text,
-                          hour: controller.hour,
-                          date: controller.date,
-                        );
-                        await QuizAppDatabaseService.I
-                            .getConnection()
-                            ?.collection('phoneReserve')
-                            .insertOne(consultModel.toJson());
-                        Get.offAllNamed(RoutesConstants.homeScreen); // 모든 스택을 제거하고 HomeScreen으로 이동
-                      },
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(10, 52),
-                  backgroundColor: Color(0xFF321646), // 버튼색을 #321646로 설정
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10), // 버튼 모서리를 둥글게 설정
+                  previousLength = value.length; // 현재의 길이를 저장
+                },
+                keyboardType: TextInputType.number,
+              ),
+              Expanded(child: SizedBox()),
+              GetBuilder<ConsultCallController>(
+                builder: (controller) => ElevatedButton(
+                  onPressed: controller.phoneTEC.value.text.isEmpty
+                      ? null
+                      : () async {
+                          final consultModel = ConsultModel(
+                            phoneNumber: controller.phoneTEC.value.text,
+                            hour: controller.hour,
+                            date: controller.date,
+                          );
+                          await QuizAppDatabaseService.I
+                              .getConnection()
+                              ?.collection('phoneReserve')
+                              .insertOne(consultModel.toJson());
+                          Get.offAllNamed(RoutesConstants.homeScreen); // 모든 스택을 제거하고 HomeScreen으로 이동
+                        },
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: Size(10, 52),
+                    backgroundColor: Color(0xFF321646), // 버튼색을 #321646로 설정
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10), // 버튼 모서리를 둥글게 설정
+                    ),
                   ),
-                ),
-                child: Text(
-                  "questionScreen_next".tr,
-                  style: TextStyle(
-                    color: Colors.white, // 글자색을 흰색으로 설정
+                  child: Text(
+                    "questionScreen_next".tr,
+                    style: TextStyle(
+                      color: Colors.white, // 글자색을 흰색으로 설정
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

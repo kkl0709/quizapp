@@ -212,6 +212,20 @@
     "am_11": "11 AM",
     "pm_5": "5 PM",
     "consult_30m": "Consultation Time 30 minutes",
-    "consult_phone_number": "Please enter the phone number for consultation."
+    "consult_phone_number": "Please enter the phone number for consultation.",
+    "result_0_0": "What you can't give to yourself comes from what you can't get from your parents. The reason you can't give to yourself ",
+    "result_0_1": " is because you didn't get ",
+    "result_0_2": " from your parents.",
+    "result_1_0": "What you can't get from your parents, you try to get from your partner. Because you didn't get ",
+    "result_1_1": " from your parents, you try to get ",
+    "result_1_2": " from your partner.",
+    "result_2_0": "It would be great if you could get everything you want from a partner, but if you can't get enough, you try to give it to yourself. Because you didn't get ",
+    "result_2_1": " enough from your partner, you give yourself ",
+    "result_2_2": " instead.",
+    "result_3_0": "What you try to give to yourself is a reward for what you receive. Because you've received ",
+    "result_3_1": " for yourself, you give ",
+    "result_3_2": " to yourself.",
+    "result_4_0": "What you receive for yourself becomes the basis of your thoughts, words, and actions. What you receive for yourself ",
+    "result_4_1": " is your intrinsic motivation."
   }
 }

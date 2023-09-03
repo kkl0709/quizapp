@@ -212,6 +212,20 @@
     "am_11": "11h du matin",
     "pm_5": "5h de l'après-midi",
     "consult_30m": "Durée de la consultation : 30 minutes",
-    "consult_phone_number": "Veuillez saisir votre numéro de téléphone pour la consultation."
+    "consult_phone_number": "Veuillez saisir votre numéro de téléphone pour la consultation.",
+    "result_0_0": "Ce que vous ne pouvez pas vous donner vient de ce que vous ne pouvez pas recevoir de vos parents. La raison pour laquelle vous ne pouvez pas vous donner ",
+    "result_0_1": " est que vous n'avez pas reçu ",
+    "result_0_2": " de vos parents.",
+    "result_1_0": "Ce que vous ne pouvez pas recevoir de vos parents, vous essayez de le compenser en recevant de votre partenaire. Car vous n'avez pas reçu ",
+    "result_1_1": " de vos parents, vous essayez de recevoir ",
+    "result_1_2": " de votre partenaire.",
+    "result_2_0": "Il serait idéal de recevoir tout ce que vous voulez de votre partenaire, mais si vous ne le pouvez pas, vous essayez de compenser en vous donnant à vous-même. Car vous n'avez pas reçu ",
+    "result_2_1": " de votre partenaire, vous vous donnez ",
+    "result_2_2": " à vous-même.",
+    "result_3_0": "Se donner à soi-même est une compensation pour ce que l'on reçoit. Puisque vous recevez ",
+    "result_3_1": ", vous donnez ",
+    "result_3_2": " à vous-même.",
+    "result_4_0": "Ce que vous donnez à vous-même devient la motivation sous-jacente de vos pensées, paroles et actions. Ce que vous donnez ",
+    "result_4_1": " est ma motivation sous-jacente."
   }
 }

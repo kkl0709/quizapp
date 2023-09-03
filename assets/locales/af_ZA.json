@@ -212,6 +212,20 @@
     "am_11": "OG 11 uur",
     "pm_5": "NM 5 uur",
     "consult_30m": "Konsultasie tyd 30 minute",
-    "consult_phone_number": "Voer asseblief die telefoonnommer in waarop u konsultasie wil ontvang."
+    "consult_phone_number": "Voer asseblief die telefoonnommer in waarop u konsultasie wil ontvang.",
+    "result_0_0": "Wat jy nie vir jouself kan gee nie, kom van wat jy nie van jou ouers kan kry nie. Die rede waarom jy nie vir jouself kan gee ",
+    "result_0_1": " is omdat jy nie ",
+    "result_0_2": " van jou ouers kon kry nie.",
+    "result_1_0": "Wat jy nie van jou ouers kan ontvang nie, probeer jy van jou metgesel te kry. Omdat jy nie ",
+    "result_1_1": " van jou ouers kon ontvang nie, probeer jy ",
+    "result_1_2": " van jou metgesel te kry.",
+    "result_2_0": "Dit sou lekker wees as jy alles wat jy van 'n metgesel wil hê, kon kry, maar as jy nie genoeg kan kry nie, probeer jy dit vir jouself te gee. Omdat jy nie ",
+    "result_2_1": " van 'n metgesel kon kry nie, gee jy ",
+    "result_2_2": " vir jouself.",
+    "result_3_0": "Wat jy vir jouself probeer gee, is 'n beloning vir wat jy ontvang. Omdat jy ",
+    "result_3_1": " vir jouself ontvang het, gee jy ",
+    "result_3_2": " vir jouself.",
+    "result_4_0": "Wat jy vir jouself ontvang, is die basis van jou denke, woorde en optrede. Wat jy vir jouself ontvang ",
+    "result_4_1": " is jou interne motivering."
   }
 }

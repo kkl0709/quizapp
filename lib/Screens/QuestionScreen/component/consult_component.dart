@@ -25,9 +25,13 @@ class ConsultReserve extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          "questionScreen_consultTimeReserve".tr,
-          style: TextStyle(color: Color(0xFF1E1F27), fontSize: 28, fontWeight: FontWeight.w700),
+        Expanded(
+          child: Text(
+            "questionScreen_consultTimeReserve".tr,
+            style: TextStyle(color: Color(0xFF1E1F27), fontSize: 28, fontWeight: FontWeight.w700),
+            overflow: TextOverflow.clip,
+            //maxLines: 2,
+          ),
         ),
         TextButton(
           onPressed: () async {
@@ -84,7 +88,12 @@ class CalendarMove extends StatelessWidget {
           children: [
             Text(
               '${(currentDate.year)}' + "questionScreen_year".tr,
-              style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 14),
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.w600,
+                fontSize: 14,
+                overflow: TextOverflow.clip,
+              ),
             ),
             Text(
               '${(currentDate.month)}' + "questionScreen_month".tr,

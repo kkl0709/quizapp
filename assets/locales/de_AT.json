@@ -211,6 +211,24 @@
     "am_11": "11 Uhr morgens",
     "pm_5": "5 Uhr nachmittags",
     "consult_30m": "Beratungszeit 30 Minuten",
-    "consult_phone_number": "Bitte geben Sie die Telefonnummer ein, unter der Sie beraten werden möchten."
+    "consult_phone_number": "Bitte geben Sie die Telefonnummer ein, unter der Sie beraten werden möchten.",
+    "result_0_0": "Was du dir selbst nicht geben kannst, kommt daher, dass du es nicht von deinen Eltern bekommen kannst. Der Grund, warum du dir selbst nicht geben kannst ",
+    "result_0_1": " ist, weil du nicht ",
+    "result_0_2": " von deinen Eltern bekommen hast.",
+
+    "result_1_0": "Was du nicht von deinen Eltern bekommen kannst, versuchst du von deinem Partner zu bekommen. Weil du nicht ",
+    "result_1_1": " von deinen Eltern bekommen hast, versuchst du ",
+    "result_1_2": " von deinem Partner zu bekommen.",
+
+    "result_2_0": "Es wäre schön, wenn du alles, was du von einem Partner möchtest, bekommen könntest, aber wenn du nicht genug bekommst, versuchst du es dir selbst zu geben. Weil du nicht ",
+    "result_2_1": " von deinem Partner bekommen hast, gibst du dir selbst ",
+    "result_2_2": " .",
+
+    "result_3_0": "Was du versuchst dir selbst zu geben, ist eine Belohnung für das, was du empfängst. Weil du ",
+    "result_3_1": " für dich selbst bekommen hast, gibst du dir ",
+    "result_3_2": " .",
+
+    "result_4_0": "Was du dir selbst gibst, wird zur Grundlage deiner Gedanken, Worte und Taten. Was du dir selbst gibst ",
+    "result_4_1": " ist deine innere Motivation."
   }
 }

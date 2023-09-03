@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:chinesequizapp/Screens/QuestionScreen/component/result_component.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/controller/result_controller.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:flutter/material.dart';
@@ -104,27 +105,14 @@ class ResultScreen extends GetView<ResultController> {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
           ),
           SizedBox(height: 20),
-          Container(
-            height: 15.h,
-            padding: EdgeInsets.all(10),
-            child: Text('aaa'),
-            decoration: BoxDecoration(
-              color: Color(0xFFFFFFFF), // 내부 색깔을 #FFFFFF로 설정
-              borderRadius: BorderRadius.circular(10), // 테두리를 둥글게 설정
-              border: Border.all(
-                color: Color(0xFFEEEEEE), // 테두리 색깔을 #EEEEEE로 설정
-                width: 1, // 테두리 두께를 1로 설정 (원하는 두께로 변경 가능)
-              ),
-            ),
-            // 원하는 크기나 내부 위젯을 여기에 추가
-          ),
+          BasicResult(),
+          SizedBox(height: 20),
+
           Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: List.generate(
-                20,
-                (index) => Container(
-                      height: 70,
-                      child: Text('aa'),
-                    )),
+                5,
+                (index) => ResultCard(index: index)),
           ),
           Row(
             children: [
@@ -143,13 +131,7 @@ class ResultScreen extends GetView<ResultController> {
                       });
                     });
                   },
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: Size(10, 52),
-                    backgroundColor: Color(0xFFE0E0E0), // 버튼색을 #321646로 설정
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10), // 버튼 모서리를 둥글게 설정
-                    ),
-                  ),
+                  style: renderButtonStyle_1(),
                   child: Text(
                     "questionScreen_saveGallery".tr,
                     style: TextStyle(color: Color(0xFF424242), fontSize: 24, letterSpacing: -2.0),
@@ -162,13 +144,7 @@ class ResultScreen extends GetView<ResultController> {
                   onPressed: () {
                     Get.toNamed(RoutesConstants.consultScreen);
                   },
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: Size(10, 52),
-                    backgroundColor: Color(0xFF321646),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
+                  style: renderButtonStyle_2(),
                   child: Text(
                     "questionScreen_consultReserve".tr,
                     style: TextStyle(color: Colors.white, fontSize: 24),
@@ -178,6 +154,25 @@ class ResultScreen extends GetView<ResultController> {
             ],
           )
         ],
+      ),
+    );
+  }
+
+  renderButtonStyle_1() {
+    return ElevatedButton.styleFrom(
+      minimumSize: Size(10, 52),
+      backgroundColor: Color(0xFFE0E0E0), // 버튼색을 #321646로 설정
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10), // 버튼 모서리를 둥글게 설정
+      ),
+    );
+  }
+  renderButtonStyle_2() {
+    return ElevatedButton.styleFrom(
+      minimumSize: Size(10, 52),
+      backgroundColor: Color(0xFF321646),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
       ),
     );
   }

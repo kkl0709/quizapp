@@ -39,7 +39,7 @@ class ConsultScreen extends GetView<ConsultController> {
             ),
           ),
           body: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -47,11 +47,11 @@ class ConsultScreen extends GetView<ConsultController> {
                   selectedDate: controller.selectedDate.value,
                   controller: controller,
                 ),
-                SizedBox(height: 25),
+                SizedBox(height: 15),
                 CalendarMove(
                     currentDate: controller.currentDate.value,
                     controller: controller.datePickerController.value),
-                SizedBox(height: 25),
+                SizedBox(height: 15),
                 Expanded(
                   child: SfDateRangePicker(
                     onViewChanged: (dateRangePickerViewChangedArgs) async {

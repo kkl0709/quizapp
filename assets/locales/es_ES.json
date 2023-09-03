@@ -212,6 +212,20 @@
     "am_11": "11 AM",
     "pm_5": "5 PM",
     "consult_30m": "Tiempo de consulta 30 minutos",
-    "consult_phone_number": "Por favor, ingrese el número de teléfono para la consulta."
+    "consult_phone_number": "Por favor, ingrese el número de teléfono para la consulta.",
+    "result_0_0": "Lo que no puedes darte a ti mismo proviene de lo que no puedes recibir de tus padres. La razón por la que no puedes darte ",
+    "result_0_1": " es porque no recibiste ",
+    "result_0_2": " de tus padres.",
+    "result_1_0": "Lo que no puedes recibir de tus padres, intentas compensarlo recibiendo de tu pareja. Ya que no recibiste ",
+    "result_1_1": " de tus padres, intentas obtener ",
+    "result_1_2": " de tu pareja.",
+    "result_2_0": "Sería ideal recibir todo lo que quieres de tu pareja, pero si no puedes, intentas compensarlo dándote a ti mismo. Ya que no recibiste ",
+    "result_2_1": " de tu pareja, te das ",
+    "result_2_2": " a ti mismo.",
+    "result_3_0": "Darte a ti mismo es una compensación por lo que recibes. Ya que recibes ",
+    "result_3_1": ", te das ",
+    "result_3_2": " a ti mismo.",
+    "result_4_0": "Lo que te das a ti mismo se convierte en la motivación subyacente detrás de tus pensamientos, palabras y acciones. Lo que te das ",
+    "result_4_1": " es la motivación subyacente en mí."
   }
 }

@@ -203,6 +203,20 @@ class LocaleKeys {
   static const questionScreen_consult_30m = 'questionScreen_consult_30m';
   static const questionScreen_consult_phone_number =
       'questionScreen_consult_phone_number';
+  static const questionScreen_result_0_0 = 'questionScreen_result_0_0';
+  static const questionScreen_result_0_1 = 'questionScreen_result_0_1';
+  static const questionScreen_result_0_2 = 'questionScreen_result_0_2';
+  static const questionScreen_result_1_0 = 'questionScreen_result_1_0';
+  static const questionScreen_result_1_1 = 'questionScreen_result_1_1';
+  static const questionScreen_result_1_2 = 'questionScreen_result_1_2';
+  static const questionScreen_result_2_0 = 'questionScreen_result_2_0';
+  static const questionScreen_result_2_1 = 'questionScreen_result_2_1';
+  static const questionScreen_result_2_2 = 'questionScreen_result_2_2';
+  static const questionScreen_result_3_0 = 'questionScreen_result_3_0';
+  static const questionScreen_result_3_1 = 'questionScreen_result_3_1';
+  static const questionScreen_result_3_2 = 'questionScreen_result_3_2';
+  static const questionScreen_result_4_0 = 'questionScreen_result_4_0';
+  static const questionScreen_result_4_1 = 'questionScreen_result_4_1';
   static const questionScreen_questions_13 = 'questionScreen_questions_13';
   static const questionScreen_questions_14 = 'questionScreen_questions_14';
   static const questionScreen_questions_15 = 'questionScreen_questions_15';
@@ -377,6 +391,25 @@ class Locales {
     'questionScreen_consult_30m': '30 minutos de consulta',
     'questionScreen_consult_phone_number':
         'Por favor, introduza o número de telefone para a consulta.',
+    'questionScreen_result_0_0':
+        'O que você não pode dar a si mesmo vem do que você não pode receber de seus pais. A razão pela qual você não pode dar ',
+    'questionScreen_result_0_1': ' para si mesmo é porque você não recebeu ',
+    'questionScreen_result_0_2': ' de seus pais.',
+    'questionScreen_result_1_0':
+        'O que você não pode receber de seus pais, você tenta obter de seu parceiro. Como você não recebeu ',
+    'questionScreen_result_1_1': ' de seus pais, você tenta receber ',
+    'questionScreen_result_1_2': ' de seu parceiro.',
+    'questionScreen_result_2_0':
+        'Seria ideal receber tudo o que você quer de seu parceiro, mas se você não pode, tenta se dar. Como você não recebeu ',
+    'questionScreen_result_2_1': ' suficiente de seu parceiro, você dá ',
+    'questionScreen_result_2_2': ' a si mesmo.',
+    'questionScreen_result_3_0':
+        'Dar a si mesmo é uma compensação pelo que você recebe. Como você recebe ',
+    'questionScreen_result_3_1': ', você dá ',
+    'questionScreen_result_3_2': ' a si mesmo.',
+    'questionScreen_result_4_0':
+        'O que você dá a si mesmo torna-se a motivação subjacente por trás de seus pensamentos, palavras e ações. Recebendo ',
+    'questionScreen_result_4_1': ' é minha motivação subjacente.',
   };
   static const ko_KR = {
     'common_button_back': '뒤로가기',
@@ -541,6 +574,22 @@ class Locales {
     'questionScreen_pm_5': '오후 5시',
     'questionScreen_consult_30m': '상담 시간 30분',
     'questionScreen_consult_phone_number': '상담 받으실 전화번호를\n입력해주세요.',
+    'questionScreen_result_0_0': '자신에게 주지 못하는 것은 부모에게서 받지 못하는 것에서 비롯됩니다. 자신에게 ',
+    'questionScreen_result_0_1': '를 주지 못하는 이유는 부모님께 ',
+    'questionScreen_result_0_2': '을 받지 못했기 때문입니다.',
+    'questionScreen_result_1_0': '부모님에게 받지 못하는 것은, 동반자에게서 받으려고 합니다. 부모님께 ',
+    'questionScreen_result_1_1': '을 받지 못했기 때문에, 동반자에게서 ',
+    'questionScreen_result_1_2': '을 받으려고 합니다.',
+    'questionScreen_result_2_0':
+        '동반자에게서 원하는 것을 충분히 받을 수 있다면 좋겠지만, 충분히 받지 못한다면 자신에게 주려고 합니다. 동반자에게서 ',
+    'questionScreen_result_2_1': '을 충분히 받지 못해, 자신에게 ',
+    'questionScreen_result_2_2': '을 주려고 합니다.',
+    'questionScreen_result_3_0': '자신에게 주려는 것은, 받는 것에 대한 보상입니다. 자신에게 ',
+    'questionScreen_result_3_1': '을 받기 때문에, 자신에게 ',
+    'questionScreen_result_3_2': '을 주려고 합니다.',
+    'questionScreen_result_4_0':
+        '자신에게 받는 것은 자신의 생각, 말, 행동의 기본 동기가 됩니다. 자신에게 받는 ',
+    'questionScreen_result_4_1': '이 내재적 동기입니다.',
   };
   static const es_ES = {
     'common_button_back': 'regresa',
@@ -719,6 +768,25 @@ class Locales {
     'questionScreen_consult_30m': 'Tiempo de consulta 30 minutos',
     'questionScreen_consult_phone_number':
         'Por favor, ingrese el número de teléfono para la consulta.',
+    'questionScreen_result_0_0':
+        'Lo que no puedes darte a ti mismo proviene de lo que no puedes recibir de tus padres. La razón por la que no puedes darte ',
+    'questionScreen_result_0_1': ' es porque no recibiste ',
+    'questionScreen_result_0_2': ' de tus padres.',
+    'questionScreen_result_1_0':
+        'Lo que no puedes recibir de tus padres, intentas compensarlo recibiendo de tu pareja. Ya que no recibiste ',
+    'questionScreen_result_1_1': ' de tus padres, intentas obtener ',
+    'questionScreen_result_1_2': ' de tu pareja.',
+    'questionScreen_result_2_0':
+        'Sería ideal recibir todo lo que quieres de tu pareja, pero si no puedes, intentas compensarlo dándote a ti mismo. Ya que no recibiste ',
+    'questionScreen_result_2_1': ' de tu pareja, te das ',
+    'questionScreen_result_2_2': ' a ti mismo.',
+    'questionScreen_result_3_0':
+        'Darte a ti mismo es una compensación por lo que recibes. Ya que recibes ',
+    'questionScreen_result_3_1': ', te das ',
+    'questionScreen_result_3_2': ' a ti mismo.',
+    'questionScreen_result_4_0':
+        'Lo que te das a ti mismo se convierte en la motivación subyacente detrás de tus pensamientos, palabras y acciones. Lo que te das ',
+    'questionScreen_result_4_1': ' es la motivación subyacente en mí.',
   };
   static const de_AT = {
     'common_button_back': 'Geh zurück',
@@ -899,6 +967,28 @@ class Locales {
     'questionScreen_consult_30m': 'Beratungszeit 30 Minuten',
     'questionScreen_consult_phone_number':
         'Bitte geben Sie die Telefonnummer ein, unter der Sie beraten werden möchten.',
+    'questionScreen_result_0_0':
+        'Was du dir selbst nicht geben kannst, kommt daher, dass du es nicht von deinen Eltern bekommen kannst. Der Grund, warum du dir selbst nicht geben kannst ',
+    'questionScreen_result_0_1': ' ist, weil du nicht ',
+    'questionScreen_result_0_2': ' von deinen Eltern bekommen hast.',
+    'questionScreen_result_1_0':
+        'Was du nicht von deinen Eltern bekommen kannst, versuchst du von deinem Partner zu bekommen. Weil du nicht ',
+    'questionScreen_result_1_1':
+        ' von deinen Eltern bekommen hast, versuchst du ',
+    'questionScreen_result_1_2': ' von deinem Partner zu bekommen.',
+    'questionScreen_result_2_0':
+        'Es wäre schön, wenn du alles, was du von einem Partner möchtest, bekommen könntest, aber wenn du nicht genug bekommst, versuchst du es dir selbst zu geben. Weil du nicht ',
+    'questionScreen_result_2_1':
+        ' von deinem Partner bekommen hast, gibst du dir selbst ',
+    'questionScreen_result_2_2': ' .',
+    'questionScreen_result_3_0':
+        'Was du versuchst dir selbst zu geben, ist eine Belohnung für das, was du empfängst. Weil du ',
+    'questionScreen_result_3_1':
+        ' für dich selbst bekommen hast, gibst du dir ',
+    'questionScreen_result_3_2': ' .',
+    'questionScreen_result_4_0':
+        'Was du dir selbst gibst, wird zur Grundlage deiner Gedanken, Worte und Taten. Was du dir selbst gibst ',
+    'questionScreen_result_4_1': ' ist deine innere Motivation.',
   };
   static const ja_JP = {
     'common_button_back': '戻る',
@@ -1056,6 +1146,22 @@ class Locales {
     'questionScreen_pm_5': '午後5時',
     'questionScreen_consult_30m': '30分の相談',
     'questionScreen_consult_phone_number': '相談のための電話番号を入力してください。',
+    'questionScreen_result_0_0': '自分自身に与えられないものは、親から受け取れないものから来ています。自分に ',
+    'questionScreen_result_0_1': ' を与えられない理由は、親から ',
+    'questionScreen_result_0_2': ' を受け取れなかったからです。',
+    'questionScreen_result_1_0': '親から受け取れないものは、パートナーから受け取ることで補おうとします。親から ',
+    'questionScreen_result_1_1': ' を受け取れなかったので、パートナーから ',
+    'questionScreen_result_1_2': ' を受け取ろうとします。',
+    'questionScreen_result_2_0':
+        'パートナーからすべてのものを受け取るのが理想的ですが、それができない場合は、自分自身に与えることで補います。パートナーから ',
+    'questionScreen_result_2_1': ' を十分に受け取れなかったので、自分に ',
+    'questionScreen_result_2_2': ' を与えています。',
+    'questionScreen_result_3_0': '自分自身に与えることは、受け取るものの代わりです。あなたが ',
+    'questionScreen_result_3_1': ' を受け取るので、自分自身に ',
+    'questionScreen_result_3_2': ' を与えています。',
+    'questionScreen_result_4_0':
+        '自分自身に与えるものは、自分の考え、言葉、行動の背後にある動機となります。私に与えられる ',
+    'questionScreen_result_4_1': ' は私の根本的な動機です。',
   };
   static const zh_CN = {
     'common_button_back': '回去',
@@ -1211,6 +1317,21 @@ class Locales {
     'questionScreen_pm_5': '下午5点',
     'questionScreen_consult_30m': '咨询时间30分钟',
     'questionScreen_consult_phone_number': '请输入您的咨询电话号码。',
+    'questionScreen_result_0_0': '你无法给予自己的，是因为你无法从父母那里得到的。你不能给自己的原因是 ',
+    'questionScreen_result_0_1': ' 是因为你没有从父母那里得到 ',
+    'questionScreen_result_0_2': '。',
+    'questionScreen_result_1_0': '你从父母那里得不到的，你会尝试从伴侣那里得到。因为你没有从父母那里得到 ',
+    'questionScreen_result_1_1': '，所以你尝试从伴侣那里得到 ',
+    'questionScreen_result_1_2': '。',
+    'questionScreen_result_2_0':
+        '如果你能从伴侣那里得到你想要的那就太好了，但如果得不到，你会尝试给予自己。因为你没有从伴侣那里得到足够的 ',
+    'questionScreen_result_2_1': '，所以你给自己 ',
+    'questionScreen_result_2_2': '。',
+    'questionScreen_result_3_0': '你给予自己的是对你所得到的的补偿。因为你得到了 ',
+    'questionScreen_result_3_1': '，所以你给自己 ',
+    'questionScreen_result_3_2': '。',
+    'questionScreen_result_4_0': '你给予自己的成为你思考、说话和行动背后的主要动机。给自己的 ',
+    'questionScreen_result_4_1': ' 是我的内在动机。',
   };
   static const it_IT = {
     'common_button_back': 'torna indietro',
@@ -1388,6 +1509,25 @@ class Locales {
     'questionScreen_consult_30m': '30 minuti di consulenza',
     'questionScreen_consult_phone_number':
         'Inserisci il tuo numero di telefono per la consulenza.',
+    'questionScreen_result_0_0':
+        'Ciò che non puoi darti proviene da ciò che non puoi ricevere dai tuoi genitori. Il motivo per cui non puoi darti ',
+    'questionScreen_result_0_1': ' è perché non hai ricevuto ',
+    'questionScreen_result_0_2': ' dai tuoi genitori.',
+    'questionScreen_result_1_0':
+        'Ciò che non puoi ricevere dai tuoi genitori, cerchi di compensarlo ricevendo dal tuo partner. Poiché non hai ricevuto ',
+    'questionScreen_result_1_1': ' dai tuoi genitori, cerchi di ricevere ',
+    'questionScreen_result_1_2': ' dal tuo partner.',
+    'questionScreen_result_2_0':
+        'Sarebbe ideale ricevere tutto ciò che desideri dal tuo partner, ma se non puoi, cerchi di compensarlo dandoti da solo. Poiché non hai ricevuto ',
+    'questionScreen_result_2_1': ' dal tuo partner, ti dai ',
+    'questionScreen_result_2_2': ' a te stesso.',
+    'questionScreen_result_3_0':
+        'Darsi da soli è una compensazione per ciò che si riceve. Poiché ricevi ',
+    'questionScreen_result_3_1': ', ti dai ',
+    'questionScreen_result_3_2': ' a te stesso.',
+    'questionScreen_result_4_0':
+        'Ciò che ti dai diventa la motivazione sottostante dietro ai tuoi pensieri, parole e azioni. Ciò che ti dai ',
+    'questionScreen_result_4_1': ' è la mia motivazione sottostante.',
   };
   static const en_US = {
     'common_button_back': 'go back',
@@ -1560,6 +1700,26 @@ class Locales {
     'questionScreen_consult_30m': 'Consultation Time 30 minutes',
     'questionScreen_consult_phone_number':
         'Please enter the phone number for consultation.',
+    'questionScreen_result_0_0':
+        'What you can\'t give to yourself comes from what you can\'t get from your parents. The reason you can\'t give to yourself ',
+    'questionScreen_result_0_1': ' is because you didn\'t get ',
+    'questionScreen_result_0_2': ' from your parents.',
+    'questionScreen_result_1_0':
+        'What you can\'t get from your parents, you try to get from your partner. Because you didn\'t get ',
+    'questionScreen_result_1_1': ' from your parents, you try to get ',
+    'questionScreen_result_1_2': ' from your partner.',
+    'questionScreen_result_2_0':
+        'It would be great if you could get everything you want from a partner, but if you can\'t get enough, you try to give it to yourself. Because you didn\'t get ',
+    'questionScreen_result_2_1':
+        ' enough from your partner, you give yourself ',
+    'questionScreen_result_2_2': ' instead.',
+    'questionScreen_result_3_0':
+        'What you try to give to yourself is a reward for what you receive. Because you\'ve received ',
+    'questionScreen_result_3_1': ' for yourself, you give ',
+    'questionScreen_result_3_2': ' to yourself.',
+    'questionScreen_result_4_0':
+        'What you receive for yourself becomes the basis of your thoughts, words, and actions. What you receive for yourself ',
+    'questionScreen_result_4_1': ' is your intrinsic motivation.',
   };
   static const hi_IN = {
     'common_button_back': 'वापस जाओ',
@@ -1736,6 +1896,27 @@ class Locales {
     'questionScreen_consult_30m': '30 मिनट परामर्श',
     'questionScreen_consult_phone_number':
         'परामर्श के लिए अपना फोन नंबर डालें।',
+    'questionScreen_result_0_0':
+        'जो आप अपने आप को नहीं दे सकते, वह आपके माता-पिता से प्राप्त नहीं हो सकता। जिस कारण आप ',
+    'questionScreen_result_0_1': ' को नहीं दे सकते, वह यह है कि आपने ',
+    'questionScreen_result_0_2': ' को अपने माता-पिता से प्राप्त नहीं किया।',
+    'questionScreen_result_1_0':
+        'जो आप अपने माता-पिता से प्राप्त नहीं कर सकते, आप अपने साथी से प्राप्त करने की कोशिश करते हैं। क्योंकि आपने ',
+    'questionScreen_result_1_1': ' को अपने माता-पिता से प्राप्त नहीं किया, आप ',
+    'questionScreen_result_1_2':
+        ' को अपने साथी से प्राप्त करने की कोशिश करते हैं।',
+    'questionScreen_result_2_0':
+        'यदि आप अपने साथी से सभी चीजें प्राप्त कर सकते हैं, तो यह अच्छा होता है, लेकिन यदि आप नहीं कर सकते हैं, तो आप अपने आप को देने की कोशिश करते हैं। क्योंकि आपने ',
+    'questionScreen_result_2_1':
+        ' को अपने साथी से प्राप्त नहीं किया, आप अपने आप को ',
+    'questionScreen_result_2_2': ' देते हैं।',
+    'questionScreen_result_3_0':
+        'अपने आप को देना वह है जो आप प्राप्त करते हैं का मुआवजा है। चूंकि आप ',
+    'questionScreen_result_3_1': ' प्राप्त करते हैं, इसलिए आप अपने आप को ',
+    'questionScreen_result_3_2': ' देते हैं।',
+    'questionScreen_result_4_0':
+        'जो आप अपने आप को देते हैं, वह आपके विचार, शब्द और क्रियावली के पीछे का मूल प्रेरणा स्रोत बनता है। आपके द्वारा दिया गया ',
+    'questionScreen_result_4_1': ' मेरा मौलिक प्रेरणा स्रोत है।',
   };
   static const af_ZA = {
     'common_button_back': 'gaan terug',
@@ -1910,6 +2091,25 @@ class Locales {
     'questionScreen_consult_30m': 'Konsultasie tyd 30 minute',
     'questionScreen_consult_phone_number':
         'Voer asseblief die telefoonnommer in waarop u konsultasie wil ontvang.',
+    'questionScreen_result_0_0':
+        'Wat jy nie vir jouself kan gee nie, kom van wat jy nie van jou ouers kan kry nie. Die rede waarom jy nie vir jouself kan gee ',
+    'questionScreen_result_0_1': ' is omdat jy nie ',
+    'questionScreen_result_0_2': ' van jou ouers kon kry nie.',
+    'questionScreen_result_1_0':
+        'Wat jy nie van jou ouers kan ontvang nie, probeer jy van jou metgesel te kry. Omdat jy nie ',
+    'questionScreen_result_1_1': ' van jou ouers kon ontvang nie, probeer jy ',
+    'questionScreen_result_1_2': ' van jou metgesel te kry.',
+    'questionScreen_result_2_0':
+        'Dit sou lekker wees as jy alles wat jy van \'n metgesel wil hê, kon kry, maar as jy nie genoeg kan kry nie, probeer jy dit vir jouself te gee. Omdat jy nie ',
+    'questionScreen_result_2_1': ' van \'n metgesel kon kry nie, gee jy ',
+    'questionScreen_result_2_2': ' vir jouself.',
+    'questionScreen_result_3_0':
+        'Wat jy vir jouself probeer gee, is \'n beloning vir wat jy ontvang. Omdat jy ',
+    'questionScreen_result_3_1': ' vir jouself ontvang het, gee jy ',
+    'questionScreen_result_3_2': ' vir jouself.',
+    'questionScreen_result_4_0':
+        'Wat jy vir jouself ontvang, is die basis van jou denke, woorde en optrede. Wat jy vir jouself ontvang ',
+    'questionScreen_result_4_1': ' is jou interne motivering.',
   };
   static const ru_RU = {
     'common_button_back': 'возвращаться',
@@ -2078,6 +2278,25 @@ class Locales {
     'questionScreen_consult_30m': 'Консультация 30 минут',
     'questionScreen_consult_phone_number':
         'Пожалуйста, введите ваш номер телефона для консультации.',
+    'questionScreen_result_0_0':
+        'То, что вы не можете дать себе, происходит от того, что вы не можете получить от родителей. Причина, по которой вы не можете дать себе ',
+    'questionScreen_result_0_1': ' - это потому, что вы не получили ',
+    'questionScreen_result_0_2': ' от ваших родителей.',
+    'questionScreen_result_1_0':
+        'То, что вы не можете получить от родителей, вы пытаетесь получить от партнера. Так как вы не получили ',
+    'questionScreen_result_1_1': ' от родителей, вы пытаетесь получить ',
+    'questionScreen_result_1_2': ' от партнера.',
+    'questionScreen_result_2_0':
+        'Было бы хорошо, если бы вы могли получить все, что хотите, от партнера, но если не можете, пытаетесь дать это себе. Так как вы не получили ',
+    'questionScreen_result_2_1': ' достаточно от партнера, вы даете себе ',
+    'questionScreen_result_2_2': ' взамен.',
+    'questionScreen_result_3_0':
+        'То, что вы даете себе, является компенсацией за то, что вы получаете. Так как вы получаете ',
+    'questionScreen_result_3_1': ', вы даете себе ',
+    'questionScreen_result_3_2': ' взамен.',
+    'questionScreen_result_4_0':
+        'То, что вы получаете для себя, становится основной мотивацией ваших мыслей, слов и действий. Получая ',
+    'questionScreen_result_4_1': ' - это моя внутренняя мотивация.',
   };
   static const ar_AR = {
     'common_button_back': 'عُد',
@@ -2250,6 +2469,25 @@ class Locales {
     'questionScreen_consult_30m': 'وقت الاستشارة 30 دقيقة',
     'questionScreen_consult_phone_number':
         'يرجى إدخال رقم الهاتف الذي ترغب في استقبال الاستشارة عليه.',
+    'questionScreen_result_0_0':
+        'ما لا يمكنك أن تعطيه لنفسك يأتي مما لا يمكنك الحصول عليه من والديك. السبب وراء عدم قدرتك على منح نفسك ',
+    'questionScreen_result_0_1': ' هو أنك لم تحصل على ',
+    'questionScreen_result_0_2': ' من والديك.',
+    'questionScreen_result_1_0':
+        'ما لا تستطيع الحصول عليه من والديك، تحاول الحصول عليه من شريك حياتك. بسبب عدم قدرتك على الحصول على ',
+    'questionScreen_result_1_1': ' من والديك، تحاول الحصول على ',
+    'questionScreen_result_1_2': ' من شريك حياتك.',
+    'questionScreen_result_2_0':
+        'سيكون من الجيد إذا استطعت الحصول على كل ما ترغب فيه من شريكك، ولكن إذا لم تستطع الحصول على ما يكفي، فستحاول منح نفسك ذلك. لأنك لم تستطع الحصول على ',
+    'questionScreen_result_2_1': ' من شريكك، تعطي نفسك ',
+    'questionScreen_result_2_2': ' بدلاً من ذلك.',
+    'questionScreen_result_3_0':
+        'ما تحاول أن تعطيه لنفسك هو مكافأة لما تستقبله. لأنك استقبلت ',
+    'questionScreen_result_3_1': ' لنفسك، تعطي ',
+    'questionScreen_result_3_2': ' لنفسك.',
+    'questionScreen_result_4_0':
+        'ما تستقبله لنفسك يصبح أساسًا لأفكارك وكلماتك وأفعالك. ما تستقبله لنفسك ',
+    'questionScreen_result_4_1': ' هو الدافع الداخلي لك.',
   };
   static const fr_FR = {
     'common_button_back': 'Retour',
@@ -2432,5 +2670,24 @@ class Locales {
     'questionScreen_consult_30m': 'Durée de la consultation : 30 minutes',
     'questionScreen_consult_phone_number':
         'Veuillez saisir votre numéro de téléphone pour la consultation.',
+    'questionScreen_result_0_0':
+        'Ce que vous ne pouvez pas vous donner vient de ce que vous ne pouvez pas recevoir de vos parents. La raison pour laquelle vous ne pouvez pas vous donner ',
+    'questionScreen_result_0_1': ' est que vous n\'avez pas reçu ',
+    'questionScreen_result_0_2': ' de vos parents.',
+    'questionScreen_result_1_0':
+        'Ce que vous ne pouvez pas recevoir de vos parents, vous essayez de le compenser en recevant de votre partenaire. Car vous n\'avez pas reçu ',
+    'questionScreen_result_1_1': ' de vos parents, vous essayez de recevoir ',
+    'questionScreen_result_1_2': ' de votre partenaire.',
+    'questionScreen_result_2_0':
+        'Il serait idéal de recevoir tout ce que vous voulez de votre partenaire, mais si vous ne le pouvez pas, vous essayez de compenser en vous donnant à vous-même. Car vous n\'avez pas reçu ',
+    'questionScreen_result_2_1': ' de votre partenaire, vous vous donnez ',
+    'questionScreen_result_2_2': ' à vous-même.',
+    'questionScreen_result_3_0':
+        'Se donner à soi-même est une compensation pour ce que l\'on reçoit. Puisque vous recevez ',
+    'questionScreen_result_3_1': ', vous donnez ',
+    'questionScreen_result_3_2': ' à vous-même.',
+    'questionScreen_result_4_0':
+        'Ce que vous donnez à vous-même devient la motivation sous-jacente de vos pensées, paroles et actions. Ce que vous donnez ',
+    'questionScreen_result_4_1': ' est ma motivation sous-jacente.',
   };
 }

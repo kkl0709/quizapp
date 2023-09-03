@@ -212,6 +212,20 @@
     "am_11": "11 del mattino",
     "pm_5": "5 del pomeriggio",
     "consult_30m": "30 minuti di consulenza",
-    "consult_phone_number": "Inserisci il tuo numero di telefono per la consulenza."
+    "consult_phone_number": "Inserisci il tuo numero di telefono per la consulenza.",
+    "result_0_0": "Ciò che non puoi darti proviene da ciò che non puoi ricevere dai tuoi genitori. Il motivo per cui non puoi darti ",
+    "result_0_1": " è perché non hai ricevuto ",
+    "result_0_2": " dai tuoi genitori.",
+    "result_1_0": "Ciò che non puoi ricevere dai tuoi genitori, cerchi di compensarlo ricevendo dal tuo partner. Poiché non hai ricevuto ",
+    "result_1_1": " dai tuoi genitori, cerchi di ricevere ",
+    "result_1_2": " dal tuo partner.",
+    "result_2_0": "Sarebbe ideale ricevere tutto ciò che desideri dal tuo partner, ma se non puoi, cerchi di compensarlo dandoti da solo. Poiché non hai ricevuto ",
+    "result_2_1": " dal tuo partner, ti dai ",
+    "result_2_2": " a te stesso.",
+    "result_3_0": "Darsi da soli è una compensazione per ciò che si riceve. Poiché ricevi ",
+    "result_3_1": ", ti dai ",
+    "result_3_2": " a te stesso.",
+    "result_4_0": "Ciò che ti dai diventa la motivazione sottostante dietro ai tuoi pensieri, parole e azioni. Ciò che ti dai ",
+    "result_4_1": " è la mia motivazione sottostante."
   }
 }

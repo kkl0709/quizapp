@@ -208,6 +208,20 @@
     "am_11": "11 da manhã",
     "pm_5": "5 da tarde",
     "consult_30m": "30 minutos de consulta",
-    "consult_phone_number": "Por favor, introduza o número de telefone para a consulta."
+    "consult_phone_number": "Por favor, introduza o número de telefone para a consulta.",
+    "result_0_0": "O que você não pode dar a si mesmo vem do que você não pode receber de seus pais. A razão pela qual você não pode dar ",
+    "result_0_1": " para si mesmo é porque você não recebeu ",
+    "result_0_2": " de seus pais.",
+    "result_1_0": "O que você não pode receber de seus pais, você tenta obter de seu parceiro. Como você não recebeu ",
+    "result_1_1": " de seus pais, você tenta receber ",
+    "result_1_2": " de seu parceiro.",
+    "result_2_0": "Seria ideal receber tudo o que você quer de seu parceiro, mas se você não pode, tenta se dar. Como você não recebeu ",
+    "result_2_1": " suficiente de seu parceiro, você dá ",
+    "result_2_2": " a si mesmo.",
+    "result_3_0": "Dar a si mesmo é uma compensação pelo que você recebe. Como você recebe ",
+    "result_3_1": ", você dá ",
+    "result_3_2": " a si mesmo.",
+    "result_4_0": "O que você dá a si mesmo torna-se a motivação subjacente por trás de seus pensamentos, palavras e ações. Recebendo ",
+    "result_4_1": " é minha motivação subjacente."
   }
 }

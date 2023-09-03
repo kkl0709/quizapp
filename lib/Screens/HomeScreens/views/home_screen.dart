@@ -67,6 +67,8 @@ class HomeScreen extends GetView<HomeScreenController> {
                         //Get.toNamed(RoutesConstants.topicSelectionScreen);
                         Get.toNamed(RoutesConstants.questionScreen);
                         //Get.toNamed(RoutesConstants.consultScreen);
+                        //Get.toNamed(RoutesConstants.resultScreen);
+
                       },
                       child: ClipRect(
                         child: BackdropFilter(
