@@ -37,7 +37,6 @@ class _ViewResultScreenState extends State<ViewResultScreen> {
   ViewResultController controller = Get.put(ViewResultController());
 
   ScreenshotController screenshotController = ScreenshotController();
-  Uint8List? bytes;
 
   @override
   void dispose() {
@@ -58,8 +57,7 @@ class _ViewResultScreenState extends State<ViewResultScreen> {
           preferredSize: Size.fromHeight(70.0),
           child: SafeArea(
             child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10.0),
+              padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10.0),
               child: Row(
                 children: [
                   InkWell(
@@ -117,15 +115,8 @@ class _ViewResultScreenState extends State<ViewResultScreen> {
                 children: [
                   getButton(
                     onTap: () async {
-                      await screenshotController.capture().then((value) async {
-                        setState(() {
-                          this.bytes = value;
-                        });
-
-                        saveImage(value ??
-                            await screenshotController.captureFromLongWidget(
-                                viewResultScreenWidget(context)));
-                      });
+                      saveImage(
+                          await screenshotController.captureFromLongWidget(viewResultScreenWidget(context)));
                     },
                     title: "viewResultScreen_button_save".tr,
                   ),

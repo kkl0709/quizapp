@@ -114,6 +114,7 @@ class ResultScreen extends GetView<ResultController> {
                 5,
                 (index) => ResultCard(index: index)),
           ),
+
           Row(
             children: [
               Expanded(
