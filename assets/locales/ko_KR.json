@@ -163,7 +163,8 @@
     "dailyQuiz": "매일 퀴즈",
     "button": {
       "true": "정답"
-    }
+    },
+    "quiz_solve": "퀴즈 풀기"
   },
   "progressScreen": {
     "progress": "진도",
@@ -226,6 +227,18 @@
     "result_3_1": "을 받기 때문에, 자신에게 ",
     "result_3_2": "을 주려고 합니다.",
     "result_4_0": "자신에게 받는 것은 자신의 생각, 말, 행동의 기본 동기가 됩니다. 자신에게 받는 ",
-    "result_4_1": "이 내재적 동기입니다."
+    "result_4_1": "이 내재적 동기입니다.",
+    "order_1": "자신에게 못준다",
+    "order_2": "부모에게 못받는다",
+    "order_3": "동반자에게서 받는다",
+    "order_4": "자신에게 준다",
+    "order_5": "자신에게 받는다"
+  },
+  "reserveScreen": {
+    "possible": "예약가능",
+    "complete": "예약완료",
+    "impossible": "예약불가",
+    "consultManage": "상담 예약 관리",
+    "purchase": "구매하기"
   }
 }

@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:chinesequizapp/generated/switch_language.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DatabaseConstants {
   // static const String databaseConnUrl =
@@ -18,4 +21,6 @@ class DatabaseConstants {
       databaseQuestionsCollection = databaseQuestionsCollection;
 
   String get getDatabaseQuestionsCollection => databaseQuestionsCollection!;
+  static List<dynamic> noReserveDates = [];
+  static StreamSubscription? stream;
 }

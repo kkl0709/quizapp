@@ -163,7 +163,8 @@
     "dailyQuiz": "prueba diaria",
     "button": {
       "true": "respuesta"
-    }
+    },
+    "quiz_solve": "Resolver el cuestionario"
   },
   "progressScreen": {
     "progress": "Progreso",
@@ -226,6 +227,18 @@
     "result_3_1": ", te das ",
     "result_3_2": " a ti mismo.",
     "result_4_0": "Lo que te das a ti mismo se convierte en la motivación subyacente detrás de tus pensamientos, palabras y acciones. Lo que te das ",
-    "result_4_1": " es la motivación subyacente en mí."
-  }
+    "result_4_1": " es la motivación subyacente en mí.",
+    "order_1": "No puede dárselo a uno mismo",
+    "order_2": "No puede recibir de los padres",
+    "order_3": "Recibe de un compañero",
+    "order_4": "Se da a sí mismo",
+    "order_5": "Recibe de sí mismo"
+  },
+    "reserveScreen": {
+      "possible": "Disponible",
+      "complete": "Reservado",
+      "impossible": "No disponible",
+      "consultManage": "Gestion des réservations de consultation",
+      "purchase": "Acheter"
+    }
 }

@@ -163,7 +163,8 @@
     "dailyQuiz": "questionário diário",
     "button": {
       "true": "responder"
-    }
+    },
+    "quiz_solve": "Resolver o quiz"
   },
   "progressScreen": {
     "progress": "Progresso",
@@ -222,6 +223,18 @@
     "result_3_1": ", você dá ",
     "result_3_2": " a si mesmo.",
     "result_4_0": "O que você dá a si mesmo torna-se a motivação subjacente por trás de seus pensamentos, palavras e ações. Recebendo ",
-    "result_4_1": " é minha motivação subjacente."
+    "result_4_1": " é minha motivação subjacente.",
+    "order_1": "Não pode dar a si mesmo",
+    "order_2": "Não pode receber dos pais",
+    "order_3": "Recebe de um companheiro",
+    "order_4": "Dá a si mesmo",
+    "order_5": "Recebe de si mesmo"
+  },
+  "reserveScreen": {
+    "possible": "Disponível",
+    "complete": "Reservado",
+    "impossible": "Indisponível",
+    "consultManage": "Gestão de reservas de consultoria",
+    "purchase": "Comprar"
   }
 }

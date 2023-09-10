@@ -62,12 +62,13 @@ android {
 
     signingConfigs {
         release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+            storeFile file('../upload-keystore.jks')
+            storePassword "123456"
+            keyAlias "upload" // 이 부분을 수정합니다.
+            keyPassword "123456"
         }
     }
+
     buildTypes {
         release {
             signingConfig signingConfigs.release
@@ -84,6 +85,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation platform('com.google.firebase:firebase-bom:32.0.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'com.facebook.android:facebook-android-sdk:[8,9)' 
-
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+    implementation "com.android.billingclient:billing:4.0.0"
 }

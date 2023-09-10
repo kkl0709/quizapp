@@ -22,18 +22,19 @@ import 'package:chinesequizapp/Screens/OnBordingScreens/views/onBoarding_screen.
 import 'package:chinesequizapp/Screens/ProfileScreens/views/profile_edit.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/Views/progress_screen_view.dart';
 import 'package:chinesequizapp/Screens/ProgressScreen/bindding/progress_screen_binding.dart';
-import 'package:chinesequizapp/Screens/QuestionScreen/binddings/consult_binding.dart';
+import 'package:chinesequizapp/Screens/PurchaseScreen/view/purchase_screen_view.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/binddings/consult_call_binding.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/binddings/questions_binding.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/binddings/result_binding.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/views/consult_call_screen.dart';
-import 'package:chinesequizapp/Screens/QuestionScreen/views/consult_screen.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/views/questions_screen.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/views/result_screen.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/binddings/daily_quiz_binding_screen.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/binddings/quiz_screen_bindding.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/views/daily_quiz_screen.dart';
 import 'package:chinesequizapp/Screens/QuizScreens/views/quiz_screen.dart';
+import 'package:chinesequizapp/Screens/ReserveScreen_3/binding/reserve_binding.dart';
+import 'package:chinesequizapp/Screens/ReserveScreen_3/view/reserve_screen.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:get/get.dart';
 
@@ -188,15 +189,20 @@ class AppPages {
         transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino),
     GetPage(
-        name: RoutesConstants.consultScreen,
-        page: () => ConsultScreen(),
-        binding: ConsultBinding(),
-        transitionDuration: Duration(milliseconds: 500),
-        transition: Transition.cupertino),
-    GetPage(
         name: RoutesConstants.consultCallScreen,
         page: () => ConsultCallScreen(),
         binding: ConsultCallBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.reserveScreen,
+        page: () => ReserveScreen(),
+        binding: ReserveBinding(),
+        transitionDuration: Duration(milliseconds: 500),
+        transition: Transition.cupertino),
+    GetPage(
+        name: RoutesConstants.purchaseScreen,
+        page: () => PurchaseScreen(),
         transitionDuration: Duration(milliseconds: 500),
         transition: Transition.cupertino),
   ];

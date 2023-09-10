@@ -163,7 +163,8 @@
     "dailyQuiz": "quiz quotidiano",
     "button": {
       "true": "risposta"
-    }
+    },
+    "quiz_solve": "Risolvi il quiz"
   },
   "progressScreen": {
     "progress": "Avanzamento",
@@ -226,6 +227,18 @@
     "result_3_1": ", ti dai ",
     "result_3_2": " a te stesso.",
     "result_4_0": "Ciò che ti dai diventa la motivazione sottostante dietro ai tuoi pensieri, parole e azioni. Ciò che ti dai ",
-    "result_4_1": " è la mia motivazione sottostante."
-  }
+    "result_4_1": " è la mia motivazione sottostante.",
+    "order_1": "Non può dare a se stesso",
+    "order_2": "Non può ricevere dai genitori",
+    "order_3": "Riceve da un compagno",
+    "order_4": "Da a se stesso",
+    "order_5": "Riceve da se stesso"
+  },
+    "reserveScreen": {
+      "possible": "Disponibile",
+      "complete": "Prenotato",
+      "impossible": "Non disponibile",
+      "consultManage": "Gestione delle prenotazioni di consulenza",
+      "purchase": "Acquista"
+    }
 }

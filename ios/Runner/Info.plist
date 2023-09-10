@@ -14,16 +14,12 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-    <string>Save images to gallery</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>Save images to gallery</string>
 	<key>CFBundleName</key>
 	<string>chinesequizapp</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
+	<string>2.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -63,7 +59,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<string>19</string>
 	<key>FacebookAppID</key>
 	<string>3485522875036833</string>
 	<key>FacebookClientToken</key>
@@ -101,8 +97,12 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSInAppUsageDescription</key>
+	<string>allow this to purchase lecture</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Save Photo</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>이 앱은 커뮤니티 사진 업로드 시 사진 폴더 접근 권한이 필요합니다.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -134,7 +134,5 @@
 	<string>QuizApp</string>
 	<key>naverServiceAppUrlScheme</key>
 	<string>tetraquizapp</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>이 앱은 커뮤니티 사진 업로드 시 사진 폴더 접근 권한이 필요합니다.</string>
 </dict>
 </plist>

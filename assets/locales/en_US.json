@@ -163,7 +163,8 @@
     "dailyQuiz": "Daily Quiz",
     "button": {
       "true": "answer"
-    }
+    },
+    "quiz_solve": "Solve Quiz"
   },
   "progressScreen": {
     "progress": "Progress",
@@ -226,6 +227,18 @@
     "result_3_1": " for yourself, you give ",
     "result_3_2": " to yourself.",
     "result_4_0": "What you receive for yourself becomes the basis of your thoughts, words, and actions. What you receive for yourself ",
-    "result_4_1": " is your intrinsic motivation."
+    "result_4_1": " is your intrinsic motivation.",
+    "order_1": "Can't give to oneself",
+    "order_2": "Can't receive from parents",
+    "order_3": "Receives from a companion",
+    "order_4": "Gives to oneself",
+    "order_5": "Receives from oneself"
+  },
+  "reserveScreen": {
+    "possible": "Available",
+    "complete": "Reserved",
+    "impossible": "Unavailable",
+    "consultManage": "Consultation Reservation Management",
+    "purchase": "Purchase"
   }
 }

@@ -1,17 +1,49 @@
 import 'package:chinesequizapp/Screens/ProfileScreens/controller/profile_screen_controller.dart';
+import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
 import 'package:chinesequizapp/infrastructure/mixins/authentication_mixin.dart';
 import 'package:chinesequizapp/infrastructure/utilities/custom_styles.dart';
 import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../infrastructure/Constants/app_constants_color.dart';
 import '../../../infrastructure/Constants/font_constants.dart';
 
-class ProfileScreen extends GetView<ProfileScreenController> {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
+
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  final ProfileScreenController controller = Get.find();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    DatabaseConstants.stream = FirebaseFirestore.instance
+        .collection('reserve')
+        .doc(DateTime(1990, 01, 01).toString())
+        .snapshots()
+        .listen((event) {
+      if (event.data() != null) {
+        DatabaseConstants.noReserveDates = event.data()!['noReserveDate'];
+        debugPrint('DatabaseConstants.noReserveDates ${DatabaseConstants.noReserveDates}');
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    DatabaseConstants.stream?.cancel();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +54,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
           child: Column(
             children: [
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
                 child: Row(
                   children: [
                     HeadlineBodyOneBaseWidget(
@@ -45,36 +76,33 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                       titleTextAlign: TextAlign.center,
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
-                      titleColor:
-                          AppConstantsColor.normalTextColor.withOpacity(0.5),
+                      titleColor: AppConstantsColor.normalTextColor.withOpacity(0.5),
                     ),
                     Spacer(),
                     InkWell(
-                        onTap: () => controller.onNavigateUpdateProfile(),
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border.all(
-                                  color: AppConstantsColor.normalTextColor
-                                      .withOpacity(0.5),
-                                  width: 1)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(5.0),
-                            child: HeadlineBodyOneBaseWidget(
-                              title: "profileScreen_profileEdit".tr,
-                              titleTextAlign: TextAlign.center,
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.w400,
-                              titleColor: AppConstantsColor.blackColor,
-                            ),
+                      onTap: () => controller.onNavigateUpdateProfile(),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(
+                                color: AppConstantsColor.normalTextColor.withOpacity(0.5), width: 1)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: HeadlineBodyOneBaseWidget(
+                            title: "profileScreen_profileEdit".tr,
+                            titleTextAlign: TextAlign.center,
+                            fontSize: 13.0,
+                            fontWeight: FontWeight.w400,
+                            titleColor: AppConstantsColor.blackColor,
                           ),
-                        )),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 20.0, vertical: 40.0),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
                 child: GestureDetector(
                   onTap: () => controller.onNavigateUpdateProfile(),
                   child: Container(
@@ -99,8 +127,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                           ), //BoxShado
                         ]),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
                       child: Row(
                         children: [
                           Column(
@@ -112,8 +139,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                                 titleTextAlign: TextAlign.center,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
-                                titleColor: AppConstantsColor.normalTextColor
-                                    .withOpacity(0.5),
+                                titleColor: AppConstantsColor.normalTextColor.withOpacity(0.5),
                               ),
                               SizedBox(
                                 height: 20.0,
@@ -123,8 +149,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                                 titleTextAlign: TextAlign.center,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
-                                titleColor: AppConstantsColor.normalTextColor
-                                    .withOpacity(0.5),
+                                titleColor: AppConstantsColor.normalTextColor.withOpacity(0.5),
                               ),
                             ],
                           ),
@@ -136,8 +161,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               HeadlineBodyOneBaseWidget(
-                                title: (controller.account.value.email ?? '')
-                                    .toString(),
+                                title: (controller.account.value.email ?? '').toString(),
                                 titleTextAlign: TextAlign.center,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
@@ -164,10 +188,10 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
                 child: TextButton(
-                  onPressed: () => Utils.launchUrl('https://ckehdwns00.wixsite.com/my-site/privacy-policy-for-tetra-self-coaching'),
+                  onPressed: () => Utils.launchUrl(
+                      'https://ckehdwns00.wixsite.com/my-site/privacy-policy-for-tetra-self-coaching'),
                   style: CustomStyles.textButtonZeroSize(),
                   child: Row(
                     children: [
@@ -189,8 +213,59 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+                child: TextButton(
+                  onPressed: () {
+                    Get.toNamed(RoutesConstants.reserveScreen);
+                  },
+                  style: CustomStyles.textButtonZeroSize(),
+                  child: Row(
+                    children: [
+                      HeadlineBodyOneBaseWidget(
+                        title: "reserveScreen_consultManage".tr,
+                        titleTextAlign: TextAlign.center,
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.w700,
+                        titleColor: AppConstantsColor.blackColor,
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: AppConstantsColor.normalTextColor.withOpacity(0.5),
+                        size: 24,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+                child: TextButton(
+                  onPressed: () {
+                    Get.toNamed(RoutesConstants.purchaseScreen);
+                  },
+                  style: CustomStyles.textButtonZeroSize(),
+                  child: Row(
+                    children: [
+                      HeadlineBodyOneBaseWidget(
+                        title: "reserveScreen_purchase".tr,
+                        titleTextAlign: TextAlign.center,
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.w700,
+                        titleColor: AppConstantsColor.blackColor,
+                      ),
+                      Spacer(),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: AppConstantsColor.normalTextColor.withOpacity(0.5),
+                        size: 24,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
                 child: Row(
                   children: [
                     InkWell(
@@ -204,10 +279,8 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                           onTap: () async {
                             bool ret = await controller.deleteAccount();
                             if (ret == true) {
-                              final int code =
-                                  await SharedPreferenceService.getAuthCode;
-                              AuthenticationHelper.unregister(
-                                  AuthType.fromCode(code));
+                              final int code = await SharedPreferenceService.getAuthCode;
+                              AuthenticationHelper.unregister(AuthType.fromCode(code));
                               SharedPreferenceService.saveLogout();
                               Get.offAllNamed(RoutesConstants.onBoarding);
                             } else {
@@ -221,8 +294,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                         titleTextAlign: TextAlign.center,
                         fontSize: 15.0,
                         fontWeight: FontWeight.w500,
-                        titleColor:
-                            AppConstantsColor.normalTextColor.withOpacity(0.5),
+                        titleColor: AppConstantsColor.normalTextColor.withOpacity(0.5),
                       ),
                     ),
                     Padding(
@@ -230,8 +302,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                       child: Container(
                         height: 15,
                         width: 1,
-                        color:
-                            AppConstantsColor.normalTextColor.withOpacity(0.5),
+                        color: AppConstantsColor.normalTextColor.withOpacity(0.5),
                       ),
                     ),
                     InkWell(
@@ -243,10 +314,10 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                             title: 'membershipScreen_logout'.tr,
                             buttonText: 'profileScreen_logout'.tr,
                             onTap: () async {
-                              int authCode =
-                                  await SharedPreferenceService.getAuthCode;
-                              await AuthenticationHelper.logout(
-                                  AuthType.fromCode(authCode)); //=> 로그아웃
+                              DatabaseConstants.stream?.cancel();
+                              DatabaseConstants.noReserveDates = [];
+                              int authCode = await SharedPreferenceService.getAuthCode;
+                              await AuthenticationHelper.logout(AuthType.fromCode(authCode)); //=> 로그아웃
                               SharedPreferenceService.saveLogout();
                               Get.offAllNamed(RoutesConstants.onBoarding);
                             },
@@ -257,8 +328,7 @@ class ProfileScreen extends GetView<ProfileScreenController> {
                           titleTextAlign: TextAlign.center,
                           fontSize: 15.0,
                           fontWeight: FontWeight.w500,
-                          titleColor: AppConstantsColor.normalTextColor
-                              .withOpacity(0.5),
+                          titleColor: AppConstantsColor.normalTextColor.withOpacity(0.5),
                         )),
                   ],
                 ),
@@ -286,8 +356,8 @@ class ProfileScreen extends GetView<ProfileScreenController> {
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('common_button_cancel'.tr,
-                  style: TextStyle(color: AppConstantsColor.normalTextColor)),
+              child:
+                  Text('common_button_cancel'.tr, style: TextStyle(color: AppConstantsColor.normalTextColor)),
               onPressed: () {
                 Get.back();
               },

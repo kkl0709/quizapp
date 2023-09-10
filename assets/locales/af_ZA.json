@@ -163,7 +163,8 @@
     "dailyQuiz": "Daaglikse vasvra",
     "button": {
       "true": "antwoord"
-    }
+    },
+    "quiz_solve": "Kwisspeletjie Speel"
   },
   "progressScreen": {
     "progress": "Vordering",
@@ -226,6 +227,18 @@
     "result_3_1": " vir jouself ontvang het, gee jy ",
     "result_3_2": " vir jouself.",
     "result_4_0": "Wat jy vir jouself ontvang, is die basis van jou denke, woorde en optrede. Wat jy vir jouself ontvang ",
-    "result_4_1": " is jou interne motivering."
+    "result_4_1": " is jou interne motivering.",
+    "order_1": "Kan dit nie aan jouself gee nie",
+    "order_2": "Kan nie van ouers kry nie",
+    "order_3": "Kry dit van 'n metgesel",
+    "order_4": "Gee aan jouself",
+    "order_5": "Kry van jouself"
+  },
+  "reserveScreen": {
+    "possible": "Beskikbaar vir bespreking",
+    "complete": "Bespreking voltooi",
+    "impossible": "Kan nie bespreek nie",
+    "consultManage": "Konsultasie Besprekingsbestuur",
+    "purchase": "Koop"
   }
 }

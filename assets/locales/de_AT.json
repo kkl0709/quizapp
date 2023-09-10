@@ -163,7 +163,8 @@
     "dailyQuiz": "tägliches Quiz",
     "button": {
       "true": "antworten"
-    }
+    },
+    "quiz_solve": "Quiz lösen"
   },
   "progressScreen": {
     "progress": "Fortschritt",
@@ -215,20 +216,28 @@
     "result_0_0": "Was du dir selbst nicht geben kannst, kommt daher, dass du es nicht von deinen Eltern bekommen kannst. Der Grund, warum du dir selbst nicht geben kannst ",
     "result_0_1": " ist, weil du nicht ",
     "result_0_2": " von deinen Eltern bekommen hast.",
-
     "result_1_0": "Was du nicht von deinen Eltern bekommen kannst, versuchst du von deinem Partner zu bekommen. Weil du nicht ",
     "result_1_1": " von deinen Eltern bekommen hast, versuchst du ",
     "result_1_2": " von deinem Partner zu bekommen.",
-
     "result_2_0": "Es wäre schön, wenn du alles, was du von einem Partner möchtest, bekommen könntest, aber wenn du nicht genug bekommst, versuchst du es dir selbst zu geben. Weil du nicht ",
     "result_2_1": " von deinem Partner bekommen hast, gibst du dir selbst ",
     "result_2_2": " .",
-
     "result_3_0": "Was du versuchst dir selbst zu geben, ist eine Belohnung für das, was du empfängst. Weil du ",
     "result_3_1": " für dich selbst bekommen hast, gibst du dir ",
     "result_3_2": " .",
-
     "result_4_0": "Was du dir selbst gibst, wird zur Grundlage deiner Gedanken, Worte und Taten. Was du dir selbst gibst ",
-    "result_4_1": " ist deine innere Motivation."
+    "result_4_1": " ist deine innere Motivation.",
+    "order_1": "Kann sich nicht selbst geben",
+    "order_2": "Kann nicht von den Eltern bekommen",
+    "order_3": "Bekommt es von einem Begleiter",
+    "order_4": "Geben Sie sich selbst",
+    "order_5": "Holen Sie sich selbst"
+  },
+  "reserveScreen": {
+    "possible": "Verfügbar",
+    "complete": "Reserviert",
+    "impossible": "Nicht verfügbar",
+    "consultManage": "Beratungstermin-Verwaltung",
+    "purchase": "Kaufen"
   }
 }

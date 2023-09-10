@@ -122,7 +122,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                                 vertical: 25.0,
                               ),
                               child: HeadlineBodyOneBaseWidget(
-                                title: '퀴즈 풀기',
+                                title: "quizScreen_quiz_solve".tr,
                                 titleTextAlign: TextAlign.center,
                                 fontSize: 24.0,
                                 fontWeight: FontWeight.w700,

@@ -1,18 +1,21 @@
+import 'package:chinesequizapp/Screens/ProfileScreens/controller/profile_screen_controller.dart';
 import 'package:chinesequizapp/Screens/QuestionScreen/controller/consult_call_controller.dart';
+import 'package:chinesequizapp/Screens/ReserveScreen_3/model/reserve_model.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/components/form_input_text.dart';
 import 'package:chinesequizapp/infrastructure/models/consult.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ConsultCallScreenArgs {
   final DateTime date;
-  final String hour;
+  final ReserveModel reserveModel;
 
   const ConsultCallScreenArgs({
     required this.date,
-    required this.hour,
+    required this.reserveModel,
   });
 }
 
@@ -23,6 +26,7 @@ class ConsultCallScreen extends GetView<ConsultCallController> {
 
   @override
   Widget build(BuildContext context) {
+    final profileController = Get.put(ProfileScreenController());
     return GestureDetector(
       onTap: () {
         FocusManager.instance.primaryFocus?.unfocus();
@@ -90,14 +94,25 @@ class ConsultCallScreen extends GetView<ConsultCallController> {
                   onPressed: controller.phoneTEC.value.text.isEmpty
                       ? null
                       : () async {
+                          await FirebaseFirestore.instance
+                              .collection('reserve')
+                              .doc(controller.date.toString())
+                              .set(
+                                ReserveModel(
+                                  date: Timestamp.fromDate(controller.date),
+                                  userEmail: profileController.account.value.email!,
+                                  status: '예약완료',
+                                  noReserveDate: [],
+                                  phoneNumber: controller.phoneTEC.value.text,
+                                ).toJson(),
+                              );
                           final consultModel = ConsultModel(
                             phoneNumber: controller.phoneTEC.value.text,
-                            hour: controller.hour,
                             date: controller.date,
                           );
                           await QuizAppDatabaseService.I
                               .getConnection()
-                              ?.collection('phoneReserve')
+                              ?.collection('noReserveDate')
                               .insertOne(consultModel.toJson());
                           Get.offAllNamed(RoutesConstants.homeScreen); // 모든 스택을 제거하고 HomeScreen으로 이동
                         },

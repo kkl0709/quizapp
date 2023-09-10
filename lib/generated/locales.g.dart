@@ -157,6 +157,7 @@ class LocaleKeys {
   static const quizScreen_content = 'quizScreen_content';
   static const quizScreen_dailyQuiz = 'quizScreen_dailyQuiz';
   static const quizScreen_button_true = 'quizScreen_button_true';
+  static const quizScreen_quiz_solve = 'quizScreen_quiz_solve';
   static const progressScreen_progress = 'progressScreen_progress';
   static const progressScreen_quizComplete = 'progressScreen_quizComplete';
   static const progressScreen_calender = 'progressScreen_calender';
@@ -217,6 +218,16 @@ class LocaleKeys {
   static const questionScreen_result_3_2 = 'questionScreen_result_3_2';
   static const questionScreen_result_4_0 = 'questionScreen_result_4_0';
   static const questionScreen_result_4_1 = 'questionScreen_result_4_1';
+  static const questionScreen_order_1 = 'questionScreen_order_1';
+  static const questionScreen_order_2 = 'questionScreen_order_2';
+  static const questionScreen_order_3 = 'questionScreen_order_3';
+  static const questionScreen_order_4 = 'questionScreen_order_4';
+  static const questionScreen_order_5 = 'questionScreen_order_5';
+  static const reserveScreen_possible = 'reserveScreen_possible';
+  static const reserveScreen_complete = 'reserveScreen_complete';
+  static const reserveScreen_impossible = 'reserveScreen_impossible';
+  static const reserveScreen_consultManage = 'reserveScreen_consultManage';
+  static const reserveScreen_purchase = 'reserveScreen_purchase';
   static const questionScreen_questions_13 = 'questionScreen_questions_13';
   static const questionScreen_questions_14 = 'questionScreen_questions_14';
   static const questionScreen_questions_15 = 'questionScreen_questions_15';
@@ -336,6 +347,7 @@ class Locales {
     'quizScreen_content': 'Tetra é a origem da vida no universo',
     'quizScreen_dailyQuiz': 'questionário diário',
     'quizScreen_button_true': 'responder',
+    'quizScreen_quiz_solve': 'Resolver o quiz',
     'progressScreen_progress': 'Progresso',
     'progressScreen_quizComplete': 'conclusão do questionário',
     'progressScreen_calender': 'calendário',
@@ -410,6 +422,16 @@ class Locales {
     'questionScreen_result_4_0':
         'O que você dá a si mesmo torna-se a motivação subjacente por trás de seus pensamentos, palavras e ações. Recebendo ',
     'questionScreen_result_4_1': ' é minha motivação subjacente.',
+    'questionScreen_order_1': 'Não pode dar a si mesmo',
+    'questionScreen_order_2': 'Não pode receber dos pais',
+    'questionScreen_order_3': 'Recebe de um companheiro',
+    'questionScreen_order_4': 'Dá a si mesmo',
+    'questionScreen_order_5': 'Recebe de si mesmo',
+    'reserveScreen_possible': 'Disponível',
+    'reserveScreen_complete': 'Reservado',
+    'reserveScreen_impossible': 'Indisponível',
+    'reserveScreen_consultManage': 'Gestão de reservas de consultoria',
+    'reserveScreen_purchase': 'Comprar',
   };
   static const ko_KR = {
     'common_button_back': '뒤로가기',
@@ -517,6 +539,7 @@ class Locales {
     'quizScreen_content': '테트라는 우주 생명의 기원입니다.',
     'quizScreen_dailyQuiz': '매일 퀴즈',
     'quizScreen_button_true': '정답',
+    'quizScreen_quiz_solve': '퀴즈 풀기',
     'progressScreen_progress': '진도',
     'progressScreen_quizComplete': '퀴즈완료',
     'progressScreen_calender': '달력',
@@ -590,6 +613,16 @@ class Locales {
     'questionScreen_result_4_0':
         '자신에게 받는 것은 자신의 생각, 말, 행동의 기본 동기가 됩니다. 자신에게 받는 ',
     'questionScreen_result_4_1': '이 내재적 동기입니다.',
+    'questionScreen_order_1': '자신에게 못준다',
+    'questionScreen_order_2': '부모에게 못받는다',
+    'questionScreen_order_3': '동반자에게서 받는다',
+    'questionScreen_order_4': '자신에게 준다',
+    'questionScreen_order_5': '자신에게 받는다',
+    'reserveScreen_possible': '예약가능',
+    'reserveScreen_complete': '예약완료',
+    'reserveScreen_impossible': '예약불가',
+    'reserveScreen_consultManage': '상담 예약 관리',
+    'reserveScreen_purchase': '구매하기',
   };
   static const es_ES = {
     'common_button_back': 'regresa',
@@ -704,6 +737,7 @@ class Locales {
     'quizScreen_content': 'Tetra es el origen de la vida en el universo.',
     'quizScreen_dailyQuiz': 'prueba diaria',
     'quizScreen_button_true': 'respuesta',
+    'quizScreen_quiz_solve': 'Resolver el cuestionario',
     'progressScreen_progress': 'Progreso',
     'progressScreen_quizComplete': 'finalización del cuestionario',
     'progressScreen_calender': 'calendario',
@@ -787,6 +821,16 @@ class Locales {
     'questionScreen_result_4_0':
         'Lo que te das a ti mismo se convierte en la motivación subyacente detrás de tus pensamientos, palabras y acciones. Lo que te das ',
     'questionScreen_result_4_1': ' es la motivación subyacente en mí.',
+    'questionScreen_order_1': 'No puede dárselo a uno mismo',
+    'questionScreen_order_2': 'No puede recibir de los padres',
+    'questionScreen_order_3': 'Recibe de un compañero',
+    'questionScreen_order_4': 'Se da a sí mismo',
+    'questionScreen_order_5': 'Recibe de sí mismo',
+    'reserveScreen_possible': 'Disponible',
+    'reserveScreen_complete': 'Reservado',
+    'reserveScreen_impossible': 'No disponible',
+    'reserveScreen_consultManage': 'Gestion des réservations de consultation',
+    'reserveScreen_purchase': 'Acheter',
   };
   static const de_AT = {
     'common_button_back': 'Geh zurück',
@@ -906,6 +950,7 @@ class Locales {
     'quizScreen_content': 'Tetra ist der Ursprung des Lebens im Universum.',
     'quizScreen_dailyQuiz': 'tägliches Quiz',
     'quizScreen_button_true': 'antworten',
+    'quizScreen_quiz_solve': 'Quiz lösen',
     'progressScreen_progress': 'Fortschritt',
     'progressScreen_quizComplete': 'Abschluss des Quiz',
     'progressScreen_calender': 'Kalender',
@@ -989,6 +1034,16 @@ class Locales {
     'questionScreen_result_4_0':
         'Was du dir selbst gibst, wird zur Grundlage deiner Gedanken, Worte und Taten. Was du dir selbst gibst ',
     'questionScreen_result_4_1': ' ist deine innere Motivation.',
+    'questionScreen_order_1': 'Kann sich nicht selbst geben',
+    'questionScreen_order_2': 'Kann nicht von den Eltern bekommen',
+    'questionScreen_order_3': 'Bekommt es von einem Begleiter',
+    'questionScreen_order_4': 'Geben Sie sich selbst',
+    'questionScreen_order_5': 'Holen Sie sich selbst',
+    'reserveScreen_possible': 'Verfügbar',
+    'reserveScreen_complete': 'Reserviert',
+    'reserveScreen_impossible': 'Nicht verfügbar',
+    'reserveScreen_consultManage': 'Beratungstermin-Verwaltung',
+    'reserveScreen_purchase': 'Kaufen',
   };
   static const ja_JP = {
     'common_button_back': '戻る',
@@ -1096,6 +1151,7 @@ class Locales {
     'quizScreen_content': 'テトラは宇宙生命の起源です',
     'quizScreen_dailyQuiz': '毎日クイズ',
     'quizScreen_button_true': '正解',
+    'quizScreen_quiz_solve': 'クイズを解く',
     'progressScreen_progress': '震度',
     'progressScreen_quizComplete': 'クイズ完了',
     'progressScreen_calender': 'カレンダー',
@@ -1162,6 +1218,16 @@ class Locales {
     'questionScreen_result_4_0':
         '自分自身に与えるものは、自分の考え、言葉、行動の背後にある動機となります。私に与えられる ',
     'questionScreen_result_4_1': ' は私の根本的な動機です。',
+    'questionScreen_order_1': '自分自身に与えることはできない',
+    'questionScreen_order_2': '両親から受け取ることはできない',
+    'questionScreen_order_3': '仲間から受け取る',
+    'questionScreen_order_4': '自分自身に与える',
+    'questionScreen_order_5': '自分自身から受け取る',
+    'reserveScreen_possible': '利用可能',
+    'reserveScreen_complete': '予約済み',
+    'reserveScreen_impossible': '利用不可',
+    'reserveScreen_consultManage': 'カウンセリング予約管理',
+    'reserveScreen_purchase': '購入する',
   };
   static const zh_CN = {
     'common_button_back': '回去',
@@ -1269,6 +1335,7 @@ class Locales {
     'quizScreen_content': 'Tetra是宇宙生命的起源',
     'quizScreen_dailyQuiz': '每日测验',
     'quizScreen_button_true': '回答',
+    'quizScreen_quiz_solve': '解决测验',
     'progressScreen_progress': '进度',
     'progressScreen_quizComplete': '测验完成',
     'progressScreen_calender': '日历',
@@ -1332,6 +1399,16 @@ class Locales {
     'questionScreen_result_3_2': '。',
     'questionScreen_result_4_0': '你给予自己的成为你思考、说话和行动背后的主要动机。给自己的 ',
     'questionScreen_result_4_1': ' 是我的内在动机。',
+    'questionScreen_order_1': '不能给自己',
+    'questionScreen_order_2': '不能从父母那里得到',
+    'questionScreen_order_3': '从伴侣那里得到',
+    'questionScreen_order_4': '给自己',
+    'questionScreen_order_5': '从自己那里得到',
+    'reserveScreen_possible': '可用',
+    'reserveScreen_complete': '已预订',
+    'reserveScreen_impossible': '不可用',
+    'reserveScreen_consultManage': '咨询预约管理',
+    'reserveScreen_purchase': '购买',
   };
   static const it_IT = {
     'common_button_back': 'torna indietro',
@@ -1446,6 +1523,7 @@ class Locales {
     'quizScreen_content': 'Tetra è l\'origine della vita nell\'universo.',
     'quizScreen_dailyQuiz': 'quiz quotidiano',
     'quizScreen_button_true': 'risposta',
+    'quizScreen_quiz_solve': 'Risolvi il quiz',
     'progressScreen_progress': 'Avanzamento',
     'progressScreen_quizComplete': 'completamento del quiz',
     'progressScreen_calender': 'calendario',
@@ -1528,6 +1606,16 @@ class Locales {
     'questionScreen_result_4_0':
         'Ciò che ti dai diventa la motivazione sottostante dietro ai tuoi pensieri, parole e azioni. Ciò che ti dai ',
     'questionScreen_result_4_1': ' è la mia motivazione sottostante.',
+    'questionScreen_order_1': 'Non può dare a se stesso',
+    'questionScreen_order_2': 'Non può ricevere dai genitori',
+    'questionScreen_order_3': 'Riceve da un compagno',
+    'questionScreen_order_4': 'Da a se stesso',
+    'questionScreen_order_5': 'Riceve da se stesso',
+    'reserveScreen_possible': 'Disponibile',
+    'reserveScreen_complete': 'Prenotato',
+    'reserveScreen_impossible': 'Non disponibile',
+    'reserveScreen_consultManage': 'Gestione delle prenotazioni di consulenza',
+    'reserveScreen_purchase': 'Acquista',
   };
   static const en_US = {
     'common_button_back': 'go back',
@@ -1638,6 +1726,7 @@ class Locales {
     'quizScreen_content': 'Tetra is the origin of life in the universe.',
     'quizScreen_dailyQuiz': 'Daily Quiz',
     'quizScreen_button_true': 'answer',
+    'quizScreen_quiz_solve': 'Solve Quiz',
     'progressScreen_progress': 'Progress',
     'progressScreen_quizComplete': 'quiz completion',
     'progressScreen_calender': 'calendar',
@@ -1720,6 +1809,16 @@ class Locales {
     'questionScreen_result_4_0':
         'What you receive for yourself becomes the basis of your thoughts, words, and actions. What you receive for yourself ',
     'questionScreen_result_4_1': ' is your intrinsic motivation.',
+    'questionScreen_order_1': 'Can\'t give to oneself',
+    'questionScreen_order_2': 'Can\'t receive from parents',
+    'questionScreen_order_3': 'Receives from a companion',
+    'questionScreen_order_4': 'Gives to oneself',
+    'questionScreen_order_5': 'Receives from oneself',
+    'reserveScreen_possible': 'Available',
+    'reserveScreen_complete': 'Reserved',
+    'reserveScreen_impossible': 'Unavailable',
+    'reserveScreen_consultManage': 'Consultation Reservation Management',
+    'reserveScreen_purchase': 'Purchase',
   };
   static const hi_IN = {
     'common_button_back': 'वापस जाओ',
@@ -1833,6 +1932,7 @@ class Locales {
     'quizScreen_content': 'टेट्रा ब्रह्मांड में जीवन की उत्पत्ति है',
     'quizScreen_dailyQuiz': 'दैनिक प्रश्नोत्तरी',
     'quizScreen_button_true': 'उत्तर',
+    'quizScreen_quiz_solve': 'प्रश्नोत्तरी हल करें',
     'progressScreen_progress': 'प्रगति',
     'progressScreen_quizComplete': 'प्रश्नोत्तरी पूर्णता',
     'progressScreen_calender': 'पंचांग',
@@ -1917,6 +2017,16 @@ class Locales {
     'questionScreen_result_4_0':
         'जो आप अपने आप को देते हैं, वह आपके विचार, शब्द और क्रियावली के पीछे का मूल प्रेरणा स्रोत बनता है। आपके द्वारा दिया गया ',
     'questionScreen_result_4_1': ' मेरा मौलिक प्रेरणा स्रोत है।',
+    'questionScreen_order_1': 'अपने आप को नहीं दे सकता',
+    'questionScreen_order_2': 'माता-पिता से प्राप्त नहीं कर सकता',
+    'questionScreen_order_3': 'एक साथी से प्राप्त करता है',
+    'questionScreen_order_4': 'अपने आप को देता है',
+    'questionScreen_order_5': 'अपने आप से प्राप्त करता है',
+    'reserveScreen_possible': 'उपलब्ध',
+    'reserveScreen_complete': 'आरक्षित',
+    'reserveScreen_impossible': 'अनुपलब्ध',
+    'reserveScreen_consultManage': 'परामर्श आरक्षण प्रबंधन',
+    'reserveScreen_purchase': 'खरीदें',
   };
   static const af_ZA = {
     'common_button_back': 'gaan terug',
@@ -2028,6 +2138,7 @@ class Locales {
     'quizScreen_content': 'Tetra is die oorsprong van lewe in die heelal.',
     'quizScreen_dailyQuiz': 'Daaglikse vasvra',
     'quizScreen_button_true': 'antwoord',
+    'quizScreen_quiz_solve': 'Kwisspeletjie Speel',
     'progressScreen_progress': 'Vordering',
     'progressScreen_quizComplete': 'vasvra voltooiing',
     'progressScreen_calender': 'kalender',
@@ -2110,6 +2221,16 @@ class Locales {
     'questionScreen_result_4_0':
         'Wat jy vir jouself ontvang, is die basis van jou denke, woorde en optrede. Wat jy vir jouself ontvang ',
     'questionScreen_result_4_1': ' is jou interne motivering.',
+    'questionScreen_order_1': 'Kan dit nie aan jouself gee nie',
+    'questionScreen_order_2': 'Kan nie van ouers kry nie',
+    'questionScreen_order_3': 'Kry dit van \'n metgesel',
+    'questionScreen_order_4': 'Gee aan jouself',
+    'questionScreen_order_5': 'Kry van jouself',
+    'reserveScreen_possible': 'Beskikbaar vir bespreking',
+    'reserveScreen_complete': 'Bespreking voltooi',
+    'reserveScreen_impossible': 'Kan nie bespreek nie',
+    'reserveScreen_consultManage': 'Konsultasie Besprekingsbestuur',
+    'reserveScreen_purchase': 'Koop',
   };
   static const ru_RU = {
     'common_button_back': 'возвращаться',
@@ -2223,6 +2344,7 @@ class Locales {
     'quizScreen_content': 'Тетра — источник жизни во Вселенной',
     'quizScreen_dailyQuiz': 'ежедневная викторина',
     'quizScreen_button_true': 'отвечать',
+    'quizScreen_quiz_solve': 'Решить викторину',
     'progressScreen_progress': 'Прогресс',
     'progressScreen_quizComplete': 'завершение викторины',
     'progressScreen_calender': 'календарь',
@@ -2297,6 +2419,16 @@ class Locales {
     'questionScreen_result_4_0':
         'То, что вы получаете для себя, становится основной мотивацией ваших мыслей, слов и действий. Получая ',
     'questionScreen_result_4_1': ' - это моя внутренняя мотивация.',
+    'questionScreen_order_1': 'Не может дать себе',
+    'questionScreen_order_2': 'Не может получить от родителей',
+    'questionScreen_order_3': 'Получает от спутника',
+    'questionScreen_order_4': 'Дает себе',
+    'questionScreen_order_5': 'Получает от себя',
+    'reserveScreen_possible': 'Доступно',
+    'reserveScreen_complete': 'Забронировано',
+    'reserveScreen_impossible': 'Недоступно',
+    'reserveScreen_consultManage': 'Управление записью на консультацию',
+    'reserveScreen_purchase': 'Купить',
   };
   static const ar_AR = {
     'common_button_back': 'عُد',
@@ -2408,6 +2540,7 @@ class Locales {
     'quizScreen_content': 'تترا هي أصل الحياة في الكون',
     'quizScreen_dailyQuiz': 'مسابقة يومية',
     'quizScreen_button_true': 'إجابة',
+    'quizScreen_quiz_solve': 'حل الاختبار',
     'progressScreen_progress': 'التقدم',
     'progressScreen_quizComplete': 'إكمال الاختبار',
     'progressScreen_calender': 'تقويم',
@@ -2488,6 +2621,16 @@ class Locales {
     'questionScreen_result_4_0':
         'ما تستقبله لنفسك يصبح أساسًا لأفكارك وكلماتك وأفعالك. ما تستقبله لنفسك ',
     'questionScreen_result_4_1': ' هو الدافع الداخلي لك.',
+    'questionScreen_order_1': 'لا يمكنك إعطاء نفسك',
+    'questionScreen_order_2': 'لا يمكنك الحصول على الوالدين',
+    'questionScreen_order_3': 'يحصل على ذلك من رفيق',
+    'questionScreen_order_4': 'أعط نفسك',
+    'questionScreen_order_5': 'احصل على نفسك',
+    'reserveScreen_possible': 'متاح للحجز',
+    'reserveScreen_complete': 'تم الحجز',
+    'reserveScreen_impossible': 'لا يمكن الحجز',
+    'reserveScreen_consultManage': 'إدارة حجوزات الاستشارة',
+    'reserveScreen_purchase': 'شراء',
   };
   static const fr_FR = {
     'common_button_back': 'Retour',
@@ -2607,6 +2750,7 @@ class Locales {
     'quizScreen_content': 'Tetra est l\'origine de la vie dans l\'univers.',
     'quizScreen_dailyQuiz': 'quiz quotidien',
     'quizScreen_button_true': 'répondre',
+    'quizScreen_quiz_solve': 'Résoudre le quiz',
     'progressScreen_progress': 'Progrès',
     'progressScreen_quizComplete': 'achèvement du quiz',
     'progressScreen_calender': 'calendrier',
@@ -2689,5 +2833,15 @@ class Locales {
     'questionScreen_result_4_0':
         'Ce que vous donnez à vous-même devient la motivation sous-jacente de vos pensées, paroles et actions. Ce que vous donnez ',
     'questionScreen_result_4_1': ' est ma motivation sous-jacente.',
+    'questionScreen_order_1': 'Ne peut pas se donner à soi-même',
+    'questionScreen_order_2': 'Ne peut pas recevoir des parents',
+    'questionScreen_order_3': 'Reçoit d\'un compagnon',
+    'questionScreen_order_4': 'Se donne à soi-même',
+    'questionScreen_order_5': 'Reçoit de soi-même',
+    'reserveScreen_possible': 'Disponible',
+    'reserveScreen_complete': 'Réservé',
+    'reserveScreen_impossible': 'Indisponible',
+    'reserveScreen_consultManage': 'Gestion des réservations de consultation',
+    'reserveScreen_purchase': 'Acheter',
   };
 }

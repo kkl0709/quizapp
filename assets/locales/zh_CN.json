@@ -163,7 +163,8 @@
     "dailyQuiz": "每日测验",
     "button": {
       "true": "回答"
-    }
+    },
+    "quiz_solve": "解决测验"
   },
   "progressScreen": {
     "progress": "进度",
@@ -222,6 +223,18 @@
     "result_3_1": "，所以你给自己 ",
     "result_3_2": "。",
     "result_4_0": "你给予自己的成为你思考、说话和行动背后的主要动机。给自己的 ",
-    "result_4_1": " 是我的内在动机。"
+    "result_4_1": " 是我的内在动机。",
+    "order_1": "不能给自己",
+    "order_2": "不能从父母那里得到",
+    "order_3": "从伴侣那里得到",
+    "order_4": "给自己",
+    "order_5": "从自己那里得到"
+  },
+  "reserveScreen": {
+    "possible": "可用",
+    "complete": "已预订",
+    "impossible": "不可用",
+    "consultManage": "咨询预约管理",
+    "purchase": "购买"
   }
 }

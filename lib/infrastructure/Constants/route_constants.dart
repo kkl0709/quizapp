@@ -31,6 +31,8 @@ class RoutesConstants {
   // 0901 김기남 수정
   static const String questionScreen = "/questionScreen";
   static const String resultScreen = "/resultScreen";
-  static const String consultScreen = "/consultScreen";
   static const String consultCallScreen = "/consultCallScreen";
+  static const String reserveScreen = "/reserveScreen";
+  static const String purchaseScreen = "/purchaseScreen";
+
 }

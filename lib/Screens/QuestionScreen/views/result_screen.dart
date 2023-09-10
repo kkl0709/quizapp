@@ -107,14 +107,10 @@ class ResultScreen extends GetView<ResultController> {
           SizedBox(height: 20),
           BasicResult(),
           SizedBox(height: 20),
-
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: List.generate(
-                5,
-                (index) => ResultCard(index: index)),
+            children: List.generate(5, (index) => ResultCard(index: index)),
           ),
-
           Row(
             children: [
               Expanded(
@@ -143,7 +139,7 @@ class ResultScreen extends GetView<ResultController> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.toNamed(RoutesConstants.consultScreen);
+                    Get.toNamed(RoutesConstants.reserveScreen);
                   },
                   style: renderButtonStyle_2(),
                   child: Text(
@@ -168,6 +164,7 @@ class ResultScreen extends GetView<ResultController> {
       ),
     );
   }
+
   renderButtonStyle_2() {
     return ElevatedButton.styleFrom(
       minimumSize: Size(10, 52),

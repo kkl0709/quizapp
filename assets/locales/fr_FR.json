@@ -163,7 +163,8 @@
     "dailyQuiz": "quiz quotidien",
     "button": {
       "true": "répondre"
-    }
+    },
+    "quiz_solve": "Résoudre le quiz"
   },
   "progressScreen": {
     "progress": "Progrès",
@@ -226,6 +227,18 @@
     "result_3_1": ", vous donnez ",
     "result_3_2": " à vous-même.",
     "result_4_0": "Ce que vous donnez à vous-même devient la motivation sous-jacente de vos pensées, paroles et actions. Ce que vous donnez ",
-    "result_4_1": " est ma motivation sous-jacente."
-  }
+    "result_4_1": " est ma motivation sous-jacente.",
+    "order_1": "Ne peut pas se donner à soi-même",
+    "order_2": "Ne peut pas recevoir des parents",
+    "order_3": "Reçoit d'un compagnon",
+    "order_4": "Se donne à soi-même",
+    "order_5": "Reçoit de soi-même"
+  },
+    "reserveScreen": {
+      "possible": "Disponible",
+      "complete": "Réservé",
+      "impossible": "Indisponible",
+      "consultManage": "Gestion des réservations de consultation",
+      "purchase": "Acheter"
+    }
 }
