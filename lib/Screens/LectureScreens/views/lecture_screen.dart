@@ -74,84 +74,109 @@ class _LectureScreenState extends State<LectureScreen> {
                   color: Color(0xff1e1f27),
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Expanded(
-                child: isLoading ? Loading() : ListView.builder(
-                  itemCount: lectureList.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    Lecture lecture = lectureList[index];
+                child: isLoading
+                    ? Loading()
+                    : ListView.builder(
+                        itemCount: lectureList.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          Lecture lecture = lectureList[index];
 
-                    return Column(
-                      children: [
-                        if (index > 0)...[
-                          SizedBox(height: 12,),
-                        ],
-                        GestureDetector(
-                          onTap: () => Get.toNamed(RoutesConstants.lectureDetailScreen, arguments: lecture),
-                          child: Container(
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                              color: Color(0xffFAFAFA),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            padding: EdgeInsets.only(top: 24, right: 20, bottom: 28, left: 20),
-                            child: Column(
-                              children: [
-                                AspectRatio(
-                                  aspectRatio: 295 / 166,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Color(0xffD9D9D9),
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Stack(
-                                      children: [
-                                        Positioned.fill(child: ImagePadding(
-                                          lecture.imgUrl,
-                                          isNetwork: true,
-                                          fit: BoxFit.cover,
-                                        )),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 16,),
-                                Row(
-                                  children: [
-                                    ImagePadding('play.png', width: 24, height: 24, fit: BoxFit.contain,),
-                                    SizedBox(width: 8,),
-                                    Expanded(child: Text(
-                                      '${lecture.number}강. ${lecture.title}',
-                                      style: TextStyle(
-                                        fontFamily: FontsConstants.sourceSerifProRegular,
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 16,
-                                        color: Color(0xff1E1F27),
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    )),
-                                    SizedBox(width: 8,),
-                                    Text(
-                                      '₩${Utils.numberFormat(lecture.price)}',
-                                      style: TextStyle(
-                                        fontFamily: FontsConstants.sourceSerifProRegular,
-                                        fontWeight: FontWeight.w700,
-                                        fontSize: 12,
-                                        color: Color(0xff696A6F),
-                                      ),
-                                    )
-                                  ],
+                          return Column(
+                            children: [
+                              if (index > 0) ...[
+                                SizedBox(
+                                  height: 12,
                                 ),
                               ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    );
-                  },
-                ),
+                              GestureDetector(
+                                onTap: () {
+                                  if (Utils.userModel.isPurchase) {
+                                    Get.toNamed(RoutesConstants.lectureDetailScreen, arguments: lecture);
+                                  } else {
+                                    Utils.showMessage(context, message: '강의를 결제해주세요');
+                                  }
+                                },
+                                child: Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffFAFAFA),
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  padding: EdgeInsets.only(top: 24, right: 20, bottom: 28, left: 20),
+                                  child: Column(
+                                    children: [
+                                      AspectRatio(
+                                        aspectRatio: 295 / 166,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Color(0xffD9D9D9),
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          clipBehavior: Clip.antiAlias,
+                                          child: Stack(
+                                            children: [
+                                              Positioned.fill(
+                                                  child: ImagePadding(
+                                                lecture.imgUrl,
+                                                isNetwork: true,
+                                                fit: BoxFit.cover,
+                                              )),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
+                                      Row(
+                                        children: [
+                                          ImagePadding(
+                                            'play.png',
+                                            width: 24,
+                                            height: 24,
+                                            fit: BoxFit.contain,
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Expanded(
+                                              child: Text(
+                                            '${lecture.number}강. ${lecture.title}',
+                                            style: TextStyle(
+                                              fontFamily: FontsConstants.sourceSerifProRegular,
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: 16,
+                                              color: Color(0xff1E1F27),
+                                            ),
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                          )),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            '₩${Utils.numberFormat(lecture.price)}',
+                                            style: TextStyle(
+                                              fontFamily: FontsConstants.sourceSerifProRegular,
+                                              fontWeight: FontWeight.w700,
+                                              fontSize: 12,
+                                              color: Color(0xff696A6F),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          );
+                        },
+                      ),
               ),
             ],
           ),

@@ -3,6 +3,7 @@ import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart'
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/Services/shared_preference_service.dart';
 import 'package:chinesequizapp/infrastructure/mixins/authentication_mixin.dart';
+import 'package:chinesequizapp/infrastructure/models/user_model.dart';
 import 'package:chinesequizapp/infrastructure/utilities/custom_styles.dart';
 import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -316,6 +317,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             onTap: () async {
                               DatabaseConstants.stream?.cancel();
                               DatabaseConstants.noReserveDates = [];
+                              Utils.userModel = UserModel(email: '초기email', isPurchase: false, isAdmin: false);
                               int authCode = await SharedPreferenceService.getAuthCode;
                               await AuthenticationHelper.logout(AuthType.fromCode(authCode)); //=> 로그아웃
                               SharedPreferenceService.saveLogout();

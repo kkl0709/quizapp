@@ -95,7 +95,7 @@ class AuthenticationHelper {
         return;
       }
     }
-    await SharedPreferenceService.saveLoggedIn(true, account.email!, type.code);
+    await SharedPreferenceService.saveLoggedIn(true, account.email?? '', type.code);
     Fluttertoast.showToast(
         msg: '로그인 되었습니다.',
         toastLength: Toast.LENGTH_LONG,

@@ -5,6 +5,7 @@ import 'package:chinesequizapp/Screens/ReserveScreen_3/model/reserve_model.dart'
 import 'package:chinesequizapp/infrastructure/Constants/database_constants.dart';
 import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/repositories/database.dart';
+import 'package:chinesequizapp/infrastructure/utilities/utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -33,6 +34,7 @@ class ManageReserve extends StatelessWidget {
             //maxLines: 2,
           ),
         ),
+        if(Utils.userModel.isAdmin)
         TextButton(
           onPressed: () async {
             if (DatabaseConstants.noReserveDates.isNotEmpty) {
@@ -93,7 +95,7 @@ class ReserveCard extends StatelessWidget {
     }
 
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 5,vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
       height: 15.h,
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
@@ -201,7 +203,7 @@ class ReserveCard extends StatelessWidget {
                                   fontSize: 15.0,
                                 ),
                               ),
-                              if (profileController.account.value.email == 'kkl0709@uos.ac.kr')
+                              if (Utils.userModel.isAdmin)
                                 Text(
                                   reserveModel.phoneNumber,
                                   style: TextStyle(
@@ -219,7 +221,7 @@ class ReserveCard extends StatelessWidget {
             ],
           ),
           /* 관리자 예약 불가 시간 설정 / 취소 설정 */
-          if (profileController.account.value.email == 'kkl0709@uos.ac.kr' && reserveModel.status != '예약완료')
+          if (Utils.userModel.isAdmin && reserveModel.status != '예약완료')
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -251,7 +253,7 @@ class ReserveCard extends StatelessWidget {
               ],
             ),
           /* 사용자 예약 설정, 취소 */
-          if (reserveModel.status == '예약가능' && profileController.account.value.email != 'kkl0709@uos.ac.kr')
+          if (reserveModel.status == '예약가능' && !Utils.userModel.isAdmin)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Column(

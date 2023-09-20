@@ -4,10 +4,12 @@ import 'package:chinesequizapp/infrastructure/Constants/route_constants.dart';
 import 'package:chinesequizapp/infrastructure/models/account.dart';
 import 'package:chinesequizapp/infrastructure/models/request/http/mailer_req.dart';
 import 'package:chinesequizapp/infrastructure/models/response/database_resp.dart';
+import 'package:chinesequizapp/infrastructure/models/user_model.dart';
 import 'package:chinesequizapp/infrastructure/repositories/db/account_repository.dart';
 import 'package:chinesequizapp/infrastructure/repositories/http/mailer_repository.dart';
 import 'package:chinesequizapp/infrastructure/utilities/encryption_helper.dart';
 import 'package:chinesequizapp/infrastructure/utilities/mailer_helper.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
@@ -89,6 +91,12 @@ class MembershipController extends GetxController {
               ],
               title: 'TETRA 인증 메일입니다.',
               body: '인증 번호를 APP 화면에 입력해주세요 : $code'));
+      debugPrint('CreateACcount');
+      await FirebaseFirestore.instance.collection('user').doc(textField1Controller.value.text).set(UserModel(
+            email: textField1Controller.value.text,
+            isPurchase: false,
+            isAdmin: false,
+          ).toJson());
 
       /// TODO:: 인증 화면 이동
       Get.toNamed(
